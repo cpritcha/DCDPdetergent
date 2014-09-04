@@ -78,7 +78,8 @@ Detergent::FirstStage() {
   coupon_td = new Jump("coupon_td", 2, CV(hat[PERCIEVED_COUPON_VALUES])[2]);
   prettyprint("Coupon (Tide)", coupon_td);
   
-  EndogenousStates(consumption, weeks_to_go, coupon_ch, coupon_other, coupon_td);
+  EndogenousStates(weeks_to_go);
+  ExogenousStates(consumption, coupon_ch, coupon_other, coupon_td);
 	CreateSpaces();
 	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
 	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();	
