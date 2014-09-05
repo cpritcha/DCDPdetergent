@@ -13,7 +13,7 @@ DetergentData::DetergentData(method) {
 	DataSet("Detergent", method, TRUE);
 	// are the strings supposed to correspond to columns of the dataset?
 	Observed(Detergent::weeks_to_go,"wks_to_g",
-					 Detergent::purchased,"purch",
+					 Detergent::purchase,"purch",
 					 Detergent::coupon_ch,"cpn_ch",
 					 Detergent::coupon_other, "cpn_oth",
 					 Detergent::coupon_td, "cpn_td",
@@ -64,12 +64,13 @@ Detergent::FirstStage() {
 
 	SetDelta(hat[DISCOUNT]);
 
-	Actions(purchased = new ActionVariable("purchased", 7));
-	prettyprint("Purchases", purchased);
+	purchase = new ActionVariable("purchase", 7);
+  purchase.actual = <0;17;42;72;127;227;400.0>;
+	prettyprint("Purchases", purchase);
 
   consumption = new ConsumptionState("consumption", 11);
   prettyprint("Consumption", consumption);
-  weeks_to_go = new InventoryState("weeks_to_go", NX, consumption, purchased);
+  weeks_to_go = new InventoryState("weeks_to_go", NX, consumption, purchase);
   prettyprint("Weeks Left", weeks_to_go);
   coupon_ch = new Jump("coupon_ch", 2, CV(hat[PERCIEVED_COUPON_VALUES])[0]);
   prettyprint("Coupon (Cheer)", coupon_ch);
@@ -93,7 +94,7 @@ Detergent::SecondStage() {
 
 Detergent::Reachable() { return new Detergent(); }
 Detergent::Utility() {
-	decl buy = aa(purchased); // what does aa() do?
+	decl buy = aa(purchase); // what does aa() do?
 	return -(
 		CV(hat[ALPHA])[0] + CV(hat[alpha])[1]*AV(consumption)*(buy==0) /* stockout cost */ + 
 		CV(hat[ETA])[0]*AV(weeks_to_go) + CV(hat[ETA])[1]*AV(weeks_to_go)^2 /* inventory holding costs */ -

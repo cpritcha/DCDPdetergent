@@ -35,7 +35,7 @@ struct Detergent : Rust {
 
 	static const decl init_hat = {0.9999, <6.0,2.0>, <0.2,1.0>, <1.0,0.8,0.7>};
 
-	static decl purchased; // control variable
+	static decl purchase; // control variable
 	static decl weeks_to_go, consumption, coupon_ch, coupon_other, coupon_td; // state variables
 	static decl normalization;
 
