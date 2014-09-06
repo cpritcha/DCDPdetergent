@@ -11,16 +11,12 @@ prettyprint(label, x) {}
 
 DetergentData::DetergentData(method) {
 	DataSet("Detergent", method, TRUE);
-	// are the strings supposed to correspond to columns of the dataset?
 	Observed(Detergent::weeks_to_go,"wks_to_g",
 					 Detergent::purchase,"purch",
 					 Detergent::coupon_ch,"cpn_ch",
 					 Detergent::coupon_other, "cpn_oth",
 					 Detergent::coupon_td, "cpn_td",
 					 Detergent::consumption, "cons");
-	/** Consumption is only used to determine 
- * the state transition of weeks_to_go. 
- * How should it be entered? **/
 	IDColumn("hh_id");
 	Read("sample.dta");
 }
@@ -55,27 +51,33 @@ DetergentEstimates::DoAll() {
 
 Detergent::FirstStage() {
 	hat = new array[N_PARAMS];
-	Initialize(Reachable,0);
+	Initialize(1.0,Reachable,FALSE,0);
 
 	hat[DISCOUNT] = new Determined("delta",init_hat[DISCOUNT]);
-	hat[STOCKOUT_COSTS] = new Positive("alpha", init_hat[STOCKOUT_COSTS]);
-	hat[INVENTORY_HOLDING_COSTS] = new Positive("eta", init_hat[INVENTORY_HOLDING_COSTS]);
-	hat[PERCIEVED_COUPON_VALUES] = new Positive("gamma", init_hat[PERCIEVED_COUPON_VALUES]);
+	hat[STOCKOUT_COSTS] = new Coefficients("alpha", init_hat[STOCKOUT_COSTS]);
+	hat[INVENTORY_HOLDING_COSTS] = new Coefficients("eta", init_hat[INVENTORY_HOLDING_COSTS]);
+	hat[PERCIEVED_COUPON_VALUES] = new Coefficients("gamma", init_hat[PERCIEVED_COUPON_VALUES]);
 
 	SetDelta(hat[DISCOUNT]);
 
 	purchase = new ActionVariable("purchase", 7);
   purchase.actual = <0;17;42;72;127;227;400.0>;
+  Actions(purchase);
 	prettyprint("Purchases", purchase);
 
   consumption = new ConsumptionState("consumption", 11);
+  consumption.actual = (consumption.vals + 1)*5;
   prettyprint("Consumption", consumption);
+
   weeks_to_go = new InventoryState("weeks_to_go", NX, consumption, purchase);
   prettyprint("Weeks Left", weeks_to_go);
+
   coupon_ch = new Jump("coupon_ch", 2, CV(hat[PERCIEVED_COUPON_VALUES])[0]);
   prettyprint("Coupon (Cheer)", coupon_ch);
+
   coupon_other = new Jump("coupon_other", 2, CV(hat[PERCIEVED_COUPON_VALUES])[1]);
   prettyprint("Coupon (Other)", coupon_other);
+
   coupon_td = new Jump("coupon_td", 2, CV(hat[PERCIEVED_COUPON_VALUES])[2]);
   prettyprint("Coupon (Tide)", coupon_td);
   

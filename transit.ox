@@ -1,13 +1,22 @@
-InventoryState::next(const FeasA, const Inventory, const Bought, const Consumption) {
-  print("\n\nInventory: ", Inventory, "\n");
-  
+#import "Inventory"
+
+vDblToInt(v) {
+  decl i, n = sizerc(v), vNew = zeros(n);
+  for (i = 0; i < n; i++) {
+    vNew[i] = int(vec(v)[i][0]);
+  }
+  return vNew;
+}
+
+next(const FeasA, const Inventory, const Bought, const Consumption) {
   decl vBoughtVolsFeasA = Bought.actual[FeasA[][Bought.pos]];
   decl vFeasibleInventoryStates = 
     setbounds(AV(Inventory) -1 + round(vBoughtVolsFeasA/AV(Consumption)), 
         Inventory.vals[0],
         Inventory.vals[sizerc(Inventory.vals)-1]);
   decl vUniqueStates = unique(vFeasibleInventoryStates);
-  
+  print("\nvUV:\n", vUniqueStates); 
+  print("\nV:\n", int(vUniqueStates[0]));
   decl n = sizerc(vBoughtVolsFeasA), 
        m = sizerc(vUniqueStates);
   decl mTransProb = zeros(n,m);
@@ -25,30 +34,25 @@ InventoryState::next(const FeasA, const Inventory, const Bought, const Consumpti
 
     mTransProb[i++][j] = 1.0;
   }
-  print({vUniqueStates, mTransProb});
   return {vUniqueStates, mTransProb};
 }
 
-InventoryState::InventoryState(const L, const N, const consumption, const purchase) {
-  StateVariable(L, N);
-  
-  this.purchase = purchase;
-  this.consumption = consumption;
-}
+main() {
+  decl Consumption = new ConsumptionState("cons", 11);
+  Consumption.actual = (Consumption.vals + 1)*5;
 
-InventoryState::Transit(const FeasA) {
-  next(FeasA, this, purchase, consumption);
-}
+  decl Bought = new ActionVariable("bought", 7);
+  Bought.actual = <0;17;42;72;127;227;400.0>;
 
-ConsumptionState::ConsumptionState(const L, const N) {
-	StateVariable(L, N);
-}
+  decl Inventory = new InventoryState("inv", 115, Bought, Consumption);
+  Inventory.v = 114;
+  Bought.pos = 0;
+  Consumption.v = 5;
 
-ConsumptionState::Transit(const FeasA) {
-	decl x = v;
-	return { x, ones(sizer(FeasA),1) };
-}
+  decl FeasA = Bought.vals';
 
-ConsumptionState::Update() {
-  actual = (vals + 1) * 5;
+  print(next(FeasA, Inventory, Bought, Consumption));
+
+  print(range(0,10));
+  print(1~2);
 }

@@ -1,0 +1,137 @@
+
+Ox Console version 7.00 (OS_X_64/U) (C) J.A. Doornik, 1994-2013
+This version may be used for academic research and teaching only
+
+Detergent Model Starting
+
+
+
+
+ niqlow version 1.00 Copyright (C) 2011-2014 Christopher Ferrall.
+ Execution of niqlow implies acceptance of its free software License (niqlow/niqlow-license.txt).
+Warning: CreateSpaces: setting clock type to stationary.
+-------------------- DP Model Summary ------------------------
+Clock Class: 0 Description: Infinite Horizon
+STATE VARIABLES
+              |eps                        |eta |theta -clock        |gamma
+            consu  coupo  coupo  coupo    s21  weeks      t     t'      r      f
+       s.N     11      2      2      2      1    115      1      1      1      1
+
+
+Transition Categories (not counting fixed)
+                 NonRandom       Random   Coevolving
+     #Vars               2            3            2
+
+Size of Spaces
+                           N
+        Exogenous         88
+    SemiExogenous          1
+       Endogenous        115
+            Times          1
+    EV()Iterating        115
+    Ch.Prob.track        115
+    TotalReachable       115
+         Terminal          0
+     Random Groups         1
+     Fixed Groups          1
+    TotalUntrimmed     10120
+
+ACTION VARIABLES (7 distinct actions)
+         purch
+    i.N      7
+
+
+ACTION SETS
+    alpha       A[0]   
+    (0)           X    
+    (1)           X    
+    (2)           X    
+    (3)           X    
+    (4)           X    
+    (5)           X    
+    (6)           X    
+#States         115
+    Key: X = row vector is feasible. - = infeasible
+Warning: DataSet: likelihood only accounting for choice probabilities.
+
+Added to the observed list: weeks_to_go purchase coupon_ch coupon_other coupon_td consumption Observed Finished.
+
+Outcome Summary: Detergent
+
+            ID purch consu coupo coupo coupo   s21 weeks     t    t'     r     f
+observed     1     1     1     1     1     1     0     1     0     0     0     0
+force0       0     0     0     0     0     0     1     0     1     1     1     1
+column       0     1     2     3     4     5    -1     6    -1    -1    -1    -1
+
+
+  sample size         mean      st.dev.          min          max
+       2070.0   1.1004e+06       181.46   1.1000e+06   1.1006e+06
+       2070.0      0.29952      0.83299       0.0000       5.0000
+       2070.0       1.6000       1.9596       0.0000       7.0000
+       2070.0      0.31546      0.46470       0.0000       1.0000
+       2070.0      0.82464      0.38028       0.0000       1.0000
+       2070.0      0.34010      0.47374       0.0000       1.0000
+       2070.0       18.288       21.373       0.0000       114.00
+Source data summary0
+. Total Outcomes Loaded: 2070
+
+
+Report of Simplex Starting  on DetergentMLE1
+
+   Obj=                    .NaN
+Free Parameters
+                index          free      
+gamma0            5     1.00000000000
+gamma1            6     1.00000000000
+gamma2            7     1.00000000000
+Actual Parameters
+                         Value 
+delta            0.999900000000
+alpha0            6.00000000000
+alpha1            2.00000000000
+eta0             0.200000000000
+eta1              1.00000000000
+gamma0            1.00000000000
+gamma1           0.800000000000
+gamma2           0.700000000000
+
+ Max # evaluations 2147483647
+ Max # restarts 2147483647
+ Plex size tolerance 1e-05
+
+
+V: 114
+
+
+
+purch: 
+->L = purchase
+->pos = 0
+->v = .Null
+->vals = 
+       0.0000       1.0000       2.0000       3.0000       4.0000       5.0000       6.0000
+->N = 7
+->actual = 
+       0.0000
+       17.000
+       42.000
+       72.000
+       127.00
+       227.00
+       400.00
+->pdf = 
+       1.0000       1.0000       1.0000       1.0000       1.0000       1.0000       1.0000
+Runtime error: variable has no value
+Runtime error occurred in Transit (12), call trace: 
+Inventory.ox (12): Transit
+ (198): ThetaTransition
+ (46): Run
+ (508): loop
+ (29): Run
+ (508): loop
+ (594): Traverse
+ (54): Run
+ (133): Solve
+ (495): LogLikelihood
+ (519): LogLikelihood
+remaining calls not listed

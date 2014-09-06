@@ -14,7 +14,7 @@ struct DetergentData : DataSet {
 }
 
 // inherits from ergodic because any state is reachable from any other state given enough time
-struct Detergent : Rust {
+struct Detergent : ExtremeValue {
 	enum{DISCOUNT, 
 			 STOCKOUT_COSTS, 
 			 INVENTORY_HOLDING_COSTS, 
@@ -23,7 +23,7 @@ struct Detergent : Rust {
 	enum{DELTA,ALPHA,ETA,GAMMA,N_PARAMS};
 
 	// maxmimum weeks of laundry detergent inventory
-	static const decl NX = 115; // no one buys more than a years worth of laundry detergent
+	static const decl NX = 120; // no one buys more than a years worth of laundry detergent
 
 	// percieved coupon values are by brand only, not volume.
 	// Don't need pars/rows for estimation
@@ -39,7 +39,7 @@ struct Detergent : Rust {
 	static decl weeks_to_go, consumption, coupon_ch, coupon_other, coupon_td; // state variables
 	static decl normalization;
 
-	static decl hat = init_hat; // estimated parameters
+	static decl hat; // estimated parameters
 	static FirstStage();
 	static SecondStage();
 
