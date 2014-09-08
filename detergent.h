@@ -23,7 +23,7 @@ struct Detergent : ExtremeValue {
 	enum{DELTA,ALPHA,ETA,GAMMA,N_PARAMS};
 
 	// maxmimum weeks of laundry detergent inventory
-	static const decl NX = 120; // no one buys more than a years worth of laundry detergent
+	static const decl NX = 115; // no one buys more than a years worth of laundry detergent
 
 	// percieved coupon values are by brand only, not volume.
 	// Don't need pars/rows for estimation

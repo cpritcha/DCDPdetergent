@@ -10,5 +10,5 @@ struct InventoryState : NonRandom {
 struct ConsumptionState : NonRandom {
 	ConsumptionState(const L, const N);
 	Transit(const FeasA);
-  Update();
+  //Update();
 }	

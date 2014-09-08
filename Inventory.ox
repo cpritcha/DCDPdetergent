@@ -1,5 +1,5 @@
 InventoryState::next(const FeasA, const Inventory, const Bought, const Consumption) {
-  print("\n\nInventory: ", Inventory, "\n");
+  //print("\n\nInventory: ", Inventory, "\n");
   
   decl vBoughtVolsFeasA = Bought.actual[FeasA[][Bought.pos]];
   decl vFeasibleInventoryStates = 
@@ -37,7 +37,7 @@ InventoryState::InventoryState(const L, const N, const consumption, const purcha
 }
 
 InventoryState::Transit(const FeasA) {
-  next(FeasA, this, purchase, consumption);
+  return next(FeasA, this, purchase, consumption);
 }
 
 ConsumptionState::ConsumptionState(const L, const N) {
@@ -49,6 +49,6 @@ ConsumptionState::Transit(const FeasA) {
 	return { x, ones(sizer(FeasA),1) };
 }
 
-ConsumptionState::Update() {
-  actual = (vals + 1) * 5;
-}
+//ConsumptionState::Update() {
+//  actual = (vals + 1) * 5;
+//}
