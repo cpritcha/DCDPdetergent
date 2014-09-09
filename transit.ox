@@ -36,7 +36,7 @@ main() {
 
   decl Inventory = new InventoryState("inv", 115, Bought, Consumption);
   Bought.pos = 0;
-  Consumption.v = 5; // (5+1)*5 = 30
+  Consumption.v = 0; // (5+1)*5 = 30
 
   decl FeasA = Bought.vals';
 
