@@ -1,13 +1,5 @@
 #import "Inventory"
 
-vDblToInt(v) {
-  decl i, n = sizerc(v), vNew = zeros(n);
-  for (i = 0; i < n; i++) {
-    vNew[i] = int(vec(v)[i][0]);
-  }
-  return vNew;
-}
-
 next(const FeasA, const Inventory, const Bought, const Consumption) {
   decl vBoughtVolsFeasA = Bought.actual[FeasA[][Bought.pos]];
   decl vFeasibleInventoryStates = 
@@ -15,8 +7,6 @@ next(const FeasA, const Inventory, const Bought, const Consumption) {
         Inventory.vals[0],
         Inventory.vals[sizerc(Inventory.vals)-1]);
   decl vUniqueStates = unique(vFeasibleInventoryStates);
-  print("\nvUV:\n", vUniqueStates); 
-  print("\nV:\n", int(vUniqueStates[0]));
   decl n = sizerc(vBoughtVolsFeasA), 
        m = sizerc(vUniqueStates);
   decl mTransProb = zeros(n,m);
@@ -45,14 +35,20 @@ main() {
   Bought.actual = <0;17;42;72;127;227;400.0>;
 
   decl Inventory = new InventoryState("inv", 115, Bought, Consumption);
-  Inventory.v = 114;
   Bought.pos = 0;
-  Consumption.v = 5;
+  Consumption.v = 5; // (5+1)*5 = 30
 
   decl FeasA = Bought.vals';
 
+  Inventory.v = 0;
+  print("\nLow inventory (weeks_to_go = 0)\n");
   print(next(FeasA, Inventory, Bought, Consumption));
 
-  print(range(0,10));
-  print(1~2);
+  Inventory.v = 20;
+  print("\nMedium inventory (weeks_to_go = 20)\n");
+  print(next(FeasA, Inventory, Bought, Consumption));
+
+  Inventory.v = 114;
+  print("\nHigh inventory (weeks_to_go = 114)\n");
+  print(next(FeasA, Inventory, Bought, Consumption));
 }

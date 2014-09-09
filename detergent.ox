@@ -96,7 +96,7 @@ Detergent::SecondStage() {
 
 Detergent::Reachable() { return new Detergent(); }
 Detergent::Utility() {
-	decl buy = aa(purchase); // what does aa() do?
+	decl buy = aa(purchase);
 	return -(
 		CV(hat[ALPHA])[0] + CV(hat[alpha])[1]*AV(consumption)*(buy==0) /* stockout cost */ + 
 		CV(hat[ETA])[0]*AV(weeks_to_go) + CV(hat[ETA])[1]*AV(weeks_to_go)^2 /* inventory holding costs */ -
