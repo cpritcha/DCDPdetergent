@@ -7,7 +7,7 @@ feasible_hh(timep, wtg, purch, cons) {
 
   decl consumption = new ConsumptionState("cons", 11);
   consumption.actual = (consumption.vals + 1)*5;
-  print("Actual: ", consumption);
+  //print("Actual: ", consumption);
 
   decl purchase = new ActionVariable("purch", 7);
   purchase.actual = <0;17;42;72;127;227;400.0>;
@@ -62,7 +62,7 @@ feasible_hhs(db) {
   decl purch_data = db.GetVar("purch");
   decl cons_data =  db.GetVar("cons");
 
-  decl unique_hhs = unique(hhs)[0];
+  decl unique_hhs = unique(hhs);
   decl i, hh_idx, timep, wtg, purch, cons;
 
   // check feasibility for each household

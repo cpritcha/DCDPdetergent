@@ -1,6 +1,4 @@
-//#define DEBUG 1
-
-#ifndef NDEBUG
+#ifdef DEBUG
 prettyprint(label, x) {
   decl sep = "\n--------------------------\n";
   print(label,sep,x,sep,"\n\n");
@@ -8,6 +6,8 @@ prettyprint(label, x) {
 #else
 prettyprint(label, x) {}
 #endif
+
+decl i = 1;
 
 DetergentData::DetergentData(method) {
 	DataSet("Detergent", method, TRUE);
@@ -26,7 +26,11 @@ DetergentEstimates::DoAll() {
 	EMax = new ValueIteration(0);
 	EMax.vtoler  = 1E-1;
 
-	detergent = new DetergentData(EMax);
+  if (i < 2) {
+    print("EMax: ", EMax);
+	  i++;
+  }
+  detergent = new DetergentData(EMax);
 
   //MPI::Volume = LOUD;
 
