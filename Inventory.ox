@@ -25,7 +25,7 @@ InventoryState::next(const FeasA, const Inventory, const Bought, const Consumpti
 
     mTransProb[i++][j] = 1.0;
   }
-  print({vUniqueStates, mTransProb});
+//  print({vUniqueStates, mTransProb});
   return {vUniqueStates, mTransProb};
 }
 

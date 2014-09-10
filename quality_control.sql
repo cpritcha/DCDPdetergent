@@ -29,3 +29,9 @@ WHERE dconsumption NOT BETWEEN 0 AND 10;
 
 SELECT COUNT(DISTINCT week)
 FROM done;
+
+-- do any households have multiple consumptions?
+SELECT hh_id
+FROM done
+GROUP BY hh_id
+HAVING COUNT(DISTINCT consumption) != 1;

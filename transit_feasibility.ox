@@ -27,7 +27,7 @@ feasible_hh(timep, wtg, purch, cons) {
 
     // expected feasible transition given consumption/purchase
     [exp_feas_states, exp_trans_prob] = inventory.Transit(FeasA); 
-    expected_transition = max(exp_feas_states.*exp_trans_prob[purch[i]][]);
+    expected_transition = max(exp_feas_states .* exp_trans_prob[purch[i]][]);
     /*
     print("purch: ", purchase.v);
     print("\t\twtg: ", AV(inventory));
@@ -40,13 +40,15 @@ feasible_hh(timep, wtg, purch, cons) {
 */
     // actual feasible transition
     actual_transition = wtg[i+1];
-
+    
+    if (actual_transition != expected_transition) {
     print("Time: ", timep[i+1],
-        "\tConsump: ", AV(consumption),
+        "\tConsump: ", AV(consumption), "\t", consumption.v, "\t", consumption.actual[consumption.v], 
         "\tPurchase: ", purch[i],
         "\tInventory: ", AV(inventory),
         "\tExpected: ", expected_transition,
         "\tActual: ", actual_transition, "\n");
+    }
 
   }
 }
