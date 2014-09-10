@@ -24,73 +24,2758 @@ inv                    2070      0  double            0       17.529          10
 
 Household:    1100032
 --------------------------------
+Time: 198602	Consump: 10	1	10	Purchase: 2	Inventory: 3	Expected: 6	Actual: 6
+Time: 198603	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198604	Consump: 10	1	10	Purchase: 3	Inventory: 5	Expected: 11	Actual: 11
+Time: 198605	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198606	Consump: 10	1	10	Purchase: 4	Inventory: 10	Expected: 22	Actual: 22
+Time: 198607	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198608	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198609	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198610	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198611	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198612	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198613	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198614	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198615	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198616	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198617	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198618	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198619	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198620	Consump: 10	1	10	Purchase: 4	Inventory: 9	Expected: 21	Actual: 21
+Time: 198621	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198622	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198623	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198624	Consump: 10	1	10	Purchase: 4	Inventory: 18	Expected: 30	Actual: 30
+Time: 198625	Consump: 10	1	10	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198626	Consump: 10	1	10	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198627	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198628	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198629	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198630	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198631	Consump: 10	1	10	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198632	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198633	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198634	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198635	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198636	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198637	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198638	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198639	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198640	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198641	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198642	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198643	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198644	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198645	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198646	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198647	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198648	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198649	Consump: 10	1	10	Purchase: 4	Inventory: 6	Expected: 18	Actual: 18
+Time: 198650	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198651	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198652	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198701	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198702	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198703	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198704	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198705	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198706	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198707	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198708	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198709	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198710	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198711	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198712	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198713	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198714	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198715	Consump: 10	1	10	Purchase: 3	Inventory: 1	Expected: 7	Actual: 7
+Time: 198716	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198717	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198718	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198719	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198720	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198721	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198722	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198723	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198724	Consump: 10	1	10	Purchase: 3	Inventory: 0	Expected: 6	Actual: 6
+Time: 198725	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198726	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198727	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198728	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198729	Consump: 10	1	10	Purchase: 3	Inventory: 2	Expected: 8	Actual: 8
+Time: 198730	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198731	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198732	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198733	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198734	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198735	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198736	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198737	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198738	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198739	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198740	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198741	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198742	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198743	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198744	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198745	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198746	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198747	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198748	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198749	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198750	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198751	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198752	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198801	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198802	Consump: 10	1	10	Purchase: 4	Inventory: 0	Expected: 12	Actual: 12
+Time: 198803	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198804	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198805	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198806	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198807	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198808	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198809	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198810	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198811	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198812	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198813	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198814	Consump: 10	1	10	Purchase: 3	Inventory: 1	Expected: 7	Actual: 7
+Time: 198815	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198816	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198817	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198818	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198819	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198820	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198821	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198822	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198823	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198824	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198825	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198826	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198827	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198828	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+purch: 0		wtg: 0		cons: 10	10	1
+efs: 
+       0.0000       1.0000       3.0000       6.0000       12.000       22.000       39.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+purch: 3		wtg: 0		cons: 10	10	1
+efs: 
+       0.0000       1.0000       3.0000       6.0000       12.000       22.000       39.000
+etp: 
+       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       6.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 10	1	10	Purchase: 3	Inventory: 0	Expected: 6	Actual: 6
+purch: 0		wtg: 6		cons: 10	10	1
+efs: 
+       5.0000       7.0000       9.0000       12.000       18.000       28.000       45.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       5.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+purch: 0		wtg: 5		cons: 10	10	1
+efs: 
+       4.0000       6.0000       8.0000       11.000       17.000       27.000       44.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       4.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+purch: 0		wtg: 4		cons: 10	10	1
+efs: 
+       3.0000       5.0000       7.0000       10.000       16.000       26.000       43.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       3.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+purch: 0		wtg: 3		cons: 10	10	1
+efs: 
+       2.0000       4.0000       6.0000       9.0000       15.000       25.000       42.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       2.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
 
 
 
 Household:    1100107
 --------------------------------
+Time: 198602	Consump: 40	7	40	Purchase: 3	Inventory: 3	Expected: 4	Actual: 4
+Time: 198603	Consump: 40	7	40	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198604	Consump: 40	7	40	Purchase: 3	Inventory: 3	Expected: 4	Actual: 4
+Time: 198605	Consump: 40	7	40	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198606	Consump: 40	7	40	Purchase: 3	Inventory: 3	Expected: 4	Actual: 4
+Time: 198607	Consump: 40	7	40	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198608	Consump: 40	7	40	Purchase: 3	Inventory: 3	Expected: 4	Actual: 4
+Time: 198609	Consump: 40	7	40	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198610	Consump: 40	7	40	Purchase: 3	Inventory: 3	Expected: 4	Actual: 4
+Time: 198611	Consump: 40	7	40	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198612	Consump: 40	7	40	Purchase: 3	Inventory: 3	Expected: 4	Actual: 4
+Time: 198613	Consump: 40	7	40	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198614	Consump: 40	7	40	Purchase: 3	Inventory: 3	Expected: 4	Actual: 4
+Time: 198615	Consump: 40	7	40	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198616	Consump: 40	7	40	Purchase: 3	Inventory: 3	Expected: 4	Actual: 4
+Time: 198617	Consump: 40	7	40	Purchase: 4	Inventory: 4	Expected: 6	Actual: 6
+Time: 198618	Consump: 40	7	40	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198619	Consump: 40	7	40	Purchase: 4	Inventory: 5	Expected: 7	Actual: 7
+Time: 198620	Consump: 40	7	40	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198621	Consump: 40	7	40	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198622	Consump: 40	7	40	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198623	Consump: 40	7	40	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198624	Consump: 40	7	40	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198625	Consump: 40	7	40	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198626	Consump: 40	7	40	Purchase: 4	Inventory: 1	Expected: 3	Actual: 3
+Time: 198627	Consump: 40	7	40	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198628	Consump: 40	7	40	Purchase: 4	Inventory: 2	Expected: 4	Actual: 4
+Time: 198629	Consump: 40	7	40	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198630	Consump: 40	7	40	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198631	Consump: 40	7	40	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198632	Consump: 40	7	40	Purchase: 4	Inventory: 1	Expected: 3	Actual: 3
+Time: 198633	Consump: 40	7	40	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198634	Consump: 40	7	40	Purchase: 3	Inventory: 2	Expected: 3	Actual: 3
+Time: 198635	Consump: 40	7	40	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198636	Consump: 40	7	40	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198637	Consump: 40	7	40	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198638	Consump: 40	7	40	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198639	Consump: 40	7	40	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198640	Consump: 40	7	40	Purchase: 3	Inventory: 0	Expected: 1	Actual: 1
+Time: 198641	Consump: 40	7	40	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198642	Consump: 40	7	40	Purchase: 3	Inventory: 0	Expected: 1	Actual: 1
+Time: 198643	Consump: 40	7	40	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198644	Consump: 40	7	40	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198645	Consump: 40	7	40	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198646	Consump: 40	7	40	Purchase: 3	Inventory: 0	Expected: 1	Actual: 1
+Time: 198647	Consump: 40	7	40	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198648	Consump: 40	7	40	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198649	Consump: 40	7	40	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198650	Consump: 40	7	40	Purchase: 4	Inventory: 0	Expected: 2	Actual: 2
+Time: 198651	Consump: 40	7	40	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198652	Consump: 40	7	40	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198701	Consump: 40	7	40	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198702	Consump: 40	7	40	Purchase: 4	Inventory: 0	Expected: 2	Actual: 2
+Time: 198703	Consump: 40	7	40	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198704	Consump: 40	7	40	Purchase: 4	Inventory: 1	Expected: 3	Actual: 3
+Time: 198705	Consump: 40	7	40	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198706	Consump: 40	7	40	Purchase: 3	Inventory: 2	Expected: 3	Actual: 3
+Time: 198707	Consump: 40	7	40	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198708	Consump: 40	7	40	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198709	Consump: 40	7	40	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198710	Consump: 40	7	40	Purchase: 4	Inventory: 0	Expected: 2	Actual: 2
+Time: 198711	Consump: 40	7	40	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198712	Consump: 40	7	40	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198713	Consump: 40	7	40	Purchase: 4	Inventory: 0	Expected: 2	Actual: 2
+Time: 198714	Consump: 40	7	40	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198715	Consump: 40	7	40	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198716	Consump: 40	7	40	Purchase: 4	Inventory: 0	Expected: 2	Actual: 2
+Time: 198717	Consump: 40	7	40	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198718	Consump: 40	7	40	Purchase: 4	Inventory: 1	Expected: 3	Actual: 3
+Time: 198719	Consump: 40	7	40	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198720	Consump: 40	7	40	Purchase: 4	Inventory: 2	Expected: 4	Actual: 4
+Time: 198721	Consump: 40	7	40	Purchase: 3	Inventory: 4	Expected: 5	Actual: 5
+Time: 198722	Consump: 40	7	40	Purchase: 4	Inventory: 5	Expected: 7	Actual: 7
+Time: 198723	Consump: 40	7	40	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198724	Consump: 40	7	40	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198725	Consump: 40	7	40	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198726	Consump: 40	7	40	Purchase: 4	Inventory: 4	Expected: 6	Actual: 6
+Time: 198727	Consump: 40	7	40	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198728	Consump: 40	7	40	Purchase: 3	Inventory: 5	Expected: 6	Actual: 6
+Time: 198729	Consump: 40	7	40	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198730	Consump: 40	7	40	Purchase: 4	Inventory: 5	Expected: 7	Actual: 7
+Time: 198731	Consump: 40	7	40	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198732	Consump: 40	7	40	Purchase: 4	Inventory: 6	Expected: 8	Actual: 8
+Time: 198733	Consump: 40	7	40	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198734	Consump: 40	7	40	Purchase: 4	Inventory: 7	Expected: 9	Actual: 9
+Time: 198735	Consump: 40	7	40	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198736	Consump: 40	7	40	Purchase: 4	Inventory: 8	Expected: 10	Actual: 10
+Time: 198737	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198738	Consump: 40	7	40	Purchase: 3	Inventory: 9	Expected: 10	Actual: 10
+Time: 198739	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198740	Consump: 40	7	40	Purchase: 3	Inventory: 9	Expected: 10	Actual: 10
+Time: 198741	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198742	Consump: 40	7	40	Purchase: 4	Inventory: 9	Expected: 11	Actual: 11
+Time: 198743	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198744	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198745	Consump: 40	7	40	Purchase: 3	Inventory: 9	Expected: 10	Actual: 10
+Time: 198746	Consump: 40	7	40	Purchase: 4	Inventory: 10	Expected: 12	Actual: 12
+Time: 198747	Consump: 40	7	40	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198748	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198749	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198750	Consump: 40	7	40	Purchase: 3	Inventory: 9	Expected: 10	Actual: 10
+Time: 198751	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198752	Consump: 40	7	40	Purchase: 3	Inventory: 9	Expected: 10	Actual: 10
+Time: 198801	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198802	Consump: 40	7	40	Purchase: 3	Inventory: 9	Expected: 10	Actual: 10
+Time: 198803	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198804	Consump: 40	7	40	Purchase: 3	Inventory: 9	Expected: 10	Actual: 10
+Time: 198805	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198806	Consump: 40	7	40	Purchase: 4	Inventory: 9	Expected: 11	Actual: 11
+Time: 198807	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198808	Consump: 40	7	40	Purchase: 4	Inventory: 10	Expected: 12	Actual: 12
+Time: 198809	Consump: 40	7	40	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198810	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198811	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198812	Consump: 40	7	40	Purchase: 4	Inventory: 9	Expected: 11	Actual: 11
+Time: 198813	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198814	Consump: 40	7	40	Purchase: 3	Inventory: 10	Expected: 11	Actual: 11
+Time: 198815	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198816	Consump: 40	7	40	Purchase: 4	Inventory: 10	Expected: 12	Actual: 12
+Time: 198817	Consump: 40	7	40	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198818	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198819	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198820	Consump: 40	7	40	Purchase: 4	Inventory: 9	Expected: 11	Actual: 11
+Time: 198821	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198822	Consump: 40	7	40	Purchase: 3	Inventory: 10	Expected: 11	Actual: 11
+Time: 198823	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198824	Consump: 40	7	40	Purchase: 3	Inventory: 10	Expected: 11	Actual: 11
+Time: 198825	Consump: 40	7	40	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198826	Consump: 40	7	40	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198827	Consump: 40	7	40	Purchase: 3	Inventory: 9	Expected: 10	Actual: 10
+Time: 198828	Consump: 40	7	40	Purchase: 4	Inventory: 10	Expected: 12	Actual: 12
+purch: 0		wtg: 12		cons: 40	40	7
+efs: 
+       11.000       12.000       13.000       14.000       17.000       21.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       11.000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 40	7	40	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+purch: 4		wtg: 11		cons: 40	40	7
+efs: 
+       10.000       11.000       12.000       13.000       16.000       20.000
+etp: 
+       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       13.000       0.0000       0.0000
+Time: 198830	Consump: 40	7	40	Purchase: 4	Inventory: 11	Expected: 13	Actual: 13
+purch: 0		wtg: 13		cons: 40	40	7
+efs: 
+       12.000       13.000       14.000       15.000       18.000       22.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       12.000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 40	7	40	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+purch: 3		wtg: 12		cons: 40	40	7
+efs: 
+       11.000       12.000       13.000       14.000       17.000       21.000
+etp: 
+       0.0000       0.0000       1.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       13.000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 40	7	40	Purchase: 3	Inventory: 12	Expected: 13	Actual: 13
+purch: 0		wtg: 13		cons: 40	40	7
+efs: 
+       12.000       13.000       14.000       15.000       18.000       22.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       12.000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 40	7	40	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+purch: 4		wtg: 12		cons: 40	40	7
+efs: 
+       11.000       12.000       13.000       14.000       17.000       21.000
+etp: 
+       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       14.000       0.0000       0.0000
+Time: 198834	Consump: 40	7	40	Purchase: 4	Inventory: 12	Expected: 14	Actual: 14
 
 
 
 Household:    1100131
 --------------------------------
+Time: 198602	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198604	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198605	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198606	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198607	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198608	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198609	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198610	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198611	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198612	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198613	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198614	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198615	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198616	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198617	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198618	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198619	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198620	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198621	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198622	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198623	Consump: 10	1	10	Purchase: 4	Inventory: 0	Expected: 12	Actual: 12
+Time: 198624	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198625	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198626	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198627	Consump: 10	1	10	Purchase: 4	Inventory: 9	Expected: 21	Actual: 21
+Time: 198628	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198629	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198630	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198631	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198632	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198633	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198634	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198635	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198636	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198637	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198638	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198639	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198640	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198641	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198642	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198643	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198644	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198645	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198646	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198647	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198648	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198649	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198650	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198651	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198652	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198701	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198702	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198703	Consump: 10	1	10	Purchase: 4	Inventory: 0	Expected: 12	Actual: 12
+Time: 198704	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198705	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198706	Consump: 10	1	10	Purchase: 4	Inventory: 10	Expected: 22	Actual: 22
+Time: 198707	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198708	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198709	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198710	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198711	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198712	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198713	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198714	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198715	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198716	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198717	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198718	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198719	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198720	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198721	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198722	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198723	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198724	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198725	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198726	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198727	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198728	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198729	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198730	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198731	Consump: 10	1	10	Purchase: 6	Inventory: 0	Expected: 39	Actual: 39
+Time: 198732	Consump: 10	1	10	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+Time: 198733	Consump: 10	1	10	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+Time: 198734	Consump: 10	1	10	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198735	Consump: 10	1	10	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198736	Consump: 10	1	10	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198737	Consump: 10	1	10	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198738	Consump: 10	1	10	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198739	Consump: 10	1	10	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198740	Consump: 10	1	10	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198741	Consump: 10	1	10	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198742	Consump: 10	1	10	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198743	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198744	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198745	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198746	Consump: 10	1	10	Purchase: 3	Inventory: 25	Expected: 31	Actual: 31
+Time: 198747	Consump: 10	1	10	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198748	Consump: 10	1	10	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198749	Consump: 10	1	10	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198750	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198751	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198752	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198801	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198802	Consump: 10	1	10	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198803	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198804	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198805	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198806	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198807	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198808	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198809	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198810	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198811	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198812	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198813	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198814	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198815	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198816	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198817	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198818	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198819	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198820	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198821	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198822	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198823	Consump: 10	1	10	Purchase: 3	Inventory: 3	Expected: 9	Actual: 9
+Time: 198824	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198825	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198826	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198827	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198828	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+purch: 0		wtg: 4		cons: 10	10	1
+efs: 
+       3.0000       5.0000       7.0000       10.000       16.000       26.000       43.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       3.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+purch: 0		wtg: 3		cons: 10	10	1
+efs: 
+       2.0000       4.0000       6.0000       9.0000       15.000       25.000       42.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       2.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+purch: 0		wtg: 2		cons: 10	10	1
+efs: 
+       1.0000       3.0000       5.0000       8.0000       14.000       24.000       41.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+purch: 0		wtg: 1		cons: 10	10	1
+efs: 
+       0.0000       2.0000       4.0000       7.0000       13.000       23.000       40.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+purch: 0		wtg: 0		cons: 10	10	1
+efs: 
+       0.0000       1.0000       3.0000       6.0000       12.000       22.000       39.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+purch: 0		wtg: 0		cons: 10	10	1
+efs: 
+       0.0000       1.0000       3.0000       6.0000       12.000       22.000       39.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
 
 
 
 Household:    1100255
 --------------------------------
+Time: 198602	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 5	0	5	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198604	Consump: 5	0	5	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198605	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198606	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198607	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198608	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198609	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198610	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198611	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198612	Consump: 5	0	5	Purchase: 2	Inventory: 0	Expected: 7	Actual: 7
+Time: 198613	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198614	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198615	Consump: 5	0	5	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198616	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198617	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198618	Consump: 5	0	5	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198619	Consump: 5	0	5	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198620	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198621	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198622	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198623	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198624	Consump: 5	0	5	Purchase: 3	Inventory: 0	Expected: 13	Actual: 13
+Time: 198625	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198626	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198627	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198628	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198629	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198630	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198631	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198632	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198633	Consump: 5	0	5	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198634	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198635	Consump: 5	0	5	Purchase: 2	Inventory: 3	Expected: 10	Actual: 10
+Time: 198636	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198637	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198638	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198639	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198640	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198641	Consump: 5	0	5	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198642	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198643	Consump: 5	0	5	Purchase: 2	Inventory: 3	Expected: 10	Actual: 10
+Time: 198644	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198645	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198646	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198647	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198648	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198649	Consump: 5	0	5	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198650	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198651	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198652	Consump: 5	0	5	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198701	Consump: 5	0	5	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198702	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198703	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198704	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198705	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198706	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198707	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198708	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198709	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198710	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198711	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198712	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198713	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198714	Consump: 5	0	5	Purchase: 2	Inventory: 0	Expected: 7	Actual: 7
+Time: 198715	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198716	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198717	Consump: 5	0	5	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198718	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198719	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198720	Consump: 5	0	5	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198721	Consump: 5	0	5	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198722	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198723	Consump: 5	0	5	Purchase: 3	Inventory: 0	Expected: 13	Actual: 13
+Time: 198724	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198725	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198726	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198727	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198728	Consump: 5	0	5	Purchase: 3	Inventory: 9	Expected: 22	Actual: 22
+Time: 198729	Consump: 5	0	5	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198730	Consump: 5	0	5	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198731	Consump: 5	0	5	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198732	Consump: 5	0	5	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198733	Consump: 5	0	5	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198734	Consump: 5	0	5	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198735	Consump: 5	0	5	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198736	Consump: 5	0	5	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198737	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198738	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198739	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198740	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198741	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198742	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198743	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198744	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198745	Consump: 5	0	5	Purchase: 2	Inventory: 6	Expected: 13	Actual: 13
+Time: 198746	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198747	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198748	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198749	Consump: 5	0	5	Purchase: 2	Inventory: 10	Expected: 17	Actual: 17
+Time: 198750	Consump: 5	0	5	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198751	Consump: 5	0	5	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198752	Consump: 5	0	5	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198801	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198802	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198803	Consump: 5	0	5	Purchase: 2	Inventory: 12	Expected: 19	Actual: 19
+Time: 198804	Consump: 5	0	5	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198805	Consump: 5	0	5	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198806	Consump: 5	0	5	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198807	Consump: 5	0	5	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198808	Consump: 5	0	5	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198809	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198810	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198811	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198812	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198813	Consump: 5	0	5	Purchase: 3	Inventory: 10	Expected: 23	Actual: 23
+Time: 198814	Consump: 5	0	5	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198815	Consump: 5	0	5	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198816	Consump: 5	0	5	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198817	Consump: 5	0	5	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198818	Consump: 5	0	5	Purchase: 2	Inventory: 19	Expected: 26	Actual: 26
+Time: 198819	Consump: 5	0	5	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198820	Consump: 5	0	5	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198821	Consump: 5	0	5	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198822	Consump: 5	0	5	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198823	Consump: 5	0	5	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198824	Consump: 5	0	5	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198825	Consump: 5	0	5	Purchase: 3	Inventory: 20	Expected: 33	Actual: 33
+Time: 198826	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198827	Consump: 5	0	5	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198828	Consump: 5	0	5	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+purch: 0		wtg: 30		cons: 5	5	0
+efs: 
+       29.000       32.000       37.000       43.000       54.000       74.000       109.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       29.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 5	0	5	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+purch: 0		wtg: 29		cons: 5	5	0
+efs: 
+       28.000       31.000       36.000       42.000       53.000       73.000       108.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       28.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 5	0	5	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+purch: 0		wtg: 28		cons: 5	5	0
+efs: 
+       27.000       30.000       35.000       41.000       52.000       72.000       107.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       27.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 5	0	5	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+purch: 0		wtg: 27		cons: 5	5	0
+efs: 
+       26.000       29.000       34.000       40.000       51.000       71.000       106.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       26.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 5	0	5	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+purch: 2		wtg: 26		cons: 5	5	0
+efs: 
+       25.000       28.000       33.000       39.000       50.000       70.000       105.00
+etp: 
+       0.0000       0.0000       1.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       33.000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 5	0	5	Purchase: 2	Inventory: 26	Expected: 33	Actual: 33
+purch: 0		wtg: 33		cons: 5	5	0
+efs: 
+       32.000       35.000       40.000       46.000       57.000       77.000       112.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       32.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
 
 
 
 Household:    1100289
 --------------------------------
+Time: 198602	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 5	0	5	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198604	Consump: 5	0	5	Purchase: 2	Inventory: 1	Expected: 8	Actual: 8
+Time: 198605	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198606	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198607	Consump: 5	0	5	Purchase: 1	Inventory: 6	Expected: 8	Actual: 8
+Time: 198608	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198609	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198610	Consump: 5	0	5	Purchase: 2	Inventory: 6	Expected: 13	Actual: 13
+Time: 198611	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198612	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198613	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198614	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198615	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198616	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198617	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198618	Consump: 5	0	5	Purchase: 1	Inventory: 6	Expected: 8	Actual: 8
+Time: 198619	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198620	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198621	Consump: 5	0	5	Purchase: 2	Inventory: 6	Expected: 13	Actual: 13
+Time: 198622	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198623	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198624	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198625	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198626	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198627	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198628	Consump: 5	0	5	Purchase: 1	Inventory: 7	Expected: 9	Actual: 9
+Time: 198629	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198630	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198631	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198632	Consump: 5	0	5	Purchase: 1	Inventory: 6	Expected: 8	Actual: 8
+Time: 198633	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198634	Consump: 5	0	5	Purchase: 1	Inventory: 7	Expected: 9	Actual: 9
+Time: 198635	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198636	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198637	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198638	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198639	Consump: 5	0	5	Purchase: 1	Inventory: 5	Expected: 7	Actual: 7
+Time: 198640	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198641	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198642	Consump: 5	0	5	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198643	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198644	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198645	Consump: 5	0	5	Purchase: 2	Inventory: 2	Expected: 9	Actual: 9
+Time: 198646	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198647	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198648	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198649	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198650	Consump: 5	0	5	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198651	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198652	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198701	Consump: 5	0	5	Purchase: 3	Inventory: 2	Expected: 15	Actual: 15
+Time: 198702	Consump: 5	0	5	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198703	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198704	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198705	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198706	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198707	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198708	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198709	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198710	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198711	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198712	Consump: 5	0	5	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198713	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198714	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198715	Consump: 5	0	5	Purchase: 1	Inventory: 2	Expected: 4	Actual: 4
+Time: 198716	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198717	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198718	Consump: 5	0	5	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198719	Consump: 5	0	5	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198720	Consump: 5	0	5	Purchase: 1	Inventory: 0	Expected: 2	Actual: 2
+Time: 198721	Consump: 5	0	5	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198722	Consump: 5	0	5	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198723	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198724	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198725	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198726	Consump: 5	0	5	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198727	Consump: 5	0	5	Purchase: 3	Inventory: 0	Expected: 13	Actual: 13
+Time: 198728	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198729	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198730	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198731	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198732	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198733	Consump: 5	0	5	Purchase: 3	Inventory: 8	Expected: 21	Actual: 21
+Time: 198734	Consump: 5	0	5	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198735	Consump: 5	0	5	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198736	Consump: 5	0	5	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198737	Consump: 5	0	5	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198738	Consump: 5	0	5	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198739	Consump: 5	0	5	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198740	Consump: 5	0	5	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198741	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198742	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198743	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198744	Consump: 5	0	5	Purchase: 2	Inventory: 11	Expected: 18	Actual: 18
+Time: 198745	Consump: 5	0	5	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198746	Consump: 5	0	5	Purchase: 2	Inventory: 17	Expected: 24	Actual: 24
+Time: 198747	Consump: 5	0	5	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198748	Consump: 5	0	5	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198749	Consump: 5	0	5	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198750	Consump: 5	0	5	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198751	Consump: 5	0	5	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198752	Consump: 5	0	5	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198801	Consump: 5	0	5	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198802	Consump: 5	0	5	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198803	Consump: 5	0	5	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198804	Consump: 5	0	5	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198805	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198806	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198807	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198808	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198809	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198810	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198811	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198812	Consump: 5	0	5	Purchase: 2	Inventory: 7	Expected: 14	Actual: 14
+Time: 198813	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198814	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198815	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198816	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198817	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198818	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198819	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198820	Consump: 5	0	5	Purchase: 2	Inventory: 7	Expected: 14	Actual: 14
+Time: 198821	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198822	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198823	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198824	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198825	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198826	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198827	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198828	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+purch: 0		wtg: 6		cons: 5	5	0
+efs: 
+       5.0000       8.0000       13.000       19.000       30.000       50.000       85.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       5.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+purch: 2		wtg: 5		cons: 5	5	0
+efs: 
+       4.0000       7.0000       12.000       18.000       29.000       49.000       84.000
+etp: 
+       0.0000       0.0000       1.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       12.000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 5	0	5	Purchase: 2	Inventory: 5	Expected: 12	Actual: 12
+purch: 0		wtg: 12		cons: 5	5	0
+efs: 
+       11.000       14.000       19.000       25.000       36.000       56.000       91.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       11.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+purch: 0		wtg: 11		cons: 5	5	0
+efs: 
+       10.000       13.000       18.000       24.000       35.000       55.000       90.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       10.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+purch: 0		wtg: 10		cons: 5	5	0
+efs: 
+       9.0000       12.000       17.000       23.000       34.000       54.000       89.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       9.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+purch: 0		wtg: 9		cons: 5	5	0
+efs: 
+       8.0000       11.000       16.000       22.000       33.000       53.000       88.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       8.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
 
 
 
 Household:    1100297
 --------------------------------
+Time: 198602	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 5	0	5	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198604	Consump: 5	0	5	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198605	Consump: 5	0	5	Purchase: 3	Inventory: 0	Expected: 13	Actual: 13
+Time: 198606	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198607	Consump: 5	0	5	Purchase: 1	Inventory: 12	Expected: 14	Actual: 14
+Time: 198608	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198609	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198610	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198611	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198612	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198613	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198614	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198615	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198616	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198617	Consump: 5	0	5	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198618	Consump: 5	0	5	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198619	Consump: 5	0	5	Purchase: 3	Inventory: 3	Expected: 16	Actual: 16
+Time: 198620	Consump: 5	0	5	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198621	Consump: 5	0	5	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198622	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198623	Consump: 5	0	5	Purchase: 3	Inventory: 13	Expected: 26	Actual: 26
+Time: 198624	Consump: 5	0	5	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198625	Consump: 5	0	5	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198626	Consump: 5	0	5	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198627	Consump: 5	0	5	Purchase: 2	Inventory: 23	Expected: 30	Actual: 30
+Time: 198628	Consump: 5	0	5	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198629	Consump: 5	0	5	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198630	Consump: 5	0	5	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198631	Consump: 5	0	5	Purchase: 2	Inventory: 27	Expected: 34	Actual: 34
+Time: 198632	Consump: 5	0	5	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198633	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198634	Consump: 5	0	5	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198635	Consump: 5	0	5	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198636	Consump: 5	0	5	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198637	Consump: 5	0	5	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198638	Consump: 5	0	5	Purchase: 3	Inventory: 28	Expected: 41	Actual: 41
+Time: 198639	Consump: 5	0	5	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+Time: 198640	Consump: 5	0	5	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+Time: 198641	Consump: 5	0	5	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+Time: 198642	Consump: 5	0	5	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+Time: 198643	Consump: 5	0	5	Purchase: 3	Inventory: 37	Expected: 50	Actual: 50
+Time: 198644	Consump: 5	0	5	Purchase: 0	Inventory: 50	Expected: 49	Actual: 49
+Time: 198645	Consump: 5	0	5	Purchase: 0	Inventory: 49	Expected: 48	Actual: 48
+Time: 198646	Consump: 5	0	5	Purchase: 0	Inventory: 48	Expected: 47	Actual: 47
+Time: 198647	Consump: 5	0	5	Purchase: 0	Inventory: 47	Expected: 46	Actual: 46
+Time: 198648	Consump: 5	0	5	Purchase: 0	Inventory: 46	Expected: 45	Actual: 45
+Time: 198649	Consump: 5	0	5	Purchase: 3	Inventory: 45	Expected: 58	Actual: 58
+Time: 198650	Consump: 5	0	5	Purchase: 0	Inventory: 58	Expected: 57	Actual: 57
+Time: 198651	Consump: 5	0	5	Purchase: 0	Inventory: 57	Expected: 56	Actual: 56
+Time: 198652	Consump: 5	0	5	Purchase: 0	Inventory: 56	Expected: 55	Actual: 55
+Time: 198701	Consump: 5	0	5	Purchase: 0	Inventory: 55	Expected: 54	Actual: 54
+Time: 198702	Consump: 5	0	5	Purchase: 0	Inventory: 54	Expected: 53	Actual: 53
+Time: 198703	Consump: 5	0	5	Purchase: 0	Inventory: 53	Expected: 52	Actual: 52
+Time: 198704	Consump: 5	0	5	Purchase: 0	Inventory: 52	Expected: 51	Actual: 51
+Time: 198705	Consump: 5	0	5	Purchase: 0	Inventory: 51	Expected: 50	Actual: 50
+Time: 198706	Consump: 5	0	5	Purchase: 0	Inventory: 50	Expected: 49	Actual: 49
+Time: 198707	Consump: 5	0	5	Purchase: 0	Inventory: 49	Expected: 48	Actual: 48
+Time: 198708	Consump: 5	0	5	Purchase: 0	Inventory: 48	Expected: 47	Actual: 47
+Time: 198709	Consump: 5	0	5	Purchase: 0	Inventory: 47	Expected: 46	Actual: 46
+Time: 198710	Consump: 5	0	5	Purchase: 0	Inventory: 46	Expected: 45	Actual: 45
+Time: 198711	Consump: 5	0	5	Purchase: 0	Inventory: 45	Expected: 44	Actual: 44
+Time: 198712	Consump: 5	0	5	Purchase: 0	Inventory: 44	Expected: 43	Actual: 43
+Time: 198713	Consump: 5	0	5	Purchase: 0	Inventory: 43	Expected: 42	Actual: 42
+Time: 198714	Consump: 5	0	5	Purchase: 0	Inventory: 42	Expected: 41	Actual: 41
+Time: 198715	Consump: 5	0	5	Purchase: 3	Inventory: 41	Expected: 54	Actual: 54
+Time: 198716	Consump: 5	0	5	Purchase: 0	Inventory: 54	Expected: 53	Actual: 53
+Time: 198717	Consump: 5	0	5	Purchase: 0	Inventory: 53	Expected: 52	Actual: 52
+Time: 198718	Consump: 5	0	5	Purchase: 0	Inventory: 52	Expected: 51	Actual: 51
+Time: 198719	Consump: 5	0	5	Purchase: 0	Inventory: 51	Expected: 50	Actual: 50
+Time: 198720	Consump: 5	0	5	Purchase: 0	Inventory: 50	Expected: 49	Actual: 49
+Time: 198721	Consump: 5	0	5	Purchase: 0	Inventory: 49	Expected: 48	Actual: 48
+Time: 198722	Consump: 5	0	5	Purchase: 0	Inventory: 48	Expected: 47	Actual: 47
+Time: 198723	Consump: 5	0	5	Purchase: 0	Inventory: 47	Expected: 46	Actual: 46
+Time: 198724	Consump: 5	0	5	Purchase: 4	Inventory: 46	Expected: 70	Actual: 70
+Time: 198725	Consump: 5	0	5	Purchase: 0	Inventory: 70	Expected: 69	Actual: 69
+Time: 198726	Consump: 5	0	5	Purchase: 0	Inventory: 69	Expected: 68	Actual: 68
+Time: 198727	Consump: 5	0	5	Purchase: 0	Inventory: 68	Expected: 67	Actual: 67
+Time: 198728	Consump: 5	0	5	Purchase: 0	Inventory: 67	Expected: 66	Actual: 66
+Time: 198729	Consump: 5	0	5	Purchase: 0	Inventory: 66	Expected: 65	Actual: 65
+Time: 198730	Consump: 5	0	5	Purchase: 0	Inventory: 65	Expected: 64	Actual: 64
+Time: 198731	Consump: 5	0	5	Purchase: 0	Inventory: 64	Expected: 63	Actual: 63
+Time: 198732	Consump: 5	0	5	Purchase: 0	Inventory: 63	Expected: 62	Actual: 62
+Time: 198733	Consump: 5	0	5	Purchase: 0	Inventory: 62	Expected: 61	Actual: 61
+Time: 198734	Consump: 5	0	5	Purchase: 0	Inventory: 61	Expected: 60	Actual: 60
+Time: 198735	Consump: 5	0	5	Purchase: 0	Inventory: 60	Expected: 59	Actual: 59
+Time: 198736	Consump: 5	0	5	Purchase: 3	Inventory: 59	Expected: 72	Actual: 72
+Time: 198737	Consump: 5	0	5	Purchase: 0	Inventory: 72	Expected: 71	Actual: 71
+Time: 198738	Consump: 5	0	5	Purchase: 0	Inventory: 71	Expected: 70	Actual: 70
+Time: 198739	Consump: 5	0	5	Purchase: 0	Inventory: 70	Expected: 69	Actual: 69
+Time: 198740	Consump: 5	0	5	Purchase: 0	Inventory: 69	Expected: 68	Actual: 68
+Time: 198741	Consump: 5	0	5	Purchase: 0	Inventory: 68	Expected: 67	Actual: 67
+Time: 198742	Consump: 5	0	5	Purchase: 0	Inventory: 67	Expected: 66	Actual: 66
+Time: 198743	Consump: 5	0	5	Purchase: 0	Inventory: 66	Expected: 65	Actual: 65
+Time: 198744	Consump: 5	0	5	Purchase: 0	Inventory: 65	Expected: 64	Actual: 64
+Time: 198745	Consump: 5	0	5	Purchase: 0	Inventory: 64	Expected: 63	Actual: 63
+Time: 198746	Consump: 5	0	5	Purchase: 0	Inventory: 63	Expected: 62	Actual: 62
+Time: 198747	Consump: 5	0	5	Purchase: 0	Inventory: 62	Expected: 61	Actual: 61
+Time: 198748	Consump: 5	0	5	Purchase: 0	Inventory: 61	Expected: 60	Actual: 60
+Time: 198749	Consump: 5	0	5	Purchase: 0	Inventory: 60	Expected: 59	Actual: 59
+Time: 198750	Consump: 5	0	5	Purchase: 0	Inventory: 59	Expected: 58	Actual: 58
+Time: 198751	Consump: 5	0	5	Purchase: 0	Inventory: 58	Expected: 57	Actual: 57
+Time: 198752	Consump: 5	0	5	Purchase: 0	Inventory: 57	Expected: 56	Actual: 56
+Time: 198801	Consump: 5	0	5	Purchase: 0	Inventory: 56	Expected: 55	Actual: 55
+Time: 198802	Consump: 5	0	5	Purchase: 0	Inventory: 55	Expected: 54	Actual: 54
+Time: 198803	Consump: 5	0	5	Purchase: 0	Inventory: 54	Expected: 53	Actual: 53
+Time: 198804	Consump: 5	0	5	Purchase: 0	Inventory: 53	Expected: 52	Actual: 52
+Time: 198805	Consump: 5	0	5	Purchase: 0	Inventory: 52	Expected: 51	Actual: 51
+Time: 198806	Consump: 5	0	5	Purchase: 0	Inventory: 51	Expected: 50	Actual: 50
+Time: 198807	Consump: 5	0	5	Purchase: 0	Inventory: 50	Expected: 49	Actual: 49
+Time: 198808	Consump: 5	0	5	Purchase: 0	Inventory: 49	Expected: 48	Actual: 48
+Time: 198809	Consump: 5	0	5	Purchase: 0	Inventory: 48	Expected: 47	Actual: 47
+Time: 198810	Consump: 5	0	5	Purchase: 0	Inventory: 47	Expected: 46	Actual: 46
+Time: 198811	Consump: 5	0	5	Purchase: 0	Inventory: 46	Expected: 45	Actual: 45
+Time: 198812	Consump: 5	0	5	Purchase: 0	Inventory: 45	Expected: 44	Actual: 44
+Time: 198813	Consump: 5	0	5	Purchase: 0	Inventory: 44	Expected: 43	Actual: 43
+Time: 198814	Consump: 5	0	5	Purchase: 0	Inventory: 43	Expected: 42	Actual: 42
+Time: 198815	Consump: 5	0	5	Purchase: 0	Inventory: 42	Expected: 41	Actual: 41
+Time: 198816	Consump: 5	0	5	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+Time: 198817	Consump: 5	0	5	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+Time: 198818	Consump: 5	0	5	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+Time: 198819	Consump: 5	0	5	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+Time: 198820	Consump: 5	0	5	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198821	Consump: 5	0	5	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198822	Consump: 5	0	5	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198823	Consump: 5	0	5	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198824	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198825	Consump: 5	0	5	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198826	Consump: 5	0	5	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198827	Consump: 5	0	5	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198828	Consump: 5	0	5	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+purch: 3		wtg: 28		cons: 5	5	0
+efs: 
+       27.000       30.000       35.000       41.000       52.000       72.000       107.00
+etp: 
+       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       41.000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 5	0	5	Purchase: 3	Inventory: 28	Expected: 41	Actual: 41
+purch: 0		wtg: 41		cons: 5	5	0
+efs: 
+       40.000       43.000       48.000       54.000       65.000       85.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       40.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 5	0	5	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+purch: 0		wtg: 40		cons: 5	5	0
+efs: 
+       39.000       42.000       47.000       53.000       64.000       84.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       39.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 5	0	5	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+purch: 0		wtg: 39		cons: 5	5	0
+efs: 
+       38.000       41.000       46.000       52.000       63.000       83.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       38.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 5	0	5	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+purch: 0		wtg: 38		cons: 5	5	0
+efs: 
+       37.000       40.000       45.000       51.000       62.000       82.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       37.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 5	0	5	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+purch: 0		wtg: 37		cons: 5	5	0
+efs: 
+       36.000       39.000       44.000       50.000       61.000       81.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       36.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 5	0	5	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
 
 
 
 Household:    1100313
 --------------------------------
+Time: 198602	Consump: 15	2	15	Purchase: 3	Inventory: 3	Expected: 7	Actual: 7
+Time: 198603	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198604	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198605	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198606	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198607	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198608	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198609	Consump: 15	2	15	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198610	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198611	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198612	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198613	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198614	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198615	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198616	Consump: 15	2	15	Purchase: 3	Inventory: 0	Expected: 4	Actual: 4
+Time: 198617	Consump: 15	2	15	Purchase: 3	Inventory: 4	Expected: 8	Actual: 8
+Time: 198618	Consump: 15	2	15	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198619	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198620	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198621	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198622	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198623	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198624	Consump: 15	2	15	Purchase: 3	Inventory: 2	Expected: 6	Actual: 6
+Time: 198625	Consump: 15	2	15	Purchase: 4	Inventory: 6	Expected: 13	Actual: 13
+Time: 198626	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198627	Consump: 15	2	15	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198628	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198629	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198630	Consump: 15	2	15	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198631	Consump: 15	2	15	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198632	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198633	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198634	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198635	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198636	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198637	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198638	Consump: 15	2	15	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198639	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198640	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198641	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198642	Consump: 15	2	15	Purchase: 5	Inventory: 0	Expected: 14	Actual: 14
+Time: 198643	Consump: 15	2	15	Purchase: 5	Inventory: 14	Expected: 28	Actual: 28
+Time: 198644	Consump: 15	2	15	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198645	Consump: 15	2	15	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198646	Consump: 15	2	15	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198647	Consump: 15	2	15	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198648	Consump: 15	2	15	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198649	Consump: 15	2	15	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198650	Consump: 15	2	15	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198651	Consump: 15	2	15	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198652	Consump: 15	2	15	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198701	Consump: 15	2	15	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198702	Consump: 15	2	15	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198703	Consump: 15	2	15	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198704	Consump: 15	2	15	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198705	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198706	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198707	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198708	Consump: 15	2	15	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198709	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198710	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198711	Consump: 15	2	15	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198712	Consump: 15	2	15	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198713	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198714	Consump: 15	2	15	Purchase: 4	Inventory: 6	Expected: 13	Actual: 13
+Time: 198715	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198716	Consump: 15	2	15	Purchase: 3	Inventory: 12	Expected: 16	Actual: 16
+Time: 198717	Consump: 15	2	15	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198718	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198719	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198720	Consump: 15	2	15	Purchase: 3	Inventory: 13	Expected: 17	Actual: 17
+Time: 198721	Consump: 15	2	15	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198722	Consump: 15	2	15	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198723	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198724	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198725	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198726	Consump: 15	2	15	Purchase: 4	Inventory: 12	Expected: 19	Actual: 19
+Time: 198727	Consump: 15	2	15	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198728	Consump: 15	2	15	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198729	Consump: 15	2	15	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198730	Consump: 15	2	15	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198731	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198732	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198733	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198734	Consump: 15	2	15	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198735	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198736	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198737	Consump: 15	2	15	Purchase: 4	Inventory: 9	Expected: 16	Actual: 16
+Time: 198738	Consump: 15	2	15	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198739	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198740	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198741	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198742	Consump: 15	2	15	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198743	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198744	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198745	Consump: 15	2	15	Purchase: 4	Inventory: 9	Expected: 16	Actual: 16
+Time: 198746	Consump: 15	2	15	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198747	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198748	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198749	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198750	Consump: 15	2	15	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198751	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198752	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198801	Consump: 15	2	15	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198802	Consump: 15	2	15	Purchase: 3	Inventory: 8	Expected: 12	Actual: 12
+Time: 198803	Consump: 15	2	15	Purchase: 3	Inventory: 12	Expected: 16	Actual: 16
+Time: 198804	Consump: 15	2	15	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198805	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198806	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198807	Consump: 15	2	15	Purchase: 4	Inventory: 13	Expected: 20	Actual: 20
+Time: 198808	Consump: 15	2	15	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198809	Consump: 15	2	15	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198810	Consump: 15	2	15	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198811	Consump: 15	2	15	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198812	Consump: 15	2	15	Purchase: 3	Inventory: 16	Expected: 20	Actual: 20
+Time: 198813	Consump: 15	2	15	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198814	Consump: 15	2	15	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198815	Consump: 15	2	15	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198816	Consump: 15	2	15	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198817	Consump: 15	2	15	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198818	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198819	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198820	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198821	Consump: 15	2	15	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198822	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198823	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198824	Consump: 15	2	15	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198825	Consump: 15	2	15	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198826	Consump: 15	2	15	Purchase: 3	Inventory: 7	Expected: 11	Actual: 11
+Time: 198827	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198828	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+purch: 0		wtg: 9		cons: 15	15	2
+efs: 
+       8.0000       9.0000       11.000       13.000       16.000       23.000       35.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       8.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 15	2	15	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+purch: 0		wtg: 8		cons: 15	15	2
+efs: 
+       7.0000       8.0000       10.000       12.000       15.000       22.000       34.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       7.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 15	2	15	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+purch: 0		wtg: 7		cons: 15	15	2
+efs: 
+       6.0000       7.0000       9.0000       11.000       14.000       21.000       33.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       6.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+purch: 0		wtg: 6		cons: 15	15	2
+efs: 
+       5.0000       6.0000       8.0000       10.000       13.000       20.000       32.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       5.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+purch: 3		wtg: 5		cons: 15	15	2
+efs: 
+       4.0000       5.0000       7.0000       9.0000       12.000       19.000       31.000
+etp: 
+       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       9.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 15	2	15	Purchase: 3	Inventory: 5	Expected: 9	Actual: 9
+purch: 0		wtg: 9		cons: 15	15	2
+efs: 
+       8.0000       9.0000       11.000       13.000       16.000       23.000       35.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       8.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 15	2	15	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
 
 
 
 Household:    1100339
 --------------------------------
+Time: 198602	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 30	5	30	Purchase: 4	Inventory: 2	Expected: 5	Actual: 5
+Time: 198604	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198605	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198606	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198607	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198608	Consump: 30	5	30	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198609	Consump: 30	5	30	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198610	Consump: 30	5	30	Purchase: 4	Inventory: 0	Expected: 3	Actual: 3
+Time: 198611	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198612	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198613	Consump: 30	5	30	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198614	Consump: 30	5	30	Purchase: 5	Inventory: 0	Expected: 7	Actual: 7
+Time: 198615	Consump: 30	5	30	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198616	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198617	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198618	Consump: 30	5	30	Purchase: 3	Inventory: 4	Expected: 5	Actual: 5
+Time: 198619	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198620	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198621	Consump: 30	5	30	Purchase: 4	Inventory: 3	Expected: 6	Actual: 6
+Time: 198622	Consump: 30	5	30	Purchase: 2	Inventory: 6	Expected: 6	Actual: 6
+Time: 198623	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198624	Consump: 30	5	30	Purchase: 4	Inventory: 5	Expected: 8	Actual: 8
+Time: 198625	Consump: 30	5	30	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198626	Consump: 30	5	30	Purchase: 4	Inventory: 7	Expected: 10	Actual: 10
+Time: 198627	Consump: 30	5	30	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198628	Consump: 30	5	30	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198629	Consump: 30	5	30	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198630	Consump: 30	5	30	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198631	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198632	Consump: 30	5	30	Purchase: 5	Inventory: 5	Expected: 12	Actual: 12
+Time: 198633	Consump: 30	5	30	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198634	Consump: 30	5	30	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198635	Consump: 30	5	30	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198636	Consump: 30	5	30	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198637	Consump: 30	5	30	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198638	Consump: 30	5	30	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198639	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198640	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198641	Consump: 30	5	30	Purchase: 4	Inventory: 4	Expected: 7	Actual: 7
+Time: 198642	Consump: 30	5	30	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198643	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198644	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198645	Consump: 30	5	30	Purchase: 4	Inventory: 4	Expected: 7	Actual: 7
+Time: 198646	Consump: 30	5	30	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198647	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198648	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198649	Consump: 30	5	30	Purchase: 4	Inventory: 4	Expected: 7	Actual: 7
+Time: 198650	Consump: 30	5	30	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198651	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198652	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198701	Consump: 30	5	30	Purchase: 4	Inventory: 4	Expected: 7	Actual: 7
+Time: 198702	Consump: 30	5	30	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198703	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198704	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198705	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198706	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198707	Consump: 30	5	30	Purchase: 4	Inventory: 2	Expected: 5	Actual: 5
+Time: 198708	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198709	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198710	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198711	Consump: 30	5	30	Purchase: 4	Inventory: 2	Expected: 5	Actual: 5
+Time: 198712	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198713	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198714	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198715	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198716	Consump: 30	5	30	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198717	Consump: 30	5	30	Purchase: 4	Inventory: 0	Expected: 3	Actual: 3
+Time: 198718	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198719	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198720	Consump: 30	5	30	Purchase: 3	Inventory: 1	Expected: 2	Actual: 2
+Time: 198721	Consump: 30	5	30	Purchase: 4	Inventory: 2	Expected: 5	Actual: 5
+Time: 198722	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198723	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198724	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198725	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198726	Consump: 30	5	30	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198727	Consump: 30	5	30	Purchase: 6	Inventory: 0	Expected: 12	Actual: 12
+Time: 198728	Consump: 30	5	30	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198729	Consump: 30	5	30	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198730	Consump: 30	5	30	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198731	Consump: 30	5	30	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198732	Consump: 30	5	30	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198733	Consump: 30	5	30	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198734	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198735	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198736	Consump: 30	5	30	Purchase: 3	Inventory: 4	Expected: 5	Actual: 5
+Time: 198737	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198738	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198739	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198740	Consump: 30	5	30	Purchase: 4	Inventory: 2	Expected: 5	Actual: 5
+Time: 198741	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198742	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198743	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198744	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198745	Consump: 30	5	30	Purchase: 3	Inventory: 1	Expected: 2	Actual: 2
+Time: 198746	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198747	Consump: 30	5	30	Purchase: 4	Inventory: 1	Expected: 4	Actual: 4
+Time: 198748	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198749	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198750	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198751	Consump: 30	5	30	Purchase: 4	Inventory: 1	Expected: 4	Actual: 4
+Time: 198752	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198801	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198802	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198803	Consump: 30	5	30	Purchase: 4	Inventory: 1	Expected: 4	Actual: 4
+Time: 198804	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198805	Consump: 30	5	30	Purchase: 4	Inventory: 3	Expected: 6	Actual: 6
+Time: 198806	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198807	Consump: 30	5	30	Purchase: 5	Inventory: 5	Expected: 12	Actual: 12
+Time: 198808	Consump: 30	5	30	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198809	Consump: 30	5	30	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198810	Consump: 30	5	30	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198811	Consump: 30	5	30	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198812	Consump: 30	5	30	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198813	Consump: 30	5	30	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198814	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198815	Consump: 30	5	30	Purchase: 3	Inventory: 5	Expected: 6	Actual: 6
+Time: 198816	Consump: 30	5	30	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198817	Consump: 30	5	30	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198818	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198819	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198820	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198821	Consump: 30	5	30	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198822	Consump: 30	5	30	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198823	Consump: 30	5	30	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198824	Consump: 30	5	30	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198825	Consump: 30	5	30	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198826	Consump: 30	5	30	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198827	Consump: 30	5	30	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198828	Consump: 30	5	30	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+purch: 0		wtg: 0		cons: 30	30	5
+efs: 
+       0.0000       1.0000       3.0000       7.0000       12.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 30	5	30	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+purch: 4		wtg: 0		cons: 30	30	5
+efs: 
+       0.0000       1.0000       3.0000       7.0000       12.000
+etp: 
+       0.0000       0.0000       1.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       3.0000       0.0000       0.0000
+Time: 198830	Consump: 30	5	30	Purchase: 4	Inventory: 0	Expected: 3	Actual: 3
+purch: 0		wtg: 3		cons: 30	30	5
+efs: 
+       2.0000       3.0000       4.0000       6.0000       10.000       15.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       2.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 30	5	30	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+purch: 0		wtg: 2		cons: 30	30	5
+efs: 
+       1.0000       2.0000       3.0000       5.0000       9.0000       14.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 30	5	30	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+purch: 4		wtg: 1		cons: 30	30	5
+efs: 
+       0.0000       1.0000       2.0000       4.0000       8.0000       13.000
+etp: 
+       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       4.0000       0.0000       0.0000
+Time: 198833	Consump: 30	5	30	Purchase: 4	Inventory: 1	Expected: 4	Actual: 4
+purch: 0		wtg: 4		cons: 30	30	5
+efs: 
+       3.0000       4.0000       5.0000       7.0000       11.000       16.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       3.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 30	5	30	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
 
 
 
 Household:    1100347
 --------------------------------
+Time: 198602	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198604	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198605	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198606	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198607	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198608	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198609	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198610	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198611	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198612	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198613	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198614	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198615	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198616	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198617	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198618	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198619	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198620	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198621	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198622	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198623	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198624	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198625	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198626	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198627	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198628	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198629	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198630	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198631	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198632	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198633	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198634	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198635	Consump: 10	1	10	Purchase: 5	Inventory: 0	Expected: 22	Actual: 22
+Time: 198636	Consump: 10	1	10	Purchase: 5	Inventory: 22	Expected: 44	Actual: 44
+Time: 198637	Consump: 10	1	10	Purchase: 0	Inventory: 44	Expected: 43	Actual: 43
+Time: 198638	Consump: 10	1	10	Purchase: 0	Inventory: 43	Expected: 42	Actual: 42
+Time: 198639	Consump: 10	1	10	Purchase: 0	Inventory: 42	Expected: 41	Actual: 41
+Time: 198640	Consump: 10	1	10	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+Time: 198641	Consump: 10	1	10	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+Time: 198642	Consump: 10	1	10	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+Time: 198643	Consump: 10	1	10	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+Time: 198644	Consump: 10	1	10	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198645	Consump: 10	1	10	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198646	Consump: 10	1	10	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198647	Consump: 10	1	10	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198648	Consump: 10	1	10	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198649	Consump: 10	1	10	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198650	Consump: 10	1	10	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198651	Consump: 10	1	10	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198652	Consump: 10	1	10	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198701	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198702	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198703	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198704	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198705	Consump: 10	1	10	Purchase: 4	Inventory: 24	Expected: 36	Actual: 36
+Time: 198706	Consump: 10	1	10	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198707	Consump: 10	1	10	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198708	Consump: 10	1	10	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198709	Consump: 10	1	10	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198710	Consump: 10	1	10	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198711	Consump: 10	1	10	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198712	Consump: 10	1	10	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198713	Consump: 10	1	10	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198714	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198715	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198716	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198717	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198718	Consump: 10	1	10	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198719	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198720	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198721	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198722	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198723	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198724	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198725	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198726	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198727	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198728	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198729	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198730	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198731	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198732	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198733	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198734	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198735	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198736	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198737	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198738	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198739	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198740	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198741	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198742	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198743	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198744	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198745	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198746	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198747	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198748	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198749	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198750	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198751	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198752	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198801	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198802	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198803	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198804	Consump: 10	1	10	Purchase: 4	Inventory: 0	Expected: 12	Actual: 12
+Time: 198805	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198806	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198807	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198808	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198809	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198810	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198811	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198812	Consump: 10	1	10	Purchase: 4	Inventory: 5	Expected: 17	Actual: 17
+Time: 198813	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198814	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198815	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198816	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198817	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198818	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198819	Consump: 10	1	10	Purchase: 4	Inventory: 11	Expected: 23	Actual: 23
+Time: 198820	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198821	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198822	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198823	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198824	Consump: 10	1	10	Purchase: 4	Inventory: 19	Expected: 31	Actual: 31
+Time: 198825	Consump: 10	1	10	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198826	Consump: 10	1	10	Purchase: 4	Inventory: 30	Expected: 42	Actual: 42
+Time: 198827	Consump: 10	1	10	Purchase: 0	Inventory: 42	Expected: 41	Actual: 41
+Time: 198828	Consump: 10	1	10	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+purch: 0		wtg: 40		cons: 10	10	1
+efs: 
+       39.000       41.000       43.000       46.000       52.000       62.000       79.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       39.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 10	1	10	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+purch: 4		wtg: 39		cons: 10	10	1
+efs: 
+       38.000       40.000       42.000       45.000       51.000       61.000       78.000
+etp: 
+       0.0000       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       0.0000       51.000       0.0000       0.0000
+Time: 198830	Consump: 10	1	10	Purchase: 4	Inventory: 39	Expected: 51	Actual: 51
+purch: 0		wtg: 51		cons: 10	10	1
+efs: 
+       50.000       52.000       54.000       57.000       63.000       73.000       90.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       50.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 10	1	10	Purchase: 0	Inventory: 51	Expected: 50	Actual: 50
+purch: 0		wtg: 50		cons: 10	10	1
+efs: 
+       49.000       51.000       53.000       56.000       62.000       72.000       89.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       49.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 10	1	10	Purchase: 0	Inventory: 50	Expected: 49	Actual: 49
+purch: 0		wtg: 49		cons: 10	10	1
+efs: 
+       48.000       50.000       52.000       55.000       61.000       71.000       88.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       48.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 10	1	10	Purchase: 0	Inventory: 49	Expected: 48	Actual: 48
+purch: 0		wtg: 48		cons: 10	10	1
+efs: 
+       47.000       49.000       51.000       54.000       60.000       70.000       87.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       47.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 10	1	10	Purchase: 0	Inventory: 48	Expected: 47	Actual: 47
 
 
 
 Household:    1100404
 --------------------------------
+Time: 198602	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198604	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198605	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198606	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198607	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198608	Consump: 10	1	10	Purchase: 2	Inventory: 0	Expected: 3	Actual: 3
+Time: 198609	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198610	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198611	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198612	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198613	Consump: 10	1	10	Purchase: 1	Inventory: 0	Expected: 1	Actual: 1
+Time: 198614	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198615	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198616	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198617	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198618	Consump: 10	1	10	Purchase: 1	Inventory: 0	Expected: 1	Actual: 1
+Time: 198619	Consump: 10	1	10	Purchase: 2	Inventory: 1	Expected: 4	Actual: 4
+Time: 198620	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198621	Consump: 10	1	10	Purchase: 3	Inventory: 3	Expected: 9	Actual: 9
+Time: 198622	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198623	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198624	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198625	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198626	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198627	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198628	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198629	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198630	Consump: 10	1	10	Purchase: 2	Inventory: 1	Expected: 4	Actual: 4
+Time: 198631	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198632	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198633	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198634	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198635	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198636	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198637	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198638	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198639	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198640	Consump: 10	1	10	Purchase: 3	Inventory: 0	Expected: 6	Actual: 6
+Time: 198641	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198642	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198643	Consump: 10	1	10	Purchase: 2	Inventory: 4	Expected: 7	Actual: 7
+Time: 198644	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198645	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198646	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198647	Consump: 10	1	10	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198648	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198649	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198650	Consump: 10	1	10	Purchase: 4	Inventory: 1	Expected: 13	Actual: 13
+Time: 198651	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198652	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198701	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198702	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198703	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198704	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198705	Consump: 10	1	10	Purchase: 4	Inventory: 7	Expected: 19	Actual: 19
+Time: 198706	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198707	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198708	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198709	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198710	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198711	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198712	Consump: 10	1	10	Purchase: 3	Inventory: 13	Expected: 19	Actual: 19
+Time: 198713	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198714	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198715	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198716	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198717	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198718	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198719	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198720	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198721	Consump: 10	1	10	Purchase: 2	Inventory: 11	Expected: 14	Actual: 14
+Time: 198722	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198723	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198724	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198725	Consump: 10	1	10	Purchase: 2	Inventory: 11	Expected: 14	Actual: 14
+Time: 198726	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198727	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198728	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198729	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198730	Consump: 10	1	10	Purchase: 2	Inventory: 10	Expected: 13	Actual: 13
+Time: 198731	Consump: 10	1	10	Purchase: 3	Inventory: 13	Expected: 19	Actual: 19
+Time: 198732	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198733	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198734	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198735	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198736	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198737	Consump: 10	1	10	Purchase: 1	Inventory: 14	Expected: 15	Actual: 15
+Time: 198738	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198739	Consump: 10	1	10	Purchase: 2	Inventory: 14	Expected: 17	Actual: 17
+Time: 198740	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198741	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198742	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198743	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198744	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198745	Consump: 10	1	10	Purchase: 2	Inventory: 12	Expected: 15	Actual: 15
+Time: 198746	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198747	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198748	Consump: 10	1	10	Purchase: 2	Inventory: 13	Expected: 16	Actual: 16
+Time: 198749	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198750	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198751	Consump: 10	1	10	Purchase: 2	Inventory: 14	Expected: 17	Actual: 17
+Time: 198752	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198801	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198802	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198803	Consump: 10	1	10	Purchase: 2	Inventory: 14	Expected: 17	Actual: 17
+Time: 198804	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198805	Consump: 10	1	10	Purchase: 3	Inventory: 16	Expected: 22	Actual: 22
+Time: 198806	Consump: 10	1	10	Purchase: 4	Inventory: 22	Expected: 34	Actual: 34
+Time: 198807	Consump: 10	1	10	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198808	Consump: 10	1	10	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198809	Consump: 10	1	10	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198810	Consump: 10	1	10	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198811	Consump: 10	1	10	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198812	Consump: 10	1	10	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198813	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198814	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198815	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198816	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198817	Consump: 10	1	10	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198818	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198819	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198820	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198821	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198822	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198823	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198824	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198825	Consump: 10	1	10	Purchase: 4	Inventory: 16	Expected: 28	Actual: 28
+Time: 198826	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198827	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198828	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+purch: 0		wtg: 25		cons: 10	10	1
+efs: 
+       24.000       26.000       28.000       31.000       37.000       47.000       64.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       24.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+purch: 0		wtg: 24		cons: 10	10	1
+efs: 
+       23.000       25.000       27.000       30.000       36.000       46.000       63.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       23.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 10	1	10	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+purch: 0		wtg: 23		cons: 10	10	1
+efs: 
+       22.000       24.000       26.000       29.000       35.000       45.000       62.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       22.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+purch: 0		wtg: 22		cons: 10	10	1
+efs: 
+       21.000       23.000       25.000       28.000       34.000       44.000       61.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       21.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+purch: 4		wtg: 21		cons: 10	10	1
+efs: 
+       20.000       22.000       24.000       27.000       33.000       43.000       60.000
+etp: 
+       0.0000       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       0.0000       33.000       0.0000       0.0000
+Time: 198833	Consump: 10	1	10	Purchase: 4	Inventory: 21	Expected: 33	Actual: 33
+purch: 0		wtg: 33		cons: 10	10	1
+efs: 
+       32.000       34.000       36.000       39.000       45.000       55.000       72.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       32.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 10	1	10	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
 
 
 
 Household:    1100487
 --------------------------------
+Time: 198602	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198604	Consump: 15	2	15	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198605	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198606	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198607	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198608	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198609	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198610	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198611	Consump: 15	2	15	Purchase: 3	Inventory: 0	Expected: 4	Actual: 4
+Time: 198612	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198613	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198614	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198615	Consump: 15	2	15	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198616	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198617	Consump: 15	2	15	Purchase: 4	Inventory: 0	Expected: 7	Actual: 7
+Time: 198618	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198619	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198620	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198621	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198622	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198623	Consump: 15	2	15	Purchase: 3	Inventory: 2	Expected: 6	Actual: 6
+Time: 198624	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198625	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198626	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198627	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198628	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198629	Consump: 15	2	15	Purchase: 2	Inventory: 1	Expected: 3	Actual: 3
+Time: 198630	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198631	Consump: 15	2	15	Purchase: 3	Inventory: 2	Expected: 6	Actual: 6
+Time: 198632	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198633	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198634	Consump: 15	2	15	Purchase: 4	Inventory: 4	Expected: 11	Actual: 11
+Time: 198635	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198636	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198637	Consump: 15	2	15	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198638	Consump: 15	2	15	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198639	Consump: 15	2	15	Purchase: 6	Inventory: 7	Expected: 33	Actual: 33
+Time: 198640	Consump: 15	2	15	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198641	Consump: 15	2	15	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198642	Consump: 15	2	15	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198643	Consump: 15	2	15	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198644	Consump: 15	2	15	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198645	Consump: 15	2	15	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198646	Consump: 15	2	15	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198647	Consump: 15	2	15	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198648	Consump: 15	2	15	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198649	Consump: 15	2	15	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198650	Consump: 15	2	15	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198651	Consump: 15	2	15	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198652	Consump: 15	2	15	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198701	Consump: 15	2	15	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198702	Consump: 15	2	15	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198703	Consump: 15	2	15	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198704	Consump: 15	2	15	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198705	Consump: 15	2	15	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198706	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198707	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198708	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198709	Consump: 15	2	15	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198710	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198711	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198712	Consump: 15	2	15	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198713	Consump: 15	2	15	Purchase: 4	Inventory: 8	Expected: 15	Actual: 15
+Time: 198714	Consump: 15	2	15	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198715	Consump: 15	2	15	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198716	Consump: 15	2	15	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198717	Consump: 15	2	15	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198718	Consump: 15	2	15	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198719	Consump: 15	2	15	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198720	Consump: 15	2	15	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198721	Consump: 15	2	15	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198722	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198723	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198724	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198725	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198726	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198727	Consump: 15	2	15	Purchase: 3	Inventory: 2	Expected: 6	Actual: 6
+Time: 198728	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198729	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198730	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198731	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198732	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198733	Consump: 15	2	15	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198734	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198735	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198736	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198737	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198738	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198739	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198740	Consump: 15	2	15	Purchase: 4	Inventory: 0	Expected: 7	Actual: 7
+Time: 198741	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198742	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198743	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198744	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198745	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198746	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198747	Consump: 15	2	15	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198748	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198749	Consump: 15	2	15	Purchase: 3	Inventory: 0	Expected: 4	Actual: 4
+Time: 198750	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198751	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198752	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198801	Consump: 15	2	15	Purchase: 3	Inventory: 1	Expected: 5	Actual: 5
+Time: 198802	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198803	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198804	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198805	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198806	Consump: 15	2	15	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198807	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198808	Consump: 15	2	15	Purchase: 4	Inventory: 0	Expected: 7	Actual: 7
+Time: 198809	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198810	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198811	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198812	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198813	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198814	Consump: 15	2	15	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198815	Consump: 15	2	15	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198816	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198817	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198818	Consump: 15	2	15	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198819	Consump: 15	2	15	Purchase: 4	Inventory: 0	Expected: 7	Actual: 7
+Time: 198820	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198821	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198822	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198823	Consump: 15	2	15	Purchase: 3	Inventory: 4	Expected: 8	Actual: 8
+Time: 198824	Consump: 15	2	15	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198825	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198826	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198827	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198828	Consump: 15	2	15	Purchase: 3	Inventory: 4	Expected: 8	Actual: 8
+purch: 0		wtg: 8		cons: 15	15	2
+efs: 
+       7.0000       8.0000       10.000       12.000       15.000       22.000       34.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       7.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 15	2	15	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+purch: 0		wtg: 7		cons: 15	15	2
+efs: 
+       6.0000       7.0000       9.0000       11.000       14.000       21.000       33.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       6.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 15	2	15	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+purch: 0		wtg: 6		cons: 15	15	2
+efs: 
+       5.0000       6.0000       8.0000       10.000       13.000       20.000       32.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       5.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 15	2	15	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+purch: 0		wtg: 5		cons: 15	15	2
+efs: 
+       4.0000       5.0000       7.0000       9.0000       12.000       19.000       31.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       4.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 15	2	15	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+purch: 0		wtg: 4		cons: 15	15	2
+efs: 
+       3.0000       4.0000       6.0000       8.0000       11.000       18.000       30.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       3.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 15	2	15	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+purch: 0		wtg: 3		cons: 15	15	2
+efs: 
+       2.0000       3.0000       5.0000       7.0000       10.000       17.000       29.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       2.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 15	2	15	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
 
 
 
 Household:    1100578
 --------------------------------
+Time: 198602	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 5	0	5	Purchase: 4	Inventory: 2	Expected: 26	Actual: 26
+Time: 198604	Consump: 5	0	5	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198605	Consump: 5	0	5	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198606	Consump: 5	0	5	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198607	Consump: 5	0	5	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198608	Consump: 5	0	5	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198609	Consump: 5	0	5	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198610	Consump: 5	0	5	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198611	Consump: 5	0	5	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198612	Consump: 5	0	5	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198613	Consump: 5	0	5	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198614	Consump: 5	0	5	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198615	Consump: 5	0	5	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198616	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198617	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198618	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198619	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198620	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198621	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198622	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198623	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198624	Consump: 5	0	5	Purchase: 2	Inventory: 6	Expected: 13	Actual: 13
+Time: 198625	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198626	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198627	Consump: 5	0	5	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198628	Consump: 5	0	5	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198629	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198630	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198631	Consump: 5	0	5	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198632	Consump: 5	0	5	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198633	Consump: 5	0	5	Purchase: 3	Inventory: 5	Expected: 18	Actual: 18
+Time: 198634	Consump: 5	0	5	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198635	Consump: 5	0	5	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198636	Consump: 5	0	5	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198637	Consump: 5	0	5	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198638	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198639	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198640	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198641	Consump: 5	0	5	Purchase: 1	Inventory: 11	Expected: 13	Actual: 13
+Time: 198642	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198643	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198644	Consump: 5	0	5	Purchase: 4	Inventory: 11	Expected: 35	Actual: 35
+Time: 198645	Consump: 5	0	5	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198646	Consump: 5	0	5	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198647	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198648	Consump: 5	0	5	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198649	Consump: 5	0	5	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198650	Consump: 5	0	5	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198651	Consump: 5	0	5	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198652	Consump: 5	0	5	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198701	Consump: 5	0	5	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198702	Consump: 5	0	5	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198703	Consump: 5	0	5	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198704	Consump: 5	0	5	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198705	Consump: 5	0	5	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198706	Consump: 5	0	5	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198707	Consump: 5	0	5	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198708	Consump: 5	0	5	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198709	Consump: 5	0	5	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198710	Consump: 5	0	5	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198711	Consump: 5	0	5	Purchase: 4	Inventory: 17	Expected: 41	Actual: 41
+Time: 198712	Consump: 5	0	5	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+Time: 198713	Consump: 5	0	5	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+Time: 198714	Consump: 5	0	5	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+Time: 198715	Consump: 5	0	5	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+Time: 198716	Consump: 5	0	5	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198717	Consump: 5	0	5	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198718	Consump: 5	0	5	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198719	Consump: 5	0	5	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198720	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198721	Consump: 5	0	5	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198722	Consump: 5	0	5	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198723	Consump: 5	0	5	Purchase: 2	Inventory: 30	Expected: 37	Actual: 37
+Time: 198724	Consump: 5	0	5	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198725	Consump: 5	0	5	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198726	Consump: 5	0	5	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198727	Consump: 5	0	5	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198728	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198729	Consump: 5	0	5	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198730	Consump: 5	0	5	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198731	Consump: 5	0	5	Purchase: 2	Inventory: 30	Expected: 37	Actual: 37
+Time: 198732	Consump: 5	0	5	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198733	Consump: 5	0	5	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198734	Consump: 5	0	5	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198735	Consump: 5	0	5	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198736	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198737	Consump: 5	0	5	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198738	Consump: 5	0	5	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198739	Consump: 5	0	5	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198740	Consump: 5	0	5	Purchase: 3	Inventory: 29	Expected: 42	Actual: 42
+Time: 198741	Consump: 5	0	5	Purchase: 0	Inventory: 42	Expected: 41	Actual: 41
+Time: 198742	Consump: 5	0	5	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+Time: 198743	Consump: 5	0	5	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+Time: 198744	Consump: 5	0	5	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+Time: 198745	Consump: 5	0	5	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+Time: 198746	Consump: 5	0	5	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198747	Consump: 5	0	5	Purchase: 3	Inventory: 36	Expected: 49	Actual: 49
+Time: 198748	Consump: 5	0	5	Purchase: 0	Inventory: 49	Expected: 48	Actual: 48
+Time: 198749	Consump: 5	0	5	Purchase: 0	Inventory: 48	Expected: 47	Actual: 47
+Time: 198750	Consump: 5	0	5	Purchase: 0	Inventory: 47	Expected: 46	Actual: 46
+Time: 198751	Consump: 5	0	5	Purchase: 0	Inventory: 46	Expected: 45	Actual: 45
+Time: 198752	Consump: 5	0	5	Purchase: 0	Inventory: 45	Expected: 44	Actual: 44
+Time: 198801	Consump: 5	0	5	Purchase: 0	Inventory: 44	Expected: 43	Actual: 43
+Time: 198802	Consump: 5	0	5	Purchase: 0	Inventory: 43	Expected: 42	Actual: 42
+Time: 198803	Consump: 5	0	5	Purchase: 0	Inventory: 42	Expected: 41	Actual: 41
+Time: 198804	Consump: 5	0	5	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+Time: 198805	Consump: 5	0	5	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+Time: 198806	Consump: 5	0	5	Purchase: 3	Inventory: 39	Expected: 52	Actual: 52
+Time: 198807	Consump: 5	0	5	Purchase: 0	Inventory: 52	Expected: 51	Actual: 51
+Time: 198808	Consump: 5	0	5	Purchase: 0	Inventory: 51	Expected: 50	Actual: 50
+Time: 198809	Consump: 5	0	5	Purchase: 0	Inventory: 50	Expected: 49	Actual: 49
+Time: 198810	Consump: 5	0	5	Purchase: 0	Inventory: 49	Expected: 48	Actual: 48
+Time: 198811	Consump: 5	0	5	Purchase: 0	Inventory: 48	Expected: 47	Actual: 47
+Time: 198812	Consump: 5	0	5	Purchase: 0	Inventory: 47	Expected: 46	Actual: 46
+Time: 198813	Consump: 5	0	5	Purchase: 0	Inventory: 46	Expected: 45	Actual: 45
+Time: 198814	Consump: 5	0	5	Purchase: 0	Inventory: 45	Expected: 44	Actual: 44
+Time: 198815	Consump: 5	0	5	Purchase: 0	Inventory: 44	Expected: 43	Actual: 43
+Time: 198816	Consump: 5	0	5	Purchase: 0	Inventory: 43	Expected: 42	Actual: 42
+Time: 198817	Consump: 5	0	5	Purchase: 0	Inventory: 42	Expected: 41	Actual: 41
+Time: 198818	Consump: 5	0	5	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+Time: 198819	Consump: 5	0	5	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+Time: 198820	Consump: 5	0	5	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+Time: 198821	Consump: 5	0	5	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+Time: 198822	Consump: 5	0	5	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198823	Consump: 5	0	5	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198824	Consump: 5	0	5	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198825	Consump: 5	0	5	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198826	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198827	Consump: 5	0	5	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198828	Consump: 5	0	5	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+purch: 2		wtg: 30		cons: 5	5	0
+efs: 
+       29.000       32.000       37.000       43.000       54.000       74.000       109.00
+etp: 
+       0.0000       0.0000       1.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       37.000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 5	0	5	Purchase: 2	Inventory: 30	Expected: 37	Actual: 37
+purch: 0		wtg: 37		cons: 5	5	0
+efs: 
+       36.000       39.000       44.000       50.000       61.000       81.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       36.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 5	0	5	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+purch: 0		wtg: 36		cons: 5	5	0
+efs: 
+       35.000       38.000       43.000       49.000       60.000       80.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       35.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 5	0	5	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+purch: 0		wtg: 35		cons: 5	5	0
+efs: 
+       34.000       37.000       42.000       48.000       59.000       79.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       34.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 5	0	5	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+purch: 0		wtg: 34		cons: 5	5	0
+efs: 
+       33.000       36.000       41.000       47.000       58.000       78.000       113.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       33.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 5	0	5	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+purch: 0		wtg: 33		cons: 5	5	0
+efs: 
+       32.000       35.000       40.000       46.000       57.000       77.000       112.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       32.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 5	0	5	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
 
 
 
 Household:    1100586
 --------------------------------
+Time: 198602	Consump: 10	1	10	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 10	1	10	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198604	Consump: 10	1	10	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198605	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198606	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198607	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198608	Consump: 10	1	10	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198609	Consump: 10	1	10	Purchase: 4	Inventory: 0	Expected: 12	Actual: 12
+Time: 198610	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198611	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198612	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198613	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198614	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198615	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198616	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198617	Consump: 10	1	10	Purchase: 3	Inventory: 5	Expected: 11	Actual: 11
+Time: 198618	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198619	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198620	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198621	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198622	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198623	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198624	Consump: 10	1	10	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198625	Consump: 10	1	10	Purchase: 3	Inventory: 4	Expected: 10	Actual: 10
+Time: 198626	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198627	Consump: 10	1	10	Purchase: 3	Inventory: 9	Expected: 15	Actual: 15
+Time: 198628	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198629	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198630	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198631	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198632	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198633	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198634	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198635	Consump: 10	1	10	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198636	Consump: 10	1	10	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198637	Consump: 10	1	10	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198638	Consump: 10	1	10	Purchase: 4	Inventory: 5	Expected: 17	Actual: 17
+Time: 198639	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198640	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198641	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198642	Consump: 10	1	10	Purchase: 4	Inventory: 14	Expected: 26	Actual: 26
+Time: 198643	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198644	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198645	Consump: 10	1	10	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198646	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198647	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198648	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198649	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198650	Consump: 10	1	10	Purchase: 4	Inventory: 19	Expected: 31	Actual: 31
+Time: 198651	Consump: 10	1	10	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198652	Consump: 10	1	10	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198701	Consump: 10	1	10	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198702	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198703	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198704	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198705	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198706	Consump: 10	1	10	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198707	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198708	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198709	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198710	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198711	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198712	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198713	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198714	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198715	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198716	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198717	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198718	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198719	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198720	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198721	Consump: 10	1	10	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198722	Consump: 10	1	10	Purchase: 4	Inventory: 8	Expected: 20	Actual: 20
+Time: 198723	Consump: 10	1	10	Purchase: 4	Inventory: 20	Expected: 32	Actual: 32
+Time: 198724	Consump: 10	1	10	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198725	Consump: 10	1	10	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198726	Consump: 10	1	10	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198727	Consump: 10	1	10	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198728	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198729	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198730	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198731	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198732	Consump: 10	1	10	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198733	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198734	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198735	Consump: 10	1	10	Purchase: 4	Inventory: 21	Expected: 33	Actual: 33
+Time: 198736	Consump: 10	1	10	Purchase: 3	Inventory: 33	Expected: 39	Actual: 39
+Time: 198737	Consump: 10	1	10	Purchase: 3	Inventory: 39	Expected: 45	Actual: 45
+Time: 198738	Consump: 10	1	10	Purchase: 0	Inventory: 45	Expected: 44	Actual: 44
+Time: 198739	Consump: 10	1	10	Purchase: 0	Inventory: 44	Expected: 43	Actual: 43
+Time: 198740	Consump: 10	1	10	Purchase: 0	Inventory: 43	Expected: 42	Actual: 42
+Time: 198741	Consump: 10	1	10	Purchase: 0	Inventory: 42	Expected: 41	Actual: 41
+Time: 198742	Consump: 10	1	10	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+Time: 198743	Consump: 10	1	10	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+Time: 198744	Consump: 10	1	10	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+Time: 198745	Consump: 10	1	10	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+Time: 198746	Consump: 10	1	10	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198747	Consump: 10	1	10	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198748	Consump: 10	1	10	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198749	Consump: 10	1	10	Purchase: 4	Inventory: 34	Expected: 46	Actual: 46
+Time: 198750	Consump: 10	1	10	Purchase: 0	Inventory: 46	Expected: 45	Actual: 45
+Time: 198751	Consump: 10	1	10	Purchase: 0	Inventory: 45	Expected: 44	Actual: 44
+Time: 198752	Consump: 10	1	10	Purchase: 0	Inventory: 44	Expected: 43	Actual: 43
+Time: 198801	Consump: 10	1	10	Purchase: 0	Inventory: 43	Expected: 42	Actual: 42
+Time: 198802	Consump: 10	1	10	Purchase: 0	Inventory: 42	Expected: 41	Actual: 41
+Time: 198803	Consump: 10	1	10	Purchase: 0	Inventory: 41	Expected: 40	Actual: 40
+Time: 198804	Consump: 10	1	10	Purchase: 0	Inventory: 40	Expected: 39	Actual: 39
+Time: 198805	Consump: 10	1	10	Purchase: 0	Inventory: 39	Expected: 38	Actual: 38
+Time: 198806	Consump: 10	1	10	Purchase: 0	Inventory: 38	Expected: 37	Actual: 37
+Time: 198807	Consump: 10	1	10	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198808	Consump: 10	1	10	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198809	Consump: 10	1	10	Purchase: 0	Inventory: 35	Expected: 34	Actual: 34
+Time: 198810	Consump: 10	1	10	Purchase: 0	Inventory: 34	Expected: 33	Actual: 33
+Time: 198811	Consump: 10	1	10	Purchase: 0	Inventory: 33	Expected: 32	Actual: 32
+Time: 198812	Consump: 10	1	10	Purchase: 0	Inventory: 32	Expected: 31	Actual: 31
+Time: 198813	Consump: 10	1	10	Purchase: 0	Inventory: 31	Expected: 30	Actual: 30
+Time: 198814	Consump: 10	1	10	Purchase: 0	Inventory: 30	Expected: 29	Actual: 29
+Time: 198815	Consump: 10	1	10	Purchase: 0	Inventory: 29	Expected: 28	Actual: 28
+Time: 198816	Consump: 10	1	10	Purchase: 0	Inventory: 28	Expected: 27	Actual: 27
+Time: 198817	Consump: 10	1	10	Purchase: 0	Inventory: 27	Expected: 26	Actual: 26
+Time: 198818	Consump: 10	1	10	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198819	Consump: 10	1	10	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198820	Consump: 10	1	10	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198821	Consump: 10	1	10	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198822	Consump: 10	1	10	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198823	Consump: 10	1	10	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198824	Consump: 10	1	10	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198825	Consump: 10	1	10	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198826	Consump: 10	1	10	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198827	Consump: 10	1	10	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198828	Consump: 10	1	10	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+purch: 0		wtg: 15		cons: 10	10	1
+efs: 
+       14.000       16.000       18.000       21.000       27.000       37.000       54.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       14.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 10	1	10	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+purch: 0		wtg: 14		cons: 10	10	1
+efs: 
+       13.000       15.000       17.000       20.000       26.000       36.000       53.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       13.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 10	1	10	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+purch: 0		wtg: 13		cons: 10	10	1
+efs: 
+       12.000       14.000       16.000       19.000       25.000       35.000       52.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       12.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 10	1	10	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+purch: 0		wtg: 12		cons: 10	10	1
+efs: 
+       11.000       13.000       15.000       18.000       24.000       34.000       51.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       11.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 10	1	10	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+purch: 0		wtg: 11		cons: 10	10	1
+efs: 
+       10.000       12.000       14.000       17.000       23.000       33.000       50.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       10.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 10	1	10	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+purch: 0		wtg: 10		cons: 10	10	1
+efs: 
+       9.0000       11.000       13.000       16.000       22.000       32.000       49.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       9.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 10	1	10	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
 
 
 
 Household:    1100602
 --------------------------------
+Time: 198602	Consump: 5	0	5	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 5	0	5	Purchase: 2	Inventory: 2	Expected: 9	Actual: 9
+Time: 198604	Consump: 5	0	5	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198605	Consump: 5	0	5	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198606	Consump: 5	0	5	Purchase: 2	Inventory: 7	Expected: 14	Actual: 14
+Time: 198607	Consump: 5	0	5	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198608	Consump: 5	0	5	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198609	Consump: 5	0	5	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198610	Consump: 5	0	5	Purchase: 2	Inventory: 11	Expected: 18	Actual: 18
+Time: 198611	Consump: 5	0	5	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198612	Consump: 5	0	5	Purchase: 2	Inventory: 17	Expected: 24	Actual: 24
+Time: 198613	Consump: 5	0	5	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198614	Consump: 5	0	5	Purchase: 2	Inventory: 23	Expected: 30	Actual: 30
+Time: 198615	Consump: 5	0	5	Purchase: 2	Inventory: 30	Expected: 37	Actual: 37
+Time: 198616	Consump: 5	0	5	Purchase: 0	Inventory: 37	Expected: 36	Actual: 36
+Time: 198617	Consump: 5	0	5	Purchase: 0	Inventory: 36	Expected: 35	Actual: 35
+Time: 198618	Consump: 5	0	5	Purchase: 3	Inventory: 35	Expected: 48	Actual: 48
+Time: 198619	Consump: 5	0	5	Purchase: 0	Inventory: 48	Expected: 47	Actual: 47
+Time: 198620	Consump: 5	0	5	Purchase: 2	Inventory: 47	Expected: 54	Actual: 54
+Time: 198621	Consump: 5	0	5	Purchase: 0	Inventory: 54	Expected: 53	Actual: 53
+Time: 198622	Consump: 5	0	5	Purchase: 2	Inventory: 53	Expected: 60	Actual: 60
+Time: 198623	Consump: 5	0	5	Purchase: 0	Inventory: 60	Expected: 59	Actual: 59
+Time: 198624	Consump: 5	0	5	Purchase: 2	Inventory: 59	Expected: 66	Actual: 66
+Time: 198625	Consump: 5	0	5	Purchase: 0	Inventory: 66	Expected: 65	Actual: 65
+Time: 198626	Consump: 5	0	5	Purchase: 2	Inventory: 65	Expected: 72	Actual: 72
+Time: 198627	Consump: 5	0	5	Purchase: 0	Inventory: 72	Expected: 71	Actual: 71
+Time: 198628	Consump: 5	0	5	Purchase: 2	Inventory: 71	Expected: 78	Actual: 78
+Time: 198629	Consump: 5	0	5	Purchase: 0	Inventory: 78	Expected: 77	Actual: 77
+Time: 198630	Consump: 5	0	5	Purchase: 0	Inventory: 77	Expected: 76	Actual: 76
+Time: 198631	Consump: 5	0	5	Purchase: 2	Inventory: 76	Expected: 83	Actual: 83
+Time: 198632	Consump: 5	0	5	Purchase: 2	Inventory: 83	Expected: 90	Actual: 90
+Time: 198633	Consump: 5	0	5	Purchase: 0	Inventory: 90	Expected: 89	Actual: 89
+Time: 198634	Consump: 5	0	5	Purchase: 2	Inventory: 89	Expected: 96	Actual: 96
+Time: 198635	Consump: 5	0	5	Purchase: 0	Inventory: 96	Expected: 95	Actual: 95
+Time: 198636	Consump: 5	0	5	Purchase: 2	Inventory: 95	Expected: 102	Actual: 102
+Time: 198637	Consump: 5	0	5	Purchase: 0	Inventory: 102	Expected: 101	Actual: 101
+Time: 198638	Consump: 5	0	5	Purchase: 2	Inventory: 101	Expected: 108	Actual: 108
+Time: 198639	Consump: 5	0	5	Purchase: 0	Inventory: 108	Expected: 107	Actual: 107
+Time: 198640	Consump: 5	0	5	Purchase: 0	Inventory: 107	Expected: 106	Actual: 106
+Time: 198641	Consump: 5	0	5	Purchase: 0	Inventory: 106	Expected: 105	Actual: 105
+Time: 198642	Consump: 5	0	5	Purchase: 0	Inventory: 105	Expected: 104	Actual: 104
+Time: 198643	Consump: 5	0	5	Purchase: 0	Inventory: 104	Expected: 103	Actual: 103
+Time: 198644	Consump: 5	0	5	Purchase: 0	Inventory: 103	Expected: 102	Actual: 102
+Time: 198645	Consump: 5	0	5	Purchase: 0	Inventory: 102	Expected: 101	Actual: 101
+Time: 198646	Consump: 5	0	5	Purchase: 0	Inventory: 101	Expected: 100	Actual: 100
+Time: 198647	Consump: 5	0	5	Purchase: 0	Inventory: 100	Expected: 99	Actual: 99
+Time: 198648	Consump: 5	0	5	Purchase: 0	Inventory: 99	Expected: 98	Actual: 98
+Time: 198649	Consump: 5	0	5	Purchase: 0	Inventory: 98	Expected: 97	Actual: 97
+Time: 198650	Consump: 5	0	5	Purchase: 0	Inventory: 97	Expected: 96	Actual: 96
+Time: 198651	Consump: 5	0	5	Purchase: 0	Inventory: 96	Expected: 95	Actual: 95
+Time: 198652	Consump: 5	0	5	Purchase: 0	Inventory: 95	Expected: 94	Actual: 94
+Time: 198701	Consump: 5	0	5	Purchase: 0	Inventory: 94	Expected: 93	Actual: 93
+Time: 198702	Consump: 5	0	5	Purchase: 0	Inventory: 93	Expected: 92	Actual: 92
+Time: 198703	Consump: 5	0	5	Purchase: 0	Inventory: 92	Expected: 91	Actual: 91
+Time: 198704	Consump: 5	0	5	Purchase: 0	Inventory: 91	Expected: 90	Actual: 90
+Time: 198705	Consump: 5	0	5	Purchase: 0	Inventory: 90	Expected: 89	Actual: 89
+Time: 198706	Consump: 5	0	5	Purchase: 0	Inventory: 89	Expected: 88	Actual: 88
+Time: 198707	Consump: 5	0	5	Purchase: 0	Inventory: 88	Expected: 87	Actual: 87
+Time: 198708	Consump: 5	0	5	Purchase: 0	Inventory: 87	Expected: 86	Actual: 86
+Time: 198709	Consump: 5	0	5	Purchase: 0	Inventory: 86	Expected: 85	Actual: 85
+Time: 198710	Consump: 5	0	5	Purchase: 0	Inventory: 85	Expected: 84	Actual: 84
+Time: 198711	Consump: 5	0	5	Purchase: 2	Inventory: 84	Expected: 91	Actual: 91
+Time: 198712	Consump: 5	0	5	Purchase: 0	Inventory: 91	Expected: 90	Actual: 90
+Time: 198713	Consump: 5	0	5	Purchase: 0	Inventory: 90	Expected: 89	Actual: 89
+Time: 198714	Consump: 5	0	5	Purchase: 0	Inventory: 89	Expected: 88	Actual: 88
+Time: 198715	Consump: 5	0	5	Purchase: 0	Inventory: 88	Expected: 87	Actual: 87
+Time: 198716	Consump: 5	0	5	Purchase: 0	Inventory: 87	Expected: 86	Actual: 86
+Time: 198717	Consump: 5	0	5	Purchase: 0	Inventory: 86	Expected: 85	Actual: 85
+Time: 198718	Consump: 5	0	5	Purchase: 0	Inventory: 85	Expected: 84	Actual: 84
+Time: 198719	Consump: 5	0	5	Purchase: 0	Inventory: 84	Expected: 83	Actual: 83
+Time: 198720	Consump: 5	0	5	Purchase: 0	Inventory: 83	Expected: 82	Actual: 82
+Time: 198721	Consump: 5	0	5	Purchase: 0	Inventory: 82	Expected: 81	Actual: 81
+Time: 198722	Consump: 5	0	5	Purchase: 0	Inventory: 81	Expected: 80	Actual: 80
+Time: 198723	Consump: 5	0	5	Purchase: 0	Inventory: 80	Expected: 79	Actual: 79
+Time: 198724	Consump: 5	0	5	Purchase: 0	Inventory: 79	Expected: 78	Actual: 78
+Time: 198725	Consump: 5	0	5	Purchase: 2	Inventory: 78	Expected: 85	Actual: 85
+Time: 198726	Consump: 5	0	5	Purchase: 0	Inventory: 85	Expected: 84	Actual: 84
+Time: 198727	Consump: 5	0	5	Purchase: 0	Inventory: 84	Expected: 83	Actual: 83
+Time: 198728	Consump: 5	0	5	Purchase: 0	Inventory: 83	Expected: 82	Actual: 82
+Time: 198729	Consump: 5	0	5	Purchase: 0	Inventory: 82	Expected: 81	Actual: 81
+Time: 198730	Consump: 5	0	5	Purchase: 0	Inventory: 81	Expected: 80	Actual: 80
+Time: 198731	Consump: 5	0	5	Purchase: 0	Inventory: 80	Expected: 79	Actual: 79
+Time: 198732	Consump: 5	0	5	Purchase: 0	Inventory: 79	Expected: 78	Actual: 78
+Time: 198733	Consump: 5	0	5	Purchase: 0	Inventory: 78	Expected: 77	Actual: 77
+Time: 198734	Consump: 5	0	5	Purchase: 0	Inventory: 77	Expected: 76	Actual: 76
+Time: 198735	Consump: 5	0	5	Purchase: 0	Inventory: 76	Expected: 75	Actual: 75
+Time: 198736	Consump: 5	0	5	Purchase: 0	Inventory: 75	Expected: 74	Actual: 74
+Time: 198737	Consump: 5	0	5	Purchase: 0	Inventory: 74	Expected: 73	Actual: 73
+Time: 198738	Consump: 5	0	5	Purchase: 0	Inventory: 73	Expected: 72	Actual: 72
+Time: 198739	Consump: 5	0	5	Purchase: 0	Inventory: 72	Expected: 71	Actual: 71
+Time: 198740	Consump: 5	0	5	Purchase: 0	Inventory: 71	Expected: 70	Actual: 70
+Time: 198741	Consump: 5	0	5	Purchase: 0	Inventory: 70	Expected: 69	Actual: 69
+Time: 198742	Consump: 5	0	5	Purchase: 0	Inventory: 69	Expected: 68	Actual: 68
+Time: 198743	Consump: 5	0	5	Purchase: 0	Inventory: 68	Expected: 67	Actual: 67
+Time: 198744	Consump: 5	0	5	Purchase: 0	Inventory: 67	Expected: 66	Actual: 66
+Time: 198745	Consump: 5	0	5	Purchase: 0	Inventory: 66	Expected: 65	Actual: 65
+Time: 198746	Consump: 5	0	5	Purchase: 0	Inventory: 65	Expected: 64	Actual: 64
+Time: 198747	Consump: 5	0	5	Purchase: 0	Inventory: 64	Expected: 63	Actual: 63
+Time: 198748	Consump: 5	0	5	Purchase: 0	Inventory: 63	Expected: 62	Actual: 62
+Time: 198749	Consump: 5	0	5	Purchase: 0	Inventory: 62	Expected: 61	Actual: 61
+Time: 198750	Consump: 5	0	5	Purchase: 0	Inventory: 61	Expected: 60	Actual: 60
+Time: 198751	Consump: 5	0	5	Purchase: 0	Inventory: 60	Expected: 59	Actual: 59
+Time: 198752	Consump: 5	0	5	Purchase: 0	Inventory: 59	Expected: 58	Actual: 58
+Time: 198801	Consump: 5	0	5	Purchase: 0	Inventory: 58	Expected: 57	Actual: 57
+Time: 198802	Consump: 5	0	5	Purchase: 0	Inventory: 57	Expected: 56	Actual: 56
+Time: 198803	Consump: 5	0	5	Purchase: 1	Inventory: 56	Expected: 58	Actual: 58
+Time: 198804	Consump: 5	0	5	Purchase: 0	Inventory: 58	Expected: 57	Actual: 57
+Time: 198805	Consump: 5	0	5	Purchase: 0	Inventory: 57	Expected: 56	Actual: 56
+Time: 198806	Consump: 5	0	5	Purchase: 0	Inventory: 56	Expected: 55	Actual: 55
+Time: 198807	Consump: 5	0	5	Purchase: 0	Inventory: 55	Expected: 54	Actual: 54
+Time: 198808	Consump: 5	0	5	Purchase: 0	Inventory: 54	Expected: 53	Actual: 53
+Time: 198809	Consump: 5	0	5	Purchase: 0	Inventory: 53	Expected: 52	Actual: 52
+Time: 198810	Consump: 5	0	5	Purchase: 0	Inventory: 52	Expected: 51	Actual: 51
+Time: 198811	Consump: 5	0	5	Purchase: 0	Inventory: 51	Expected: 50	Actual: 50
+Time: 198812	Consump: 5	0	5	Purchase: 0	Inventory: 50	Expected: 49	Actual: 49
+Time: 198813	Consump: 5	0	5	Purchase: 0	Inventory: 49	Expected: 48	Actual: 48
+Time: 198814	Consump: 5	0	5	Purchase: 2	Inventory: 48	Expected: 55	Actual: 55
+Time: 198815	Consump: 5	0	5	Purchase: 0	Inventory: 55	Expected: 54	Actual: 54
+Time: 198816	Consump: 5	0	5	Purchase: 0	Inventory: 54	Expected: 53	Actual: 53
+Time: 198817	Consump: 5	0	5	Purchase: 0	Inventory: 53	Expected: 52	Actual: 52
+Time: 198818	Consump: 5	0	5	Purchase: 2	Inventory: 52	Expected: 59	Actual: 59
+Time: 198819	Consump: 5	0	5	Purchase: 0	Inventory: 59	Expected: 58	Actual: 58
+Time: 198820	Consump: 5	0	5	Purchase: 0	Inventory: 58	Expected: 57	Actual: 57
+Time: 198821	Consump: 5	0	5	Purchase: 0	Inventory: 57	Expected: 56	Actual: 56
+Time: 198822	Consump: 5	0	5	Purchase: 0	Inventory: 56	Expected: 55	Actual: 55
+Time: 198823	Consump: 5	0	5	Purchase: 0	Inventory: 55	Expected: 54	Actual: 54
+Time: 198824	Consump: 5	0	5	Purchase: 0	Inventory: 54	Expected: 53	Actual: 53
+Time: 198825	Consump: 5	0	5	Purchase: 0	Inventory: 53	Expected: 52	Actual: 52
+Time: 198826	Consump: 5	0	5	Purchase: 0	Inventory: 52	Expected: 51	Actual: 51
+Time: 198827	Consump: 5	0	5	Purchase: 0	Inventory: 51	Expected: 50	Actual: 50
+Time: 198828	Consump: 5	0	5	Purchase: 0	Inventory: 50	Expected: 49	Actual: 49
+purch: 1		wtg: 49		cons: 5	5	0
+efs: 
+       48.000       51.000       56.000       62.000       73.000       93.000       114.00
+etp: 
+       0.0000       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       0.0000       51.000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198829	Consump: 5	0	5	Purchase: 1	Inventory: 49	Expected: 51	Actual: 51
+purch: 0		wtg: 51		cons: 5	5	0
+efs: 
+       50.000       53.000       58.000       64.000       75.000       95.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       50.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 5	0	5	Purchase: 0	Inventory: 51	Expected: 50	Actual: 50
+purch: 0		wtg: 50		cons: 5	5	0
+efs: 
+       49.000       52.000       57.000       63.000       74.000       94.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       49.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 5	0	5	Purchase: 0	Inventory: 50	Expected: 49	Actual: 49
+purch: 0		wtg: 49		cons: 5	5	0
+efs: 
+       48.000       51.000       56.000       62.000       73.000       93.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       48.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 5	0	5	Purchase: 0	Inventory: 49	Expected: 48	Actual: 48
+purch: 0		wtg: 48		cons: 5	5	0
+efs: 
+       47.000       50.000       55.000       61.000       72.000       92.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       47.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 5	0	5	Purchase: 0	Inventory: 48	Expected: 47	Actual: 47
+purch: 0		wtg: 47		cons: 5	5	0
+efs: 
+       46.000       49.000       54.000       60.000       71.000       91.000       114.00
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       46.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198834	Consump: 5	0	5	Purchase: 0	Inventory: 47	Expected: 46	Actual: 46
 
 
 
 Household:    1100628
 --------------------------------
+Time: 198602	Consump: 20	3	20	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198603	Consump: 20	3	20	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198604	Consump: 20	3	20	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198605	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198606	Consump: 20	3	20	Purchase: 5	Inventory: 0	Expected: 10	Actual: 10
+Time: 198607	Consump: 20	3	20	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198608	Consump: 20	3	20	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198609	Consump: 20	3	20	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198610	Consump: 20	3	20	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198611	Consump: 20	3	20	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198612	Consump: 20	3	20	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198613	Consump: 20	3	20	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198614	Consump: 20	3	20	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198615	Consump: 20	3	20	Purchase: 5	Inventory: 2	Expected: 12	Actual: 12
+Time: 198616	Consump: 20	3	20	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198617	Consump: 20	3	20	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198618	Consump: 20	3	20	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198619	Consump: 20	3	20	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198620	Consump: 20	3	20	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198621	Consump: 20	3	20	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198622	Consump: 20	3	20	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198623	Consump: 20	3	20	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198624	Consump: 20	3	20	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198625	Consump: 20	3	20	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198626	Consump: 20	3	20	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198627	Consump: 20	3	20	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198628	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198629	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198630	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198631	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198632	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198633	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198634	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198635	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198636	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198637	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198638	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198639	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198640	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198641	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198642	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198643	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198644	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198645	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198646	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198647	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198648	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198649	Consump: 20	3	20	Purchase: 3	Inventory: 0	Expected: 3	Actual: 3
+Time: 198650	Consump: 20	3	20	Purchase: 3	Inventory: 3	Expected: 6	Actual: 6
+Time: 198651	Consump: 20	3	20	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198652	Consump: 20	3	20	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198701	Consump: 20	3	20	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198702	Consump: 20	3	20	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198703	Consump: 20	3	20	Purchase: 5	Inventory: 2	Expected: 12	Actual: 12
+Time: 198704	Consump: 20	3	20	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198705	Consump: 20	3	20	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198706	Consump: 20	3	20	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198707	Consump: 20	3	20	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198708	Consump: 20	3	20	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198709	Consump: 20	3	20	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198710	Consump: 20	3	20	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198711	Consump: 20	3	20	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198712	Consump: 20	3	20	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198713	Consump: 20	3	20	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198714	Consump: 20	3	20	Purchase: 5	Inventory: 2	Expected: 12	Actual: 12
+Time: 198715	Consump: 20	3	20	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198716	Consump: 20	3	20	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198717	Consump: 20	3	20	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198718	Consump: 20	3	20	Purchase: 5	Inventory: 9	Expected: 19	Actual: 19
+Time: 198719	Consump: 20	3	20	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198720	Consump: 20	3	20	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198721	Consump: 20	3	20	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198722	Consump: 20	3	20	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198723	Consump: 20	3	20	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198724	Consump: 20	3	20	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198725	Consump: 20	3	20	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198726	Consump: 20	3	20	Purchase: 3	Inventory: 12	Expected: 15	Actual: 15
+Time: 198727	Consump: 20	3	20	Purchase: 4	Inventory: 15	Expected: 20	Actual: 20
+Time: 198728	Consump: 20	3	20	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198729	Consump: 20	3	20	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198730	Consump: 20	3	20	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198731	Consump: 20	3	20	Purchase: 3	Inventory: 17	Expected: 20	Actual: 20
+Time: 198732	Consump: 20	3	20	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198733	Consump: 20	3	20	Purchase: 4	Inventory: 19	Expected: 24	Actual: 24
+Time: 198734	Consump: 20	3	20	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198735	Consump: 20	3	20	Purchase: 3	Inventory: 23	Expected: 26	Actual: 26
+Time: 198736	Consump: 20	3	20	Purchase: 0	Inventory: 26	Expected: 25	Actual: 25
+Time: 198737	Consump: 20	3	20	Purchase: 0	Inventory: 25	Expected: 24	Actual: 24
+Time: 198738	Consump: 20	3	20	Purchase: 0	Inventory: 24	Expected: 23	Actual: 23
+Time: 198739	Consump: 20	3	20	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198740	Consump: 20	3	20	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198741	Consump: 20	3	20	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198742	Consump: 20	3	20	Purchase: 3	Inventory: 20	Expected: 23	Actual: 23
+Time: 198743	Consump: 20	3	20	Purchase: 0	Inventory: 23	Expected: 22	Actual: 22
+Time: 198744	Consump: 20	3	20	Purchase: 0	Inventory: 22	Expected: 21	Actual: 21
+Time: 198745	Consump: 20	3	20	Purchase: 0	Inventory: 21	Expected: 20	Actual: 20
+Time: 198746	Consump: 20	3	20	Purchase: 0	Inventory: 20	Expected: 19	Actual: 19
+Time: 198747	Consump: 20	3	20	Purchase: 0	Inventory: 19	Expected: 18	Actual: 18
+Time: 198748	Consump: 20	3	20	Purchase: 0	Inventory: 18	Expected: 17	Actual: 17
+Time: 198749	Consump: 20	3	20	Purchase: 0	Inventory: 17	Expected: 16	Actual: 16
+Time: 198750	Consump: 20	3	20	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+Time: 198751	Consump: 20	3	20	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+Time: 198752	Consump: 20	3	20	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+Time: 198801	Consump: 20	3	20	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+Time: 198802	Consump: 20	3	20	Purchase: 0	Inventory: 12	Expected: 11	Actual: 11
+Time: 198803	Consump: 20	3	20	Purchase: 0	Inventory: 11	Expected: 10	Actual: 10
+Time: 198804	Consump: 20	3	20	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198805	Consump: 20	3	20	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198806	Consump: 20	3	20	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198807	Consump: 20	3	20	Purchase: 0	Inventory: 7	Expected: 6	Actual: 6
+Time: 198808	Consump: 20	3	20	Purchase: 0	Inventory: 6	Expected: 5	Actual: 5
+Time: 198809	Consump: 20	3	20	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198810	Consump: 20	3	20	Purchase: 0	Inventory: 4	Expected: 3	Actual: 3
+Time: 198811	Consump: 20	3	20	Purchase: 0	Inventory: 3	Expected: 2	Actual: 2
+Time: 198812	Consump: 20	3	20	Purchase: 0	Inventory: 2	Expected: 1	Actual: 1
+Time: 198813	Consump: 20	3	20	Purchase: 0	Inventory: 1	Expected: 0	Actual: 0
+Time: 198814	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198815	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198816	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198817	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198818	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198819	Consump: 20	3	20	Purchase: 0	Inventory: 0	Expected: 0	Actual: 0
+Time: 198820	Consump: 20	3	20	Purchase: 4	Inventory: 0	Expected: 5	Actual: 5
+Time: 198821	Consump: 20	3	20	Purchase: 0	Inventory: 5	Expected: 4	Actual: 4
+Time: 198822	Consump: 20	3	20	Purchase: 4	Inventory: 4	Expected: 9	Actual: 9
+Time: 198823	Consump: 20	3	20	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198824	Consump: 20	3	20	Purchase: 0	Inventory: 8	Expected: 7	Actual: 7
+Time: 198825	Consump: 20	3	20	Purchase: 3	Inventory: 7	Expected: 10	Actual: 10
+Time: 198826	Consump: 20	3	20	Purchase: 0	Inventory: 10	Expected: 9	Actual: 9
+Time: 198827	Consump: 20	3	20	Purchase: 0	Inventory: 9	Expected: 8	Actual: 8
+Time: 198828	Consump: 20	3	20	Purchase: 3	Inventory: 8	Expected: 11	Actual: 11
+purch: 4		wtg: 11		cons: 20	20	3
+efs: 
+       10.000       11.000       12.000       14.000       16.000       21.000       30.000
+etp: 
+       0.0000       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       0.0000       16.000       0.0000       0.0000
+Time: 198829	Consump: 20	3	20	Purchase: 4	Inventory: 11	Expected: 16	Actual: 16
+purch: 0		wtg: 16		cons: 20	20	3
+efs: 
+       15.000       16.000       17.000       19.000       21.000       26.000       35.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       15.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198830	Consump: 20	3	20	Purchase: 0	Inventory: 16	Expected: 15	Actual: 15
+purch: 0		wtg: 15		cons: 20	20	3
+efs: 
+       14.000       15.000       16.000       18.000       20.000       25.000       34.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       14.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198831	Consump: 20	3	20	Purchase: 0	Inventory: 15	Expected: 14	Actual: 14
+purch: 0		wtg: 14		cons: 20	20	3
+efs: 
+       13.000       14.000       15.000       17.000       19.000       24.000       33.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       13.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198832	Consump: 20	3	20	Purchase: 0	Inventory: 14	Expected: 13	Actual: 13
+purch: 0		wtg: 13		cons: 20	20	3
+efs: 
+       12.000       13.000       14.000       16.000       18.000       23.000       32.000
+etp: 
+       1.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+x: 
+       12.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+Time: 198833	Consump: 20	3	20	Purchase: 0	Inventory: 13	Expected: 12	Actual: 12
+purch: 4		wtg: 12		cons: 20	20	3
+efs: 
+       11.000       12.000       13.000       15.000       17.000       22.000       31.000
+etp: 
+       0.0000       0.0000       0.0000       0.0000       1.0000       0.0000       0.0000
+x: 
+       0.0000       0.0000       0.0000       0.0000       17.000       0.0000       0.0000
+Time: 198834	Consump: 20	3	20	Purchase: 4	Inventory: 12	Expected: 17	Actual: 17
