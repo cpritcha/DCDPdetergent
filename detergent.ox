@@ -26,13 +26,7 @@ DetergentEstimates::DoAll() {
 	EMax = new ValueIteration(0);
 	EMax.vtoler  = 1E-1;
 
-  if (i < 2) {
-    print("EMax: ", EMax);
-	  i++;
-  }
   detergent = new DetergentData(EMax);
-
-  //MPI::Volume = LOUD;
 
 	nfxp = new PanelBB("DetergentMLE1", detergent,Detergent::hat);
 	nfxp.Volume = LOUD;
@@ -69,7 +63,7 @@ Detergent::FirstStage() {
   Actions(purchase);
 	prettyprint("Purchases", purchase);
 
-  consumption = new ConsumptionState("consumption", 11);
+  consumption = new FixedEffect("consumption", 11);
   consumption.actual = (consumption.vals + 1)*5;
   prettyprint("Consumption", consumption);
 
@@ -86,7 +80,8 @@ Detergent::FirstStage() {
   prettyprint("Coupon (Tide)", coupon_td);
   
   EndogenousStates(weeks_to_go);
-  ExogenousStates(consumption, coupon_ch, coupon_other, coupon_td);
+  ExogenousStates(coupon_ch, coupon_other, coupon_td);
+  GroupVariables(consumption);
 	CreateSpaces();
 	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
 	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();	

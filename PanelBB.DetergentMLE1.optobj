@@ -1,0 +1,32 @@
+"PanelBB"
+"DetergentMLE1"
+0
+<0.99990000000000001;
+ 6;
+ 2;
+ 0.20000000000000001;
+ 1;
+ 1;
+ 0.80000000000000004;
+ 0.69999999999999996 >
+"delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 "
+<5;
+ 6;
+ 7 >
+<1;
+ 1;
+ 1 >------------
+
+delta              0.99990
+alpha0              6.0000
+alpha1              2.0000
+eta0               0.20000
+eta1                1.0000
+gamma0              1.0000
+gamma1             0.80000
+gamma2             0.70000
+{"Determined","Free","Free","Free","Free","Free","Free","Free"}delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 .NaNHessian delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 
+<>
+
+--------------------
+Created by Objective::Save(). 14-09-2014. 21:01:08
