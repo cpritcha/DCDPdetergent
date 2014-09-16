@@ -1,0 +1,123 @@
+
+Ox Console version 7.00 (OS_X_64/U) (C) J.A. Doornik, 1994-2013
+This version may be used for academic research and teaching only
+
+Detergent Model Starting
+
+
+
+
+ niqlow version 1.00 Copyright (C) 2011-2014 Christopher Ferrall.
+ Execution of niqlow implies acceptance of its free software License (niqlow/niqlow-license.txt).
+Warning: CreateSpaces: setting clock type to stationary.
+-------------------- DP Model Summary ------------------------
+Clock Class: 0 Description: Infinite Horizon
+STATE VARIABLES
+              |eps                 |eta |theta -clock        |gamma
+            coupo  coupo  coupo    s21  weeks      t     t'      r  consu
+       s.N      2      2      2      1    118      1      1      1     11
+
+
+Transition Categories (not counting fixed)
+                 NonRandom       Random   Coevolving
+     #Vars               1            3            2
+
+Size of Spaces
+                           N
+        Exogenous          8
+    SemiExogenous          1
+       Endogenous        118
+            Times          1
+    EV()Iterating        118
+    Ch.Prob.track        118
+    TotalReachable       118
+         Terminal          0
+     Random Groups         1
+     Fixed Groups         11
+    TotalUntrimmed     10384
+
+ACTION VARIABLES (7 distinct actions)
+         purch
+    i.N      7
+
+
+ACTION SETS
+    alpha       A[0]   
+    (0)           X    
+    (1)           X    
+    (2)           X    
+    (3)           X    
+    (4)           X    
+    (5)           X    
+    (6)           X    
+#States         118
+    Key: X = row vector is feasible. - = infeasible
+Warning: DataSet: likelihood only accounting for choice probabilities.
+
+Added to the observed list: weeks_to_go purchase coupon_ch coupon_other coupon_td consumption Observed Finished.
+
+Outcome Summary: Detergent
+
+            ID purch coupo coupo coupo   s21 weeks     t    t'     r consu
+observed     1     1     1     1     1     0     1     0     0     0     1
+force0       0     0     0     0     0     1     0     1     1     1     0
+column       0     1     2     3     4    -1     5    -1    -1    -1     6
+
+
+  sample size         mean      st.dev.          min          max
+       3791.0   1.1015e+06       841.41   1.1000e+06   1.1030e+06
+       3791.0      0.53416       1.2415       0.0000       6.0000
+       3791.0      0.25666      0.43679       0.0000       1.0000
+       3791.0      0.85307      0.35403       0.0000       1.0000
+       3791.0      0.26642      0.44209       0.0000       1.0000
+       3791.0       9.7953       13.397       0.0000       108.00
+       3791.0       1.9370       1.8010       0.0000       7.0000
+Source data summary0
+. Total Outcomes Loaded: 3791
+
+
+Report of Simplex Starting  on DetergentMLE1
+
+   Obj=                    .NaN
+Free Parameters
+                index          free      
+gamma0            5     1.00000000000
+gamma1            6     1.00000000000
+gamma2            7     1.00000000000
+Actual Parameters
+                         Value 
+delta            0.999900000000
+alpha0            2.00000000000
+alpha1            5.00000000000
+eta0             0.200000000000
+eta1              1.00000000000
+gamma0           0.800000000000
+gamma1           0.800000000000
+gamma2           0.700000000000
+
+ Max # evaluations 2147483647
+ Max # restarts 2147483647
+ Plex size tolerance 1e-05
+Amoeba Start
+now: 0
+viinds: 
+[0] = 
+       2.0000
+[1] = 
+       3.0000
+
+vilikes: 0
+Runtime error: 'matrix[0][0]' cannot cast to double
+Runtime error occurred in PathLike (404), call trace: 
+ (404): PathLike
+ (447): Likelihood
+ (515): LogLikelihood
+ (532): LogLikelihood
+ (862): EconometricObjective
+ (550): vfunc
+ (345): vobj
+ (286): funclist
+ (333): Amoeba
+ (262): Iterate
+detergent.ox (39): DoAll
+remaining calls not listed

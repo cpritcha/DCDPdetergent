@@ -1,3 +1,5 @@
+#include "detergent.h"
+
 #ifdef DEBUG
 prettyprint(label, x) {
   decl sep = "\n--------------------------\n";
@@ -6,8 +8,6 @@ prettyprint(label, x) {
 #else
 prettyprint(label, x) {}
 #endif
-
-decl i = 1;
 
 DetergentData::DetergentData(method) {
 	DataSet("Detergent", method, TRUE);
@@ -32,6 +32,7 @@ DetergentEstimates::DoAll() {
 	nfxp.Volume = LOUD;
 	mle = new NelderMead(nfxp);
 	mle.Volume = LOUD;
+  mle.maxiter = 15;
 
 	Outcome::OnlyTransitions = TRUE;
 	EMax.DoNotIterate = TRUE;
@@ -96,6 +97,7 @@ Detergent::SecondStage() {
 Detergent::Reachable() { return new Detergent(); }
 Detergent::Utility() {
 	decl buy = aa(purchase);
+  prettyprint("buy: ", buy);
 	return -(
 		CV(hat[ALPHA])[0] + CV(hat[alpha])[1]*AV(consumption)*(buy==0) /* stockout cost */ + 
 		CV(hat[ETA])[0]*AV(weeks_to_go) + CV(hat[ETA])[1]*AV(weeks_to_go)^2 /* inventory holding costs */ -

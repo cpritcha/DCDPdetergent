@@ -23,7 +23,7 @@ struct Detergent : ExtremeValue {
 	enum{DELTA,ALPHA,ETA,GAMMA,N_PARAMS};
 
 	// maxmimum weeks of laundry detergent inventory
-	static const decl NX = 115; // no one buys more than a years worth of laundry detergent
+	static const decl NX = 118; // no one buys more than a years worth of laundry detergent
 
 	// percieved coupon values are by brand only, not volume.
 	// Don't need pars/rows for estimation
@@ -33,7 +33,7 @@ struct Detergent : ExtremeValue {
 	static decl row;
 	*/
 
-	static const decl init_hat = {0.9999, <6.0,2.0>, <0.2,1.0>, <1.0,0.8,0.7>};
+	static const decl init_hat = {0.9999, <2.0,5.0>, <0.2,1.0>, <0.8,0.8,0.7>};
 
 	static decl purchase; // control variable
 	static decl weeks_to_go, consumption, coupon_ch, coupon_other, coupon_td; // state variables
