@@ -33,7 +33,7 @@ struct Detergent : ExtremeValue {
 	static decl row;
 	*/
 
-	static const decl init_hat = {0.9999, <2.0,5.0>, <0.2,1.0>, <0.8,0.8,0.7>};
+	static const decl init_hat = {0.95, <2.0,5.0>, <0.2,1.0>, <0.8,0.8,0.7>};
 
 	static decl purchase; // control variable
 	static decl weeks_to_go, consumption, coupon_ch, coupon_other, coupon_td; // state variables

@@ -33,6 +33,7 @@ DetergentEstimates::DoAll() {
 	mle = new NelderMead(nfxp);
 	mle.Volume = LOUD;
   mle.maxiter = 15;
+  //mle.tolerance = 2.0;
 
 	Outcome::OnlyTransitions = TRUE;
 	EMax.DoNotIterate = TRUE;
@@ -80,9 +81,10 @@ Detergent::FirstStage() {
   coupon_td = new Jump("coupon_td", 2, CV(hat[PERCIEVED_COUPON_VALUES])[2]);
   prettyprint("Coupon (Tide)", coupon_td);
   
-  EndogenousStates(weeks_to_go);
-  ExogenousStates(coupon_ch, coupon_other, coupon_td);
-  GroupVariables(consumption);
+  EndogenousStates(coupon_ch, coupon_other, coupon_td, weeks_to_go, consumption);
+  //EndogenousStates(weeks_to_go);
+  //ExogenousStates(coupon_ch, coupon_other, coupon_td);
+  //GroupVariables(consumption);
 	CreateSpaces();
 	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
 	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();	
@@ -95,17 +97,31 @@ Detergent::SecondStage() {
 }
 
 Detergent::Reachable() { return new Detergent(); }
-Detergent::Utility() {
-	decl buy = aa(purchase);
-  prettyprint("buy: ", buy);
-	return -(
-		CV(hat[ALPHA])[0] + CV(hat[alpha])[1]*AV(consumption)*(buy==0) /* stockout cost */ + 
-		CV(hat[ETA])[0]*AV(weeks_to_go) + CV(hat[ETA])[1]*AV(weeks_to_go)^2 /* inventory holding costs */ -
-		(CV(hat[GAMMA])[0]*AV(coupon_ch) + CV(hat[GAMMA])[1]*AV(coupon_other) +CV(hat[GAMMA])[2]*AV(coupon_td)) * (buy!=0)); // coupon preference weights
-}
 
-/*
-		CV(hat[ALPHA]) * <1.0; consumption> * (buy==0) + // stockout cost 
-		CV(hat[ETA])* <weeks_to_go; weeks_to_go^2> - // inventory holding costs
-		CV(hat[GAMMA])* <cpn_ch; cpn_oth; cpn_td> * (buy!=0)); // coupon preference weights
-*/
+Detergent::Utility() {
+	//println("start utility");
+  decl buy = aa(purchase);
+
+  decl util = zeros(sizer(buy),1);
+
+  // stockout costs
+  util += (CV(hat[ALPHA])[0] +  CV(hat[ALPHA])[1]*AV(consumption))*(buy .? 0 .: 1)*
+    (AV(weeks_to_go) > 0 ? 0 : 1);
+  /*
+  println("weeks to go: ", AV(weeks_to_go));
+  println("consumption: ", AV(consumption));
+  println("coupon_ch: ", AV(coupon_ch));
+	println("utility1: ", util);
+ */
+
+  // inventory holding costs
+	util += CV(hat[ETA])[0]*AV(weeks_to_go) + CV(hat[ETA])[1]*AV(weeks_to_go)^2;
+	//println("utility2: ", util);
+	
+  // coupon preference weights
+  util -= (CV(hat[GAMMA])[0]*AV(coupon_ch) + CV(hat[GAMMA])[1]*AV(coupon_other) +CV(hat[GAMMA])[2]*AV(coupon_td)) * 
+    (buy .? 1 .: 0);
+  //println("utility3: ", util);
+
+  return util;
+}

@@ -1,7 +1,7 @@
 "PanelBB"
 "DetergentMLE1"
-0
-<0.99990000000000001;
+-6930.8654067179868
+<0.94999999999999996;
  2;
  5;
  0.20000000000000001;
@@ -17,7 +17,7 @@
  1;
  1 >------------
 
-delta              0.99990
+delta              0.95000
 alpha0              2.0000
 alpha1              5.0000
 eta0               0.20000
@@ -25,10 +25,8 @@ eta1                1.0000
 gamma0             0.80000
 gamma1             0.80000
 gamma2             0.70000
-{"Determined","Free","Free","Free","Free","Free","Free","Free"}delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 
-<>
-Hessian delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 
+{"Determined","Free","Free","Free","Free","Free","Free","Free"}delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 .NaNHessian delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 delta alpha0 alpha1 eta0 eta1 gamma0 gamma1 gamma2 
 <>
 
 --------------------
-Created by Objective::Save(). 15-09-2014. 21:32:59
+Created by Objective::Save(). 17-09-2014. 20:37:43
