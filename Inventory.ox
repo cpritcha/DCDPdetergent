@@ -49,6 +49,28 @@ ConsumptionState::Transit(const FeasA) {
 	return { x, ones(sizer(FeasA),1) };
 }
 
-//ConsumptionState::Update() {
-//  actual = (vals + 1) * 5;
-//}
+
+CouponState::CouponState(const L, probs) {
+  /**
+   * L: label
+   * probs: Array of Probability
+   *          # rows = 2(# vals - 1)
+   * */
+  
+  this.probs = probs;
+  decl N = sizerc(this.probs);
+
+  StateVariable(L, N);
+}
+
+CouponState::Transit(const FeasA) {
+  decl vRows = sizer(FeasA);
+  
+  //println("probs: ", probs[v].v);
+  decl vP = probs[v].v ~ (1-probs[v].v);
+  decl mTransProb = ones(vRows, sizerc(vals));
+
+  mTransProb .*= vP;
+  //println({vals, mTransProb});
+  return {vals, mTransProb};
+}

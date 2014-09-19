@@ -33,7 +33,7 @@ DetergentEstimates::DoAll() {
 	mle = new NelderMead(nfxp);
 	mle.Volume = LOUD;
   mle.maxiter = 15;
-  //mle.tolerance = 2.0;
+  mle.tolerance = 0.2;
 
 	Outcome::OnlyTransitions = TRUE;
 	EMax.DoNotIterate = TRUE;
@@ -51,12 +51,27 @@ DetergentEstimates::DoAll() {
 
 Detergent::FirstStage() {
 	hat = new array[N_PARAMS];
-	Initialize(1.0,Reachable,FALSE,0);
+  Initialize(1.0,Reachable,FALSE,0);
 
 	hat[DISCOUNT] = new Determined("delta",init_hat[DISCOUNT]);
 	hat[STOCKOUT_COSTS] = new Coefficients("alpha", init_hat[STOCKOUT_COSTS]);
 	hat[INVENTORY_HOLDING_COSTS] = new Coefficients("eta", init_hat[INVENTORY_HOLDING_COSTS]);
 	hat[PERCIEVED_COUPON_VALUES] = new Coefficients("gamma", init_hat[PERCIEVED_COUPON_VALUES]);
+  
+  hat[TRANS_PROB_CH] = {
+    new Probability("q_ch1", init_hat[TRANS_PROB_CH][0]),
+    new Probability("q_ch2", init_hat[TRANS_PROB_CH][1])
+  };
+  
+  hat[TRANS_PROB_OTHER] = {
+    new Probability("q_other1", init_hat[TRANS_PROB_OTHER][0]),
+    new Probability("q_other2", init_hat[TRANS_PROB_OTHER][1])
+  };
+  
+  hat[TRANS_PROB_TD] = {
+    new Probability("q_td1", init_hat[TRANS_PROB_TD][0]),
+    new Probability("q_td2", init_hat[TRANS_PROB_TD][1])
+  };
 
 	SetDelta(hat[DISCOUNT]);
 
@@ -72,13 +87,13 @@ Detergent::FirstStage() {
   weeks_to_go = new InventoryState("weeks_to_go", NX, consumption, purchase);
   prettyprint("Weeks Left", weeks_to_go);
 
-  coupon_ch = new Jump("coupon_ch", 2, CV(hat[PERCIEVED_COUPON_VALUES])[0]);
+  coupon_ch = new CouponState("coupon_ch", hat[TRANS_PROB_CH]);
   prettyprint("Coupon (Cheer)", coupon_ch);
 
-  coupon_other = new Jump("coupon_other", 2, CV(hat[PERCIEVED_COUPON_VALUES])[1]);
+  coupon_other = new CouponState("coupon_other", hat[TRANS_PROB_OTHER]);
   prettyprint("Coupon (Other)", coupon_other);
 
-  coupon_td = new Jump("coupon_td", 2, CV(hat[PERCIEVED_COUPON_VALUES])[2]);
+  coupon_td = new CouponState("coupon_td", hat[TRANS_PROB_TD]);
   prettyprint("Coupon (Tide)", coupon_td);
   
   EndogenousStates(coupon_ch, coupon_other, coupon_td, weeks_to_go, consumption);
@@ -87,13 +102,20 @@ Detergent::FirstStage() {
   //GroupVariables(consumption);
 	CreateSpaces();
 	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
-	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();	
+	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();
+  hat[PERCIEVED_COUPON_VALUES]->ToggleDoNotVary();
 }
 
 Detergent::SecondStage() {
 	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
 	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();
-	hat[PERCIEVED_COUPON_VALUES]->ToggleDoNotVary();
+  hat[PERCIEVED_COUPON_VALUES]->ToggleDoNotVary();
+	hat[TRANS_PROB_CH][0]->ToggleDoNotVary();
+	hat[TRANS_PROB_CH][1]->ToggleDoNotVary();
+  hat[TRANS_PROB_OTHER][0]->ToggleDoNotVary();
+	hat[TRANS_PROB_OTHER][1]->ToggleDoNotVary();
+  hat[TRANS_PROB_TD][0]->ToggleDoNotVary();
+	hat[TRANS_PROB_TD][1]->ToggleDoNotVary();
 }
 
 Detergent::Reachable() { return new Detergent(); }

@@ -11,4 +11,10 @@ struct ConsumptionState : NonRandom {
 	ConsumptionState(const L, const N);
 	Transit(const FeasA);
   //Update();
-}	
+}
+
+struct CouponState : Random {
+  decl probs;
+  CouponState(const L, probs);
+  Transit(const FeasA);
+}
