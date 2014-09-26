@@ -30,10 +30,12 @@ DetergentEstimates::DoAll() {
 
 	nfxp = new PanelBB("DetergentMLE1", detergent,Detergent::hat);
 	nfxp.Volume = LOUD;
-	mle = new NelderMead(nfxp);
-	mle.Volume = LOUD;
-  mle.maxiter = 15;
-  mle.tolerance = 0.2;
+	// mle = new NelderMead(nfxp);
+	mle = new BFGS(nfxp);
+  mle.Volume = LOUD;
+  //mle.maxiter = 15;
+  //mle.tolerance = 0.2;
+  nfxp->Load();
 
 	Outcome::OnlyTransitions = TRUE;
 	EMax.DoNotIterate = TRUE;
