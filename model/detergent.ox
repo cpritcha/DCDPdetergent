@@ -1,5 +1,14 @@
 #include "detergent.h"
 
+writeLogEntry(msg) {
+  decl f = fopen("/Users/calvinpritchard/Documents/out.log", "a");
+  if (isfile(f)) {
+    fprintln(f, msg);
+    //fflush(f);
+    fclose(f);
+  } else print("couldn't open file");
+}
+
 #ifdef DEBUG
 prettyprint(label, x) {
   decl sep = "\n--------------------------\n";
@@ -123,7 +132,7 @@ Detergent::SecondStage() {
 Detergent::Reachable() { return new Detergent(); }
 
 Detergent::Utility() {
-	//println("start utility");
+	// println("start utility");
   decl buy = aa(purchase);
 
   decl util = zeros(sizer(buy),1);
@@ -144,8 +153,9 @@ Detergent::Utility() {
 	
   // coupon preference weights
   util -= (CV(hat[GAMMA])[0]*AV(coupon_ch) + CV(hat[GAMMA])[1]*AV(coupon_other) +CV(hat[GAMMA])[2]*AV(coupon_td)) * 
-    (buy .? 1 .: 0);
+    //(buy .? 1 .: 0);
   //println("utility3: ", util);
-
-  return util;
+  
+  writeLogEntry(sprint(util'));
+  return util/10000;
 }
