@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm -f out.log
+rm -f model/main.oxo
+oxl -c model/detergentMain.ox model/Inventory.h model/detergent.h
+mv detergentMain.oxo model/main.oxo
+
+echo $OXHOME
+
+echo "Starting Detergent Estimation"
+sqsub -r 6.0h -o out.log -q serial --memperproc=4.0G oxl model/main.oxo
