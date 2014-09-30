@@ -27,7 +27,7 @@ DetergentData::DetergentData(method) {
 					 Detergent::coupon_td, "cpn_td",
 					 Detergent::consumption, "cons");
 	IDColumn("hh_id");
-	Read("sample.dta");
+	Read("../data/full.dta");
 }
 
 DetergentEstimates::DoAll() {
@@ -91,11 +91,11 @@ Detergent::FirstStage() {
   Actions(purchase);
 	prettyprint("Purchases", purchase);
 
-  consumption = new FixedEffect("consumption", 11);
-  consumption.actual = (consumption.vals + 1)*5;
+  consumption = new FixedEffect("consumption", Nconsumption);
+  consumption.actual = (consumption.vals + 4);
   prettyprint("Consumption", consumption);
 
-  weeks_to_go = new InventoryState("weeks_to_go", NX, consumption, purchase);
+  weeks_to_go = new InventoryState("weeks_to_go", Nwtg, consumption, purchase);
   prettyprint("Weeks Left", weeks_to_go);
 
   coupon_ch = new CouponState("coupon_ch", hat[TRANS_PROB_CH]);

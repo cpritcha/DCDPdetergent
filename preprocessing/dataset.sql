@@ -192,8 +192,8 @@ CREATE TABLE stores_visited_by_hh AS
 
 DROP TABLE IF EXISTS min_unit_price_by_brand;
 CREATE TABLE min_unit_price_by_brand AS
-  SELECT v.hh_id, v.week, 
-    bool_or(coupon_available_store_ch) AS coupon_available_store_ch, 
+SELECT v.hh_id, v.week, 
+bool_or(coupon_available_store_ch) AS coupon_available_store_ch, 
     bool_or(coupon_available_store_other) AS coupon_available_store_other, 
     bool_or(coupon_available_store_td) AS coupon_available_store_td
   FROM key_vars AS v
@@ -283,70 +283,26 @@ CREATE TABLE inventory1 AS
 
 DROP TABLE IF EXISTS results1;
 CREATE TABLE results1 AS
-  SELECT b.hh_id, b.week, COALESCE(vol, 0) AS vol, 0::double precision AS inventory, 0::integer as dinventory, coupon_available_ch, coupon_available_other, coupon_available_td
+  SELECT b.hh_id, b.week, COALESCE(vol, 0) AS vol, 0::double precision AS inventory, 0::integer as dweeks_to_go, coupon_available_ch, coupon_available_other, coupon_available_td
   FROM min_unit_price_by_brand3 AS b
   LEFT JOIN inventory1 AS i ON (i.hh_id, i.week) = (b.hh_id, b.week);
 
--- Inventory
-CREATE OR REPLACE FUNCTION inventory() RETURNS void AS 
-$BODY$
-DECLARE
-  cur CURSOR FOR
-    SELECT r.hh_id, week, vol AS bought, consumption
-    FROM results1 AS r
-    --WHERE hh_id = 2170639
-    INNER JOIN (
-      SELECT hh_id, sum(vol)::double precision/(SELECT COUNT(DISTINCT week) FROM key_vars) AS consumption
-      FROM inventory1
-      GROUP BY hh_id
-    ) AS i ON i.hh_id = r.hh_id
-    ORDER BY hh_id, week;
-
-  r RECORD;
-
-  hh_id_prev integer;
-
-  consumption double precision;
-  inventory_curr double precision;
-  inventory_prev double precision;
-
-BEGIN
-  hh_id_prev := -1;
-  
-  FOR r IN cur LOOP
-    IF r.hh_id = hh_id_prev THEN
-      inventory_curr := CASE 
-        WHEN inventory_prev + r.bought - r.consumption <= 0 THEN 0 
-        ELSE inventory_prev  + r.bought - r.consumption
-      END;
-    ELSE
-    
-      RAISE NOTICE 'hh_id: (%), consumption: (%)', r.hh_id, r.consumption;
-      --SELECT avg(vol) INTO vol_avg FROM key_vars4 WHERE hh_id = hh_id_curr
-      inventory_curr := 2*r.consumption + r.bought;
-      hh_id_prev := r.hh_id;
-    END IF;
-
-    UPDATE results1 SET inventory = inventory_curr WHERE hh_id = r.hh_id AND week = r.week;
-    -- WHERE CURRENT OF cur;
-    inventory_prev := inventory_curr;
-  END LOOP;
-END
-$BODY$
-language plpgsql;
 
 CREATE OR REPLACE FUNCTION disc_inventory() RETURNS void AS 
 $BODY$
 DECLARE
   cur CURSOR FOR
-    SELECT r.hh_id, week, vol AS bought, consumption
+    SELECT r.hh_id, week, vol AS bought, consumption, ave_purchase_size
     FROM results1 AS r
     --WHERE hh_id = 2170639
     INNER JOIN (
       -- discretized consumption
-      SELECT hh_id, round(consumption/5)*5 AS consumption
+      SELECT hh_id, round(consumption) AS consumption, round(ave_purchase_size) AS ave_purchase_size
       FROM (
-        SELECT hh_id, sum(vol)::double precision/(SELECT COUNT(DISTINCT week) FROM key_vars) AS consumption
+        SELECT 
+          hh_id, 
+          sum(vol)::double precision/(SELECT COUNT(DISTINCT week) FROM key_vars) AS consumption,
+          sum(vol)::double precision/sum(CASE WHEN vol > 0 THEN 1 ELSE 0 END) AS ave_purchase_size
         FROM inventory1
         GROUP BY hh_id) AS a
       WHERE consumption > 4 AND consumption < 56.25
@@ -374,11 +330,11 @@ BEGIN
     
       RAISE NOTICE 'hh_id: (%), consumption: (%)', r.hh_id, r.consumption;
       --SELECT avg(vol) INTO vol_avg FROM key_vars4 WHERE hh_id = hh_id_curr
-      inventory_curr := 2*r.consumption + r.bought;
+      inventory_curr := 0.5*r.ave_purchase_size + r.bought;
       hh_id_prev := r.hh_id;
     END IF;
 
-    UPDATE results1 SET dinventory = inventory_curr WHERE hh_id = r.hh_id AND week = r.week;
+    UPDATE results1 SET dweeks_to_go = inventory_curr WHERE hh_id = r.hh_id AND week = r.week;
     -- WHERE CURRENT OF cur;
     inventory_prev := inventory_curr;
   END LOOP;
@@ -397,7 +353,6 @@ CREATE TABLE results_final AS
   SELECT r.hh_id, week, 
     r.vol,
     enum_vol AS purchased,
-    floor(dinventory/dconsumption)::integer AS weeks_to_go,
     coupon_available_ch, 
     coupon_available_other, 
     coupon_available_td,
@@ -406,7 +361,7 @@ CREATE TABLE results_final AS
     dconsumption
   FROM results1 AS r
   INNER JOIN (
-    SELECT hh_id, round(consumption/5)*5 AS dconsumption
+    SELECT hh_id, round(consumption) AS dconsumption
     FROM (
       SELECT hh_id, sum(vol)::double precision/(SELECT COUNT(DISTINCT week) FROM key_vars) AS consumption
       FROM inventory1
@@ -436,13 +391,125 @@ CREATE TABLE results_final AS
   );
 
 
+CREATE OR REPLACE FUNCTION disc_wtg() RETURNS void AS 
+$BODY$
+DECLARE
+  cur CURSOR FOR
+    SELECT r.hh_id, week, vol AS bought, consumption, ave_purchase_size
+    FROM results1 AS r
+    --WHERE hh_id = 2170639
+    INNER JOIN (
+      -- discretized consumption
+      SELECT hh_id, round(consumption)::integer AS consumption, round(ave_purchase_size)::integer AS ave_purchase_size
+      FROM (
+        SELECT 
+          hh_id, 
+          sum(vol)::double precision/(SELECT COUNT(DISTINCT week) FROM key_vars) AS consumption,
+          sum(vol)::double precision/sum(CASE WHEN vol > 0 THEN 1 ELSE 0 END) AS ave_purchase_size
+        FROM inventory1
+        GROUP BY hh_id) AS a
+      WHERE consumption > 4 AND consumption < 56.25
+    ) AS i ON i.hh_id = r.hh_id
+    ORDER BY hh_id, week;
+
+  r RECORD;
+
+  hh_id_prev integer;
+
+  consumption integer;
+  inventory_curr integer;
+  inventory_prev integer;
+
+BEGIN
+  hh_id_prev := -1;
+  
+  FOR r IN cur LOOP
+    IF r.hh_id = hh_id_prev THEN
+      inventory_curr := CASE 
+        WHEN inventory_prev -1 + r.bought/r.consumption <= 0 THEN 0 
+        ELSE inventory_prev -1 + r.bought/r.consumption 
+      END;
+    ELSE
+    
+      RAISE NOTICE 'hh_id: (%), consumption: (%)', r.hh_id, r.consumption;
+      --SELECT avg(vol) INTO vol_avg FROM key_vars4 WHERE hh_id = hh_id_curr
+      inventory_curr := (r.ave_purchase_size/2 + r.bought)/r.consumption;
+      hh_id_prev := r.hh_id;
+    END IF;
+
+    UPDATE results1 SET dinventory = inventory_curr WHERE hh_id = r.hh_id AND week = r.week;
+    -- WHERE CURRENT OF cur;
+    inventory_prev := inventory_curr;
+  END LOOP;
+END
+$BODY$
+language plpgsql;
+
+SELECT disc_wtg();
+
+DROP TABLE IF EXISTS results_final;
+CREATE TABLE results_final AS
+  SELECT r.hh_id, week, 
+    r.vol,
+    enum_vol AS purchased,
+    coupon_available_ch, 
+    coupon_available_other, 
+    coupon_available_td,
+    inventory,
+    dinventory,
+    dconsumption
+  FROM results1 AS r
+  INNER JOIN (
+    SELECT hh_id, round(consumption)::integer AS dconsumption
+    FROM (
+      SELECT hh_id, sum(vol)::double precision/(SELECT COUNT(DISTINCT week) FROM key_vars) AS consumption
+      FROM inventory1
+      GROUP BY hh_id) AS a
+    WHERE consumption > 4 AND consumption < 56.25
+  ) AS i ON i.hh_id = r.hh_id
+  INNER JOIN volumes AS v ON v.vol = r.vol
+  WHERE r.hh_id IN (
+    SELECT hh_id
+    FROM shopoccasion
+    GROUP BY hh_id
+    HAVING COUNT(DISTINCT time4) = 29
+
+    INTERSECT
+
+    SELECT d.hh_id
+    FROM hh_consumption AS c
+    INNER JOIN hh_demog AS d ON d.hh_id = c.hh_id
+    WHERE consumption/hh_size > 1.0
+
+    INTERSECT
+
+    SELECT hh_id
+    FROM criteria_table
+    GROUP BY hh_id
+    HAVING max(vol) < 410 AND min(vol) > 0
+  );
+
 DROP TABLE IF EXISTS done;
 CREATE TABLE done AS
-  SELECT *, CAST(consumption/5 - 1 AS integer) AS consumption
+  SELECT *, CAST(dconsumption - 4 AS integer) AS consumption
   FROM (
     SELECT *,
-      lag(weeks_to_go,1,3) OVER (PARTITION BY hh_id ORDER BY week) AS inv_lag
-    FROM results_final) AS a;
+      lag(dinventory,1,NULL) OVER (PARTITION BY hh_id ORDER BY week) AS inv_lag
+    FROM results_final) AS a
+  WHERE hh_id IN (
+    SELECT hh_id
+    FROM results_final
+    GROUP BY hh_id
+    HAVING COUNT(week) = 138);
+
+UPDATE done SET inv_lag = dl.inv_first + 1 - vol/dconsumption 
+  FROM (
+    SELECT hh_id, inv_lag AS inv_first, inv_lag
+    FROM done
+    WHERE week = 198602
+  ) AS dl 
+  WHERE dl.hh_id = done.hh_id
+    AND done.week = 198601;
 
 SELECT *
 FROM done
@@ -466,57 +533,3 @@ CREATE TABLE brands AS
   FROM (
     SELECT DISTINCT brand
     FROM purchhist) AS a;
-
-
-
-CREATE OR REPLACE FUNCTION disc_wtg() RETURNS void AS 
-$BODY$
-DECLARE
-  cur CURSOR FOR
-    SELECT r.hh_id, week, vol AS bought, consumption
-    FROM results1 AS r
-    --WHERE hh_id = 2170639
-    INNER JOIN (
-      -- discretized consumption
-      SELECT hh_id, round(consumption/5)*5 AS consumption
-      FROM (
-        SELECT hh_id, sum(vol)::double precision/(SELECT COUNT(DISTINCT week) FROM key_vars) AS consumption
-        FROM inventory1
-        GROUP BY hh_id) AS a
-      WHERE consumption > 4 AND consumption < 56.25
-    ) AS i ON i.hh_id = r.hh_id
-    ORDER BY hh_id, week;
-
-  r RECORD;
-
-  hh_id_prev integer;
-
-  consumption double precision;
-  inventory_curr double precision;
-  inventory_prev double precision;
-
-BEGIN
-  hh_id_prev := -1;
-  
-  FOR r IN cur LOOP
-    IF r.hh_id = hh_id_prev THEN
-      inventory_curr := CASE 
-        WHEN inventory_prev -1 + round(r.bought/r.consumption) <= 0 THEN 0 
-        ELSE inventory_prev -1 + round(r.bought/r.consumption) 
-      END;
-    ELSE
-    
-      RAISE NOTICE 'hh_id: (%), consumption: (%)', r.hh_id, r.consumption;
-      --SELECT avg(vol) INTO vol_avg FROM key_vars4 WHERE hh_id = hh_id_curr
-      inventory_curr := 2 + round(r.bought/r.consumption);
-      hh_id_prev := r.hh_id;
-    END IF;
-
-    UPDATE results1 SET dinventory = inventory_curr WHERE hh_id = r.hh_id AND week = r.week;
-    -- WHERE CURRENT OF cur;
-    inventory_prev := inventory_curr;
-  END LOOP;
-END
-$BODY$
-language plpgsql;
-
