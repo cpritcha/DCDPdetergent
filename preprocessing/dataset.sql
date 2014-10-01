@@ -391,6 +391,8 @@ CREATE TABLE results_final AS
   );
 
 
+
+-- half average purchase volume initial inventory heuristic
 CREATE OR REPLACE FUNCTION disc_wtg() RETURNS void AS 
 $BODY$
 DECLARE
@@ -432,8 +434,8 @@ BEGIN
     ELSE
     
       RAISE NOTICE 'hh_id: (%), consumption: (%)', r.hh_id, r.consumption;
-      --SELECT avg(vol) INTO vol_avg FROM key_vars4 WHERE hh_id = hh_id_curr
-      inventory_curr := (r.ave_purchase_size/2 + r.bought)/r.consumption;
+      -- initial inventory set to make minimum unrestricted inventory zero
+      --inventory_curr := (r.ave_purchase_size/2 + r.bought)/r.consumption;
       hh_id_prev := r.hh_id;
     END IF;
 
@@ -444,6 +446,12 @@ BEGIN
 END
 $BODY$
 language plpgsql;
+
+SELECT hh_id, week, sum(vol/consumption) - row_number() OVER (PARTITIION BY hh_id, ORDER BY week)
+FROM done
+ORDER BY hh_id, week
+LIMIT 1000
+
 
 SELECT disc_wtg();
 
@@ -469,6 +477,7 @@ CREATE TABLE results_final AS
   ) AS i ON i.hh_id = r.hh_id
   INNER JOIN volumes AS v ON v.vol = r.vol
   WHERE r.hh_id IN (
+    -- household shopped at least once every month
     SELECT hh_id
     FROM shopoccasion
     GROUP BY hh_id
@@ -476,13 +485,16 @@ CREATE TABLE results_final AS
 
     INTERSECT
 
+    -- household must consume at least 4 ounces of detergent per person per week
     SELECT d.hh_id
     FROM hh_consumption AS c
     INNER JOIN hh_demog AS d ON d.hh_id = c.hh_id
-    WHERE consumption/hh_size > 1.0
+    WHERE consumption/hh_size > 4.0
 
     INTERSECT
 
+    -- exclude households that bought more than 410 ounces in a week at least once 
+    --  or that bought a negative amount of laundry detergent
     SELECT hh_id
     FROM criteria_table
     GROUP BY hh_id
@@ -510,6 +522,69 @@ UPDATE done SET inv_lag = dl.inv_first + 1 - vol/dconsumption
   ) AS dl 
   WHERE dl.hh_id = done.hh_id
     AND done.week = 198601;
+
+--CREATE INDEX idx_done ON done (hh_id, week);
+
+UPDATE done SET inv_lag = b.min_unrestricted_wtg
+FROM (
+  SELECT hh_id, CASE WHEN -min(unrestricted_wtg) < 0 THEN 0 ELSE -min(unrestricted_wtg) END AS min_unrestricted_wtg
+  FROM (
+    SELECT hh_id, week, vol, dconsumption, 
+      sum(vol/dconsumption) OVER (PARTITION BY hh_id ORDER BY week) - row_number() OVER (PARTITION BY hh_id ORDER BY week) AS unrestricted_wtg
+    FROM done
+    ORDER BY hh_id, week
+  ) AS a
+  GROUP BY hh_id) AS b
+WHERE done.week = 198601 AND done.hh_id = b.hh_id;
+
+-- initial inventory set to make minimum unrestricted inventory zero
+CREATE OR REPLACE FUNCTION disc_wtg_done() RETURNS void AS 
+$BODY$
+DECLARE
+  cur CURSOR FOR
+    SELECT r.hh_id, week, vol AS bought, dconsumption AS consumption, inv_lag
+    FROM done AS r
+    ORDER BY hh_id, week;
+
+  r RECORD;
+
+  hh_id_prev integer;
+
+  consumption integer;
+  inventory_curr integer;
+  inventory_prev integer;
+
+  bought_prev integer;
+  consumption_prev integer;
+
+BEGIN
+  hh_id_prev := -1;
+  
+  FOR r IN cur LOOP
+    IF r.hh_id = hh_id_prev THEN
+      inventory_curr := CASE 
+        WHEN inventory_prev -1 + bought_prev/consumption_prev <= 0 THEN 0 
+        ELSE inventory_prev -1 + bought_prev/consumption_prev
+      END;
+
+      UPDATE done SET inv_lag = inventory_curr WHERE hh_id = r.hh_id AND week = r.week;
+    ELSE
+    
+      RAISE NOTICE 'hh_id: (%), consumption: (%)', r.hh_id, r.consumption;
+
+      hh_id_prev := r.hh_id;
+      inventory_curr := r.inv_lag;
+    END IF;
+
+    bought_prev := r.bought;
+    consumption_prev := r.consumption;
+    inventory_prev := inventory_curr;
+  END LOOP;
+END
+$BODY$
+language plpgsql;
+
+SELECT disc_wtg_done();
 
 SELECT *
 FROM done

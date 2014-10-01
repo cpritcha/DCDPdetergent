@@ -46,9 +46,11 @@ DetergentEstimates::DoAll() {
   //mle.tolerance = 0.2;
   nfxp->Load();
 
-	Outcome::OnlyTransitions = TRUE;
+  /*
+  Outcome::OnlyTransitions = TRUE;
 	EMax.DoNotIterate = TRUE;
 	mle -> Iterate(0);
+  */
 
 	Detergent::SecondStage();
 	Outcome::OnlyTransitions = FALSE;

@@ -2,15 +2,14 @@ setwd("~/Google Drive/School/Masters/FinalPaper/src")
 library(foreign)
 library(data.table)
 
-data <- data.table(read.dta("data/sample.dta"))
+directory <- "data/detergent/"
+
+load(paste(directory, "data.RData", sep=""))
+data <- data.table(read.dta("data/full.dta"))
 hhs <- unique(data$hh_id)
 
-forecast <- function(x, prob) {
-  ifelse(x == 1, prob
-}
-
 d <- subset(data,hh_id==hhs[30])
-t <- 1:nrow(t) %% 52
+t <- 1:nrow(d) %% 52
 plot(d$cpn_ch)
 plot(d$cpn_td)
 plot(d$cpn_oth)
@@ -28,6 +27,37 @@ utility <- function(consumption, wtg, stockout_cost_params=c(2,5),invholding_cos
   return(stockout_cost + invholding_cost)
 }
 
-utility(5,0:10)
+# Demographics
+setkey(data, hh_id)
+setkey(hh.demog, hh_id)
 
-f <- function(x) 2.46885*x -0.22295*x^2
+demodata <- merge(data,hh.demog)
+
+demodata[,hh_income := factor(hh_income,levels = 1:14,
+                              labels=c("< $5K",
+                                       "$5K-$10K",
+                                       "$10K-$15K",
+                                       "$15K-$20K",
+                                       "$20K-$25K",
+                                       "$25K-$30K",
+                                       "$30K-$35K",
+                                       "$35K-$40K",
+                                       "$40K-$45K",
+                                       "$45K-$50K",
+                                       "$50K-$60K",
+                                       "$60K-$75K",
+                                       "$75K-$100K",
+                                       "$100K+"))]
+
+longest_stockout <- function(wks_to_g) {
+  res <- rle(wks_to_g)
+  max(res$lengths[res$values == 0])
+}
+
+# Income by Max Stockout
+library(reshape2)
+income_stockout <- demodata[,list(hh_income = unique(hh_income), 
+                                  wks_to_g = as.integer(longest_stockout(wks_to_g))),by=hh_id]
+
+xtabs(wks_to_g ~ hh_income, data=income_stockout)
+
