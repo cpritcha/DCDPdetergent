@@ -1,6 +1,0 @@
-#!/bin/bash
-rm -f detergent.log
-echo $OXHOME
-
-echo "Starting Detergent Estimation"
-sqsub -r 10.0m -0 detergent.log -q mpi -n 6 oxl -DMPI detergmentMain.ox

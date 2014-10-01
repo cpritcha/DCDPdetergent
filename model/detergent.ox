@@ -52,11 +52,13 @@ DetergentEstimates::DoAll() {
 	mle -> Iterate(0);
   */
 
+
 	Detergent::SecondStage();
 	Outcome::OnlyTransitions = FALSE;
 	EMax.DoNotIterate = FALSE;
 	nfxp -> ResetMax();
 	mle -> Iterate(0);
+	
 
 	delete mle, nfxp, EMax;
 	Bellman::Delete();
@@ -155,9 +157,9 @@ Detergent::Utility() {
 	
   // coupon preference weights
   util -= (CV(hat[GAMMA])[0]*AV(coupon_ch) + CV(hat[GAMMA])[1]*AV(coupon_other) +CV(hat[GAMMA])[2]*AV(coupon_td)) * 
-    //(buy .? 1 .: 0);
+    (buy .? 1 .: 0);
   //println("utility3: ", util);
   
-  writeLogEntry(sprint(util'));
+  //writeLogEntry(sprint(util'));
   return util/10000;
 }
