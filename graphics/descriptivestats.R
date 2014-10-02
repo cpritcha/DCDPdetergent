@@ -61,3 +61,15 @@ income_stockout <- demodata[,list(hh_income = unique(hh_income),
 
 xtabs(wks_to_g ~ hh_income, data=income_stockout)
 
+
+library(ggplot2)
+
+d <- ggplot(demodata, aes(purch, wks_to_g))
+d + ylim(0,10)+ stat_bin2d()
+d + stat_sum(aes(size = ..n..))
+
+dd <- demodata[,list(count=length(hh_id)),by=c("vol","wks_to_g")]
+ggplot(data=dd, aes(x = vol, fill = wks_to_g)) + geom_bar()
+
+d2 <- ggplot(data=dd, aes(vol, wks_to_g))
+d2 + stat_sum(aes(group = count))
