@@ -1,76 +1,52 @@
-﻿--ALTER TABLE retail
---  ALTER COLUMN extended_price TYPE double precision USING CAST(extended_price AS double precision);
---ALTER TABLE retail
---  ALTER COLUMN unit_wght TYPE double precision USING CAST(unit_wght AS double precision);
---UPDATE retail SET 
---  unit_wght = unit_wght/1000,
---  extended_price = extended_price/100;
+﻿-- get the data into the right data types
+ALTER TABLE purchhist
+  ALTER COLUMN hh_id TYPE integer USING CAST(hh_id AS integer);
 
---ALTER TABLE purchhist
---  ALTER COLUMN week TYPE integer USING CAST(week AS integer);
---ALTER TABLE retail
---  ALTER COLUMN week TYPE integer USING CAST(week AS integer);
+ALTER TABLE purchhist
+  ALTER COLUMN store_id TYPE integer USING CAST(store_id AS integer);
+ALTER TABLE retail
+  ALTER COLUMN store_id TYPE integer USING CAST(store_id AS integer);
 
---ALTER TABLE definitions
---  ALTER COLUMN upc_id TYPE bigint USING CAST(upc_id AS bigint);
---ALTER TABLE purchhist
---  ALTER COLUMN upc_id TYPE bigint USING CAST(upc_id AS bigint);
+ALTER TABLE purchhist
+  ALTER COLUMN tot_coupon_val_manu TYPE double precision USING CAST(tot_coupon_val_manu AS double precision);
 
---ALTER TABLE purchhist
---  ALTER COLUMN tot_coupon_val_store TYPE double precision USING CAST(tot_coupon_val_store AS double precision);
---
---UPDATE purchhist SET
---  tot_coupon_val_store = tot_coupon_val_store/100;
+UPDATE purchhist
+  SET tot_coupon_val_manu = tot_coupon_val_manu/100;
 
---ALTER TABLE retail
---  ALTER COLUMN tot_coupon_val_store TYPE double precision USING CAST(tot_coupon_val_store AS double precision); 
---
---UPDATE retail SET
---  tot_coupon_val_store = tot_coupon_val_store/100;
+ALTER TABLE upcdata
+  ALTER COLUMN upc_id TYPE bigint USING CAST(upc_id AS bigint);
 
-CREATE OR REPLACE FUNCTION categorize_vol(vol integer) returns integer AS $BODY$
-    DECLARE
-        r integer;
-    BEGIN
-        CASE 
-            WHEN vol <= 31 THEN r := 17;
-            WHEN vol <= 63 THEN r := 42;
-            WHEN vol <= 93 THEN r := 72;
-            WHEN vol <= 150 THEN r := 127;
-            WHEN vol <= 300 THEN r := 227;
-            ELSE r = 400;
-        END CASE;
-        RETURN r;
-    END
-$BODY$ language plpgsql;
+ALTER TABLE retail
+  ALTER COLUMN extended_price TYPE double precision USING CAST(extended_price AS double precision);
+ALTER TABLE retail
+  ALTER COLUMN unit_wght TYPE double precision USING CAST(unit_wght AS double precision);
+UPDATE retail SET 
+  unit_wght = unit_wght/1000,
+  extended_price = extended_price/100;
 
-CREATE OR REPLACE FUNCTION categorize_vol(vol double precision) returns integer AS $BODY$
-    DECLARE
-        r integer;
-    BEGIN
-        CASE 
-            WHEN vol <= 31 THEN r := 17;
-            WHEN vol <= 63 THEN r := 42;
-            WHEN vol <= 93 THEN r := 72;
-            WHEN vol <= 150 THEN r := 127;
-            WHEN vol <= 300 THEN r := 227;
-            ELSE r = 400;
-        END CASE;
-        RETURN r;
-    END
-$BODY$ language plpgsql;
+ALTER TABLE purchhist
+  ALTER COLUMN week TYPE integer USING CAST(week AS integer);
+ALTER TABLE retail
+  ALTER COLUMN week TYPE integer USING CAST(week AS integer);
 
+ALTER TABLE definitions
+  ALTER COLUMN upc_id TYPE bigint USING CAST(upc_id AS bigint);
+ALTER TABLE purchhist
+  ALTER COLUMN upc_id TYPE bigint USING CAST(upc_id AS bigint);
 
---ALTER TABLE purchhist
---  ALTER COLUMN store_id TYPE integer USING CAST(store_id AS integer);
---ALTER TABLE retail
---  ALTER COLUMN store_id TYPE integer USING CAST(store_id AS integer);
+ALTER TABLE purchhist
+  ALTER COLUMN tot_coupon_val_store TYPE double precision USING CAST(tot_coupon_val_store AS double precision);
 
---ALTER TABLE purchhist
---  ALTER COLUMN tot_coupon_val_manu TYPE double precision USING CAST(tot_coupon_val_manu AS double precision);
---
---UPDATE purchhist
---  SET tot_coupon_val_manu = tot_coupon_val_manu/100;
+UPDATE purchhist SET
+  tot_coupon_val_store = tot_coupon_val_store/100;
+
+ALTER TABLE retail
+  ALTER COLUMN tot_coupon_val_store TYPE double precision USING CAST(tot_coupon_val_store AS double precision); 
+
+UPDATE retail SET
+  tot_coupon_val_store = tot_coupon_val_store/100;
+
+-- discretize the volumes
 
 DROP TABLE IF EXISTS goods_bought;
 CREATE TABLE goods_bought AS
@@ -120,11 +96,6 @@ CREATE TABLE summary_summary AS
 --  ADD COLUMN unit_price double precision;
 --ALTER TABLE retail
 --  ALTER COLUMN units_purchased TYPE integer USING CAST(units_purchased AS integer);
-
---ALTER TABLE retail
---  ALTER COLUMN upc_id TYPE bigint USING CAST(upc_id AS bigint);
---ALTER TABLE upcdata
---  ALTER COLUMN upc_id TYPE bigint USING CAST(upc_id AS bigint);
 
 --ALTER TABLE retail
 --  ADD COLUMN unit_price_net_store_coupon double precision;
@@ -287,61 +258,6 @@ CREATE TABLE results1 AS
   FROM min_unit_price_by_brand3 AS b
   LEFT JOIN inventory1 AS i ON (i.hh_id, i.week) = (b.hh_id, b.week);
 
-
-CREATE OR REPLACE FUNCTION disc_inventory() RETURNS void AS 
-$BODY$
-DECLARE
-  cur CURSOR FOR
-    SELECT r.hh_id, week, vol AS bought, consumption, ave_purchase_size
-    FROM results1 AS r
-    --WHERE hh_id = 2170639
-    INNER JOIN (
-      -- discretized consumption
-      SELECT hh_id, round(consumption) AS consumption, round(ave_purchase_size) AS ave_purchase_size
-      FROM (
-        SELECT 
-          hh_id, 
-          sum(vol)::double precision/(SELECT COUNT(DISTINCT week) FROM key_vars) AS consumption,
-          sum(vol)::double precision/sum(CASE WHEN vol > 0 THEN 1 ELSE 0 END) AS ave_purchase_size
-        FROM inventory1
-        GROUP BY hh_id) AS a
-      WHERE consumption > 4 AND consumption < 56.25
-    ) AS i ON i.hh_id = r.hh_id
-    ORDER BY hh_id, week;
-
-  r RECORD;
-
-  hh_id_prev integer;
-
-  consumption double precision;
-  inventory_curr double precision;
-  inventory_prev double precision;
-
-BEGIN
-  hh_id_prev := -1;
-  
-  FOR r IN cur LOOP
-    IF r.hh_id = hh_id_prev THEN
-      inventory_curr := CASE 
-        WHEN inventory_prev + r.bought - r.consumption <= 0 THEN 0 
-        ELSE inventory_prev  + r.bought - r.consumption
-      END;
-    ELSE
-    
-      RAISE NOTICE 'hh_id: (%), consumption: (%)', r.hh_id, r.consumption;
-      --SELECT avg(vol) INTO vol_avg FROM key_vars4 WHERE hh_id = hh_id_curr
-      inventory_curr := 0.5*r.ave_purchase_size + r.bought;
-      hh_id_prev := r.hh_id;
-    END IF;
-
-    UPDATE results1 SET dweeks_to_go = inventory_curr WHERE hh_id = r.hh_id AND week = r.week;
-    -- WHERE CURRENT OF cur;
-    inventory_prev := inventory_curr;
-  END LOOP;
-END
-$BODY$
-language plpgsql;
-
 CREATE INDEX idx_inventory_hh_id ON inventory1 (hh_id);
 CREATE INDEX idx_results1 ON results1 (hh_id, week);
 
@@ -389,63 +305,6 @@ CREATE TABLE results_final AS
     GROUP BY hh_id
     HAVING max(vol) < 410 AND min(vol) > 0
   );
-
-
-
--- half average purchase volume initial inventory heuristic
-CREATE OR REPLACE FUNCTION disc_wtg() RETURNS void AS 
-$BODY$
-DECLARE
-  cur CURSOR FOR
-    SELECT r.hh_id, week, vol AS bought, consumption, ave_purchase_size
-    FROM results1 AS r
-    --WHERE hh_id = 2170639
-    INNER JOIN (
-      -- discretized consumption
-      SELECT hh_id, round(consumption)::integer AS consumption, round(ave_purchase_size)::integer AS ave_purchase_size
-      FROM (
-        SELECT 
-          hh_id, 
-          sum(vol)::double precision/(SELECT COUNT(DISTINCT week) FROM key_vars) AS consumption,
-          sum(vol)::double precision/sum(CASE WHEN vol > 0 THEN 1 ELSE 0 END) AS ave_purchase_size
-        FROM inventory1
-        GROUP BY hh_id) AS a
-      WHERE consumption > 4 AND consumption < 56.25
-    ) AS i ON i.hh_id = r.hh_id
-    ORDER BY hh_id, week;
-
-  r RECORD;
-
-  hh_id_prev integer;
-
-  consumption integer;
-  inventory_curr integer;
-  inventory_prev integer;
-
-BEGIN
-  hh_id_prev := -1;
-  
-  FOR r IN cur LOOP
-    IF r.hh_id = hh_id_prev THEN
-      inventory_curr := CASE 
-        WHEN inventory_prev -1 + r.bought/r.consumption <= 0 THEN 0 
-        ELSE inventory_prev -1 + r.bought/r.consumption 
-      END;
-    ELSE
-    
-      RAISE NOTICE 'hh_id: (%), consumption: (%)', r.hh_id, r.consumption;
-      -- initial inventory set to make minimum unrestricted inventory zero
-      --inventory_curr := (r.ave_purchase_size/2 + r.bought)/r.consumption;
-      hh_id_prev := r.hh_id;
-    END IF;
-
-    UPDATE results1 SET dinventory = inventory_curr WHERE hh_id = r.hh_id AND week = r.week;
-    -- WHERE CURRENT OF cur;
-    inventory_prev := inventory_curr;
-  END LOOP;
-END
-$BODY$
-language plpgsql;
 
 SELECT hh_id, week, sum(vol/consumption) - row_number() OVER (PARTITIION BY hh_id, ORDER BY week)
 FROM done
@@ -537,52 +396,6 @@ FROM (
   GROUP BY hh_id) AS b
 WHERE done.week = 198601 AND done.hh_id = b.hh_id;
 
--- initial inventory set to make minimum unrestricted inventory zero
-CREATE OR REPLACE FUNCTION disc_wtg_done() RETURNS void AS 
-$BODY$
-DECLARE
-  cur CURSOR FOR
-    SELECT r.hh_id, week, vol AS bought, dconsumption AS consumption, inv_lag
-    FROM done AS r
-    ORDER BY hh_id, week;
-
-  r RECORD;
-
-  hh_id_prev integer;
-
-  consumption integer;
-  inventory_curr integer;
-  inventory_prev integer;
-
-  bought_prev integer;
-  consumption_prev integer;
-
-BEGIN
-  hh_id_prev := -1;
-  
-  FOR r IN cur LOOP
-    IF r.hh_id = hh_id_prev THEN
-      inventory_curr := CASE 
-        WHEN inventory_prev -1 + bought_prev/consumption_prev <= 0 THEN 0 
-        ELSE inventory_prev -1 + bought_prev/consumption_prev
-      END;
-
-      UPDATE done SET inv_lag = inventory_curr WHERE hh_id = r.hh_id AND week = r.week;
-    ELSE
-    
-      RAISE NOTICE 'hh_id: (%), consumption: (%)', r.hh_id, r.consumption;
-
-      hh_id_prev := r.hh_id;
-      inventory_curr := r.inv_lag;
-    END IF;
-
-    bought_prev := r.bought;
-    consumption_prev := r.consumption;
-    inventory_prev := inventory_curr;
-  END LOOP;
-END
-$BODY$
-language plpgsql;
 
 SELECT disc_wtg_done();
 

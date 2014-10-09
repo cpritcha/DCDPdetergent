@@ -2,7 +2,7 @@ setwd("~/Google Drive/School/Masters/FinalPaper/src")
 library(foreign)
 library(data.table)
 
-directory <- "data/detergent/"
+directory <- "data/pbutter/"
 
 load(paste(directory, "data.RData", sep=""))
 data <- data.table(read.dta("data/full.dta"))
