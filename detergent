@@ -8,4 +8,4 @@ mv detergentMain.oxo model/main.oxo
 echo $OXHOME
 
 echo "Starting Detergent Estimation"
-sqsub -r 6.0h -o out.log -q serial --memperproc=4.0G oxl model/main.oxo
+sqsub -r 3.0h -o out.log -q serial --memperproc=3.0G oxl model/main.oxo

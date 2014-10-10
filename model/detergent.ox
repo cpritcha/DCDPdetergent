@@ -45,13 +45,10 @@ DetergentEstimates::DoAll() {
   //mle.maxiter = 15;
   //mle.tolerance = 0.2;
   nfxp->Load();
-
-  /*
+  
   Outcome::OnlyTransitions = TRUE;
 	EMax.DoNotIterate = TRUE;
 	mle -> Iterate(0);
-  */
-
 
 	Detergent::SecondStage();
 	Outcome::OnlyTransitions = FALSE;
@@ -59,7 +56,6 @@ DetergentEstimates::DoAll() {
 	nfxp -> ResetMax();
 	mle -> Iterate(0);
 	
-
 	delete mle, nfxp, EMax;
 	Bellman::Delete();
 }
@@ -122,9 +118,11 @@ Detergent::FirstStage() {
 }
 
 Detergent::SecondStage() {
+	println("\nStarting Second Stage\n");
+
 	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
 	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();
-  hat[PERCIEVED_COUPON_VALUES]->ToggleDoNotVary();
+  //hat[PERCIEVED_COUPON_VALUES]->ToggleDoNotVary();
 	hat[TRANS_PROB_CH][0]->ToggleDoNotVary();
 	hat[TRANS_PROB_CH][1]->ToggleDoNotVary();
   hat[TRANS_PROB_OTHER][0]->ToggleDoNotVary();

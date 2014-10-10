@@ -35,9 +35,10 @@ PButterEstimates::DoAll() {
 	// mle = new NelderMead(nfxp);
 	mle = new BFGS(nfxp);
   mle.Volume = LOUD;
+	mle -> Iterate();
   //mle.maxiter = 15;
   //mle.tolerance = 0.2;
-  nfxp->Load();
+  //nfxp->Load();
 
   /*
   Outcome::OnlyTransitions = TRUE;
@@ -45,13 +46,13 @@ PButterEstimates::DoAll() {
 	mle -> Iterate(0);
   */
 
-
+	/*
 	PButter::SecondStage();
 	Outcome::OnlyTransitions = FALSE;
 	EMax.DoNotIterate = FALSE;
 	nfxp -> ResetMax();
 	mle -> Iterate(0);
-	
+	*/
 
 	delete mle, nfxp, EMax;
 	Bellman::Delete();
