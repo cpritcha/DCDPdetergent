@@ -1,12 +1,35 @@
 #include "pbutter.h"
 
-writeLogEntry(msg) {
-  decl f = fopen("/Users/calvinpritchard/Documents/out.log", "a");
+writeToFile(fname, msg) {
+  decl f = fopen(fname, "a");
   if (isfile(f)) {
     fprintln(f, msg);
-    //fflush(f);
     fclose(f);
   } else print("couldn't open file");
+}
+
+writeLogEntry(msg) {
+	writeToFile("/Users/calvinpritchard/Documents/out.log", msg);
+}
+
+asymptoticConfidenceInterval(solution, invhessian, level) {
+	// calculates a two sided asymptotic normal confidence interval
+	decl n = sizec(invhessian),
+			 m = sizer(invhessian);
+	if (n != m) oxrunerror("invhessian nrows != ncols");
+	if (n != sizer(solution)) oxrunerror("solution nrows != invhessian nrows");
+
+	level = (1+level)/2; 
+
+	decl confidence;
+	decl confidenceMat = zeros(n,2);
+	decl i;
+	for (i = 0; i < n; i++) {
+		confidence = quann(level)*invhessian[i][i];
+		confidenceMat[i][2] = solution[i] + confidence;
+		confidenceMat[i][1] = solution[i] - confidence;
+	}
+	return confidenceMat;
 }
 
 PButterData::PButterData(method) {
@@ -24,7 +47,7 @@ PButterData::PButterData(method) {
 }
 
 PButterEstimates::DoAll() {
-	PButter::FirstStage();
+	PButter::Initialize();
 	EMax = new ValueIteration(0);
 	EMax.vtoler  = 1E-1;
 
@@ -32,33 +55,42 @@ PButterEstimates::DoAll() {
 
 	nfxp = new PanelBB("PeanutButterMLE1", pbutter,PButter::hat);
 	nfxp.Volume = LOUD;
-	// mle = new NelderMead(nfxp);
-	mle = new BFGS(nfxp);
-  mle.Volume = LOUD;
-	mle -> Iterate();
-  //mle.maxiter = 15;
-  //mle.tolerance = 0.2;
-  //nfxp->Load();
 
-  /*
-  Outcome::OnlyTransitions = TRUE;
-	EMax.DoNotIterate = TRUE;
-	mle -> Iterate(0);
-  */
+  mleNM = new NelderMead(nfxp);
+  mleNM.Volume = LOUD;
+	
+	mleBHHH = new BHHH(nfxp);
+	mleBHHH.Volume = LOUD;
+	mleBHHH.maxiter = 1;
+  
+	nfxp->Load();
 
-	/*
+	PButter::FirstStage(mleNM);
+	// first stage estimated in R	
+	//Outcome::OnlyTransitions = TRUE;
+	//EMax.DoNotIterate = TRUE;
+	//mleNM -> Iterate(0);
+	
 	PButter::SecondStage();
 	Outcome::OnlyTransitions = FALSE;
 	EMax.DoNotIterate = FALSE;
 	nfxp -> ResetMax();
-	mle -> Iterate(0);
-	*/
+	mleNM -> Iterate(0);	
+
+	PButter::ThirdStage();
+	// Perform one iteration for all parameters
+	// to get variance/covariance matrix
+	nfxp -> ResetMax();
+	mleBFGS -> Iterate(0);
+
+	writeToFile("/home/cpritcha/paper/src/confidence.log",
+		asymptoticConfidenceInterval(mle.O.F, invert(mle.O.H), 0.95));
 
 	delete mle, nfxp, EMax;
 	Bellman::Delete();
 }
 
-PButter::FirstStage() {
+PButter::Initialize() {
 	hat = new array[N_PARAMS];
   Initialize(1.0,Reachable,FALSE,0);
 
@@ -110,19 +142,16 @@ PButter::FirstStage() {
   coupon_other = new CouponState("coupon_other", hat[TRANS_PROB_OTHER]);
 
   EndogenousStates(coupon_ctl, coupon_jif, coupon_peter, coupon_skippy, coupon_other, weeks_to_go, consumption);
-  //EndogenousStates(weeks_to_go);
-  //ExogenousStates(coupon_ch, coupon_other, coupon_td);
-  //GroupVariables(consumption);
 	CreateSpaces();
+}
+
+PButter::ToggleInventoryVars() {
 	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
 	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();
   hat[PERCIEVED_COUPON_VALUES]->ToggleDoNotVary();
 }
 
-PButter::SecondStage() {
-	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
-	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();
-  hat[PERCIEVED_COUPON_VALUES]->ToggleDoNotVary();
+PButter::ToggleCouponTransitionVars() {
 	hat[TRANS_PROB_CTL][0]->ToggleDoNotVary();
 	hat[TRANS_PROB_CTL][1]->ToggleDoNotVary();
 	hat[TRANS_PROB_JIF][0]->ToggleDoNotVary();
@@ -133,6 +162,20 @@ PButter::SecondStage() {
 	hat[TRANS_PROB_SKIPPY][1]->ToggleDoNotVary();
   hat[TRANS_PROB_OTHER][0]->ToggleDoNotVary();
 	hat[TRANS_PROB_OTHER][1]->ToggleDoNotVary();
+}
+
+PButter::FirstStage() {
+	ToggleInvetoryVars();  
+}
+
+PButter::SecondStage() {
+	ToggleInventoryVars();
+	ToggleCouponTransitionVars();
+
+}
+
+PButter::ThirdStage(estimator) {
+	ToggleCouponTransitionVars();
 }
 
 PButter::Reachable() { return new PButter(); }
@@ -151,7 +194,7 @@ PButter::Utility() {
   println("consumption: ", AV(consumption));
   println("coupon_ch: ", AV(coupon_ch));
 	println("utility1: ", util);
- */
+  */
 
   // inventory holding costs
 	util += CV(hat[ETA])[0]*AV(weeks_to_go) + CV(hat[ETA])[1]*AV(weeks_to_go)^2;

@@ -44,15 +44,21 @@ struct PButter : ExtremeValue {
     <2.0,5.0>, 
     <0.1,0.2>, 
     <1.0,1.0,1.0,1.0,1.0>, 
-    <0.5;0.5>, <0.5;0.5>, <0.5;0.5>, <0.5,0.5>, <0.5,0.5>};
+    <0.0;0.01034117>, <0.07843137;0.09803922>, <0.5073331;0.1775556>, <0.1176471,0.1998359>, <0.04,0.06>};
 
 	static decl purchase; // control variable
 	static decl weeks_to_go, consumption, coupon_ctl, coupon_jif, coupon_peter, coupon_skippy, coupon_other; // state variables
 	static decl normalization;
 
 	static decl hat; // estimated parameters
-	static FirstStage();
-	static SecondStage();
+
+	static Initialize();	
+	static ToggleFirstStageVars();
+	static ToggleSecondStageVars();
+
+	static FirstStage(estimator);
+	static SecondStage(estimator);
+	static ThirdStage(estimator);
 
 	//static Run();
 	static Reachable();
