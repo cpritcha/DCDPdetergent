@@ -47,7 +47,7 @@ PButterData::PButterData(method) {
 }
 
 PButterEstimates::DoAll() {
-	PButter::Initialize();
+	PButter::InitializeStatesParams();
 	EMax = new ValueIteration(0);
 	EMax.vtoler  = 1E-1;
 
@@ -58,14 +58,15 @@ PButterEstimates::DoAll() {
 
   mleNM = new NelderMead(nfxp);
   mleNM.Volume = LOUD;
-	
+  mleNM.maxiter = 1;
+
 	mleBHHH = new BHHH(nfxp);
 	mleBHHH.Volume = LOUD;
 	mleBHHH.maxiter = 1;
   
-	nfxp->Load();
+	//nfxp->Load();
 
-	PButter::FirstStage(mleNM);
+	PButter::FirstStage();
 	// first stage estimated in R	
 	//Outcome::OnlyTransitions = TRUE;
 	//EMax.DoNotIterate = TRUE;
@@ -81,16 +82,16 @@ PButterEstimates::DoAll() {
 	// Perform one iteration for all parameters
 	// to get variance/covariance matrix
 	nfxp -> ResetMax();
-	mleBFGS -> Iterate(0);
+	mleBHHH -> Iterate(0);
 
-	writeToFile("/home/cpritcha/paper/src/confidence.log",
-		asymptoticConfidenceInterval(mle.O.F, invert(mle.O.H), 0.95));
+	writeToFile("confint.log",
+		asymptoticConfidenceInterval(mleBHHH.O.F, invert(mleBHHH.O.H), 0.95));
 
-	delete mle, nfxp, EMax;
+	delete mleNM, mleBHHH, nfxp, EMax;
 	Bellman::Delete();
 }
 
-PButter::Initialize() {
+PButter::InitializeStatesParams() {
 	hat = new array[N_PARAMS];
   Initialize(1.0,Reachable,FALSE,0);
 
@@ -165,7 +166,7 @@ PButter::ToggleCouponTransitionVars() {
 }
 
 PButter::FirstStage() {
-	ToggleInvetoryVars();  
+	ToggleInventoryVars();  
 }
 
 PButter::SecondStage() {
@@ -174,7 +175,7 @@ PButter::SecondStage() {
 
 }
 
-PButter::ThirdStage(estimator) {
+PButter::ThirdStage() {
 	ToggleCouponTransitionVars();
 }
 
