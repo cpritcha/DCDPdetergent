@@ -84,8 +84,10 @@ PButterEstimates::DoAll() {
 	nfxp -> ResetMax();
 	mleBHHH -> Iterate(0);
 
-	writeToFile("confint.log",
-		asymptoticConfidenceInterval(mleBHHH.O.F, invert(mleBHHH.O.H), 0.95));
+	//writeToFile("confint.log",
+	//	asymptoticConfidenceInterval(mleBHHH.O.cur.X, invert(mleBHHH.OC.H), 0.95));
+  writeToFile("confint.log", "parameters:\n" + sprint(mleBHHH.O.cur.X));
+  wroteToFile("confint.log", "hessian:\n" + sprint(mleBHHH.OC.H)); 
 
 	delete mleNM, mleBHHH, nfxp, EMax;
 	Bellman::Delete();
