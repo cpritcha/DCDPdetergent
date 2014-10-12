@@ -4,7 +4,7 @@
 
 struct PButterEstimates {
 	static decl EMax, pbutter, nfxp, mleNM, mleBHHH;
-	static DoAll(_datafile,_logfile,_resultfile);
+	static DoAll(_datafile, _logfile, _resultfile, _savefile);
 }
 
 struct PButterData : DataSet {

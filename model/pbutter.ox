@@ -48,7 +48,7 @@ PButterData::PButterData(method, datafile) {
 	Read(datafile);
 }
 
-PButterEstimates::DoAll(_datafile, _logfile, _resultsfile) {
+PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 	logfile = _logfile;
 
 	PButter::InitializeStatesParams();
@@ -59,6 +59,7 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile) {
 
 	nfxp = new PanelBB("PeanutButterMLE1", pbutter,PButter::hat);
 	nfxp.Volume = LOUD;
+	nfxp.fname = _savefile;
 
   mleNM = new BFGS(nfxp); //new NelderMead(nfxp);
   mleNM.Volume = LOUD;
@@ -68,8 +69,8 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile) {
 	mleBHHH.Volume = LOUD;
 	mleBHHH.maxiter = 2;
   
-	//nfxp->Load();
-
+	nfxp->Load(_savefile);
+	//nfxp->Save();
 	println("\nFirst Stage");
 	PButter::FirstStage();
 	// first stage estimated in R	
@@ -90,6 +91,8 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile) {
 	// to get variance/covariance matrix
 	nfxp -> ResetMax();
 	mleBHHH -> Iterate(0);
+
+	nfxp->Save(_savefile);
 
   writeToFile(_resultsfile, "hessian:\n" + sprint(mleBHHH.OC.H)); 
   writeToFile(_resultsfile, "parameters:\n" + sprint(mleBHHH.O.cur.X));
