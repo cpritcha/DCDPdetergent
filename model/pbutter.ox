@@ -1,5 +1,7 @@
 #include "pbutter.h"
 
+decl logfile;
+
 writeToFile(fname, msg) {
   decl f = fopen(fname, "a");
   if (isfile(f)) {
@@ -9,10 +11,10 @@ writeToFile(fname, msg) {
 }
 
 writeLogEntry(msg) {
-	writeToFile("/Users/calvinpritchard/Documents/out.log", msg);
+	writeToFile(logfile, msg);
 }
 
-asymptoticConfidenceInterval(solution, invhessian, level) {
+aconfint(solution, invhessian, level) {
 	// calculates a two sided asymptotic normal confidence interval
 	decl n = sizec(invhessian),
 			 m = sizer(invhessian);
@@ -32,7 +34,7 @@ asymptoticConfidenceInterval(solution, invhessian, level) {
 	return confidenceMat;
 }
 
-PButterData::PButterData(method) {
+PButterData::PButterData(method, datafile) {
 	DataSet("PeanutButter", method, TRUE);
 	Observed(PButter::weeks_to_go,"wks_to_g",
 					 PButter::purchase,"purch",
@@ -43,51 +45,56 @@ PButterData::PButterData(method) {
 					 PButter::coupon_other, "cpn_oth",
 					 PButter::consumption, "cons");
 	IDColumn("hh_id");
-	Read("../data/pbutter.dta");
+	Read(datafile);
 }
 
-PButterEstimates::DoAll() {
+PButterEstimates::DoAll(_datafile, _logfile, _resultsfile) {
+	logfile = _logfile;
+
 	PButter::InitializeStatesParams();
 	EMax = new ValueIteration(0);
 	EMax.vtoler  = 1E-1;
 
-  pbutter = new PButterData(EMax);
+  pbutter = new PButterData(EMax, _datafile);
 
 	nfxp = new PanelBB("PeanutButterMLE1", pbutter,PButter::hat);
 	nfxp.Volume = LOUD;
 
-  mleNM = new NelderMead(nfxp);
+  mleNM = new BFGS(nfxp); //new NelderMead(nfxp);
   mleNM.Volume = LOUD;
-  mleNM.maxiter = 1;
+  mleNM.maxiter = 2;
 
 	mleBHHH = new BHHH(nfxp);
 	mleBHHH.Volume = LOUD;
-	mleBHHH.maxiter = 1;
+	mleBHHH.maxiter = 2;
   
 	//nfxp->Load();
 
+	println("\nFirst Stage");
 	PButter::FirstStage();
 	// first stage estimated in R	
 	//Outcome::OnlyTransitions = TRUE;
 	//EMax.DoNotIterate = TRUE;
 	//mleNM -> Iterate(0);
 	
+	println("\nSecond Stage");
 	PButter::SecondStage();
 	Outcome::OnlyTransitions = FALSE;
 	EMax.DoNotIterate = FALSE;
 	nfxp -> ResetMax();
 	mleNM -> Iterate(0);	
 
+	println("\nThird Stage");
 	PButter::ThirdStage();
 	// Perform one iteration for all parameters
 	// to get variance/covariance matrix
 	nfxp -> ResetMax();
 	mleBHHH -> Iterate(0);
 
-	//writeToFile("confint.log",
-	//	asymptoticConfidenceInterval(mleBHHH.O.cur.X, invert(mleBHHH.OC.H), 0.95));
-  writeToFile("confint.log", "parameters:\n" + sprint(mleBHHH.O.cur.X));
-  wroteToFile("confint.log", "hessian:\n" + sprint(mleBHHH.OC.H)); 
+  writeToFile(_resultsfile, "hessian:\n" + sprint(mleBHHH.OC.H)); 
+  writeToFile(_resultsfile, "parameters:\n" + sprint(mleBHHH.O.cur.X));
+	writeToFile(_resultsfile,
+		aconfint(mleBHHH.O.cur.X, invert(mleBHHH.OC.H), 0.95));
 
 	delete mleNM, mleBHHH, nfxp, EMax;
 	Bellman::Delete();

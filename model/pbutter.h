@@ -4,11 +4,11 @@
 
 struct PButterEstimates {
 	static decl EMax, pbutter, nfxp, mleNM, mleBHHH;
-	static DoAll();
+	static DoAll(_datafile,_logfile,_resultfile);
 }
 
 struct PButterData : DataSet {
-	PButterData(method=0);
+	PButterData(method, datafile);
 }
 
 // inherits from ergodic because any state is reachable from any other state given enough time
@@ -44,7 +44,7 @@ struct PButter : ExtremeValue {
     <2.0,5.0>, 
     <0.1,0.2>, 
     <1.0,1.0,1.0,1.0,1.0>, 
-    <0.001;0.01034117>, <0.07843137;0.09803922>, <0.5073331;0.1775556>, <0.1176471,0.1998359>, <0.04,0.06>};
+    <0.01;0.01034117>, <0.07843137;0.09803922>, <0.5073331;0.1775556>, <0.1176471,0.1998359>, <0.04,0.06>};
 
 	static decl purchase; // control variable
 	static decl weeks_to_go, consumption, coupon_ctl, coupon_jif, coupon_peter, coupon_skippy, coupon_other; // state variables
