@@ -1,4 +1,4 @@
-# Ouput
+# Output
 
 - `.out` files contain final output
 - `.log` files contain information on the model convergence
