@@ -1,0 +1,20 @@
+#!/bin/bash
+
+version=${2:-1}
+datafile="data/$1.dta"
+logfile="output/$1$version.log"
+resultsfile="output/$1$version.out"
+savefile="output/$1$version"
+
+rm -f ${logfile}
+rm -f ${resultsfile}
+rm -f model/pbutterMainSimple.oxo
+oxl -c model/pbutterMainSimple.ox model/Inventory.h model/pbutter.h
+mv pbutterMainSimple.oxo model/.
+
+cmd="sqsub -r 10.0m -o ${logfile} -q serial --memperproc=2.5G
+ oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
+echo "Starting Peanut Butter Estimation"
+echo $cmd
+
+eval $cmd

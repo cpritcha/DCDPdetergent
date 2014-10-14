@@ -1,5 +1,14 @@
 #include "detergent.h"
 
+writeLogEntry(msg) {
+  decl f = fopen("/Users/calvinpritchard/Documents/out.log", "a");
+  if (isfile(f)) {
+    fprintln(f, msg);
+    //fflush(f);
+    fclose(f);
+  } else print("couldn't open file");
+}
+
 #ifdef DEBUG
 prettyprint(label, x) {
   decl sep = "\n--------------------------\n";
@@ -18,7 +27,7 @@ DetergentData::DetergentData(method) {
 					 Detergent::coupon_td, "cpn_td",
 					 Detergent::consumption, "cons");
 	IDColumn("hh_id");
-	Read("sample.dta");
+	Read("../data/full.dta");
 }
 
 DetergentEstimates::DoAll() {
@@ -36,8 +45,8 @@ DetergentEstimates::DoAll() {
   //mle.maxiter = 15;
   //mle.tolerance = 0.2;
   nfxp->Load();
-
-	Outcome::OnlyTransitions = TRUE;
+  
+  Outcome::OnlyTransitions = TRUE;
 	EMax.DoNotIterate = TRUE;
 	mle -> Iterate(0);
 
@@ -46,7 +55,7 @@ DetergentEstimates::DoAll() {
 	EMax.DoNotIterate = FALSE;
 	nfxp -> ResetMax();
 	mle -> Iterate(0);
-
+	
 	delete mle, nfxp, EMax;
 	Bellman::Delete();
 }
@@ -82,11 +91,11 @@ Detergent::FirstStage() {
   Actions(purchase);
 	prettyprint("Purchases", purchase);
 
-  consumption = new FixedEffect("consumption", 11);
-  consumption.actual = (consumption.vals + 1)*5;
+  consumption = new FixedEffect("consumption", Nconsumption);
+  consumption.actual = (consumption.vals + 4);
   prettyprint("Consumption", consumption);
 
-  weeks_to_go = new InventoryState("weeks_to_go", NX, consumption, purchase);
+  weeks_to_go = new InventoryState("weeks_to_go", Nwtg, consumption, purchase);
   prettyprint("Weeks Left", weeks_to_go);
 
   coupon_ch = new CouponState("coupon_ch", hat[TRANS_PROB_CH]);
@@ -109,9 +118,11 @@ Detergent::FirstStage() {
 }
 
 Detergent::SecondStage() {
+	println("\nStarting Second Stage\n");
+
 	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
 	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();
-  hat[PERCIEVED_COUPON_VALUES]->ToggleDoNotVary();
+  //hat[PERCIEVED_COUPON_VALUES]->ToggleDoNotVary();
 	hat[TRANS_PROB_CH][0]->ToggleDoNotVary();
 	hat[TRANS_PROB_CH][1]->ToggleDoNotVary();
   hat[TRANS_PROB_OTHER][0]->ToggleDoNotVary();
@@ -123,7 +134,7 @@ Detergent::SecondStage() {
 Detergent::Reachable() { return new Detergent(); }
 
 Detergent::Utility() {
-	//println("start utility");
+	// println("start utility");
   decl buy = aa(purchase);
 
   decl util = zeros(sizer(buy),1);
@@ -146,6 +157,7 @@ Detergent::Utility() {
   util -= (CV(hat[GAMMA])[0]*AV(coupon_ch) + CV(hat[GAMMA])[1]*AV(coupon_other) +CV(hat[GAMMA])[2]*AV(coupon_td)) * 
     (buy .? 1 .: 0);
   //println("utility3: ", util);
-
-  return util;
+  
+  //writeLogEntry(sprint(util'));
+  return util/10000;
 }

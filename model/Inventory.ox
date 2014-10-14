@@ -3,7 +3,7 @@ InventoryState::next(const FeasA, const Inventory, const Bought, const Consumpti
   
   decl vBoughtVolsFeasA = Bought.actual[FeasA[][Bought.pos]];
   decl vFeasibleInventoryStates = 
-    setbounds(AV(Inventory) -1 + round(vBoughtVolsFeasA/AV(Consumption)), 
+    setbounds(AV(Inventory) -1 + idiv(vBoughtVolsFeasA, AV(Consumption)), 
         Inventory.vals[0],
         Inventory.vals[sizerc(Inventory.vals)-1]);
   decl vUniqueStates = unique(vFeasibleInventoryStates);

@@ -1,19 +1,19 @@
-#import "Inventory"
+#import "../model/Inventory"
 #import <database>
 #import "DDP"
 
 feasible_hh(timep, wtg, purch, cons) {
   decl i, n = sizerc(wtg);
 
-  decl consumption = new ConsumptionState("cons", 11);
-  consumption.actual = (consumption.vals + 1)*5;
+  decl consumption = new ConsumptionState("cons", 64);
+  consumption.actual = consumption.vals + 1;
   //print("Actual: ", consumption);
 
-  decl purchase = new ActionVariable("purch", 7);
-  purchase.actual = <0;17;42;72;127;227;400.0>;
+  decl purchase = new ActionVariable("purch", 6);
+  purchase.actual = <0;12;18;28;40;80.0>;
   purchase.pos = 0;
 
-  decl inventory = new InventoryState("inv", 115, consumption, purchase);
+  decl inventory = new InventoryState("inv", 59, consumption, purchase);
   decl FeasA = purchase.vals';
 
   decl expected_transition, actual_transition;
@@ -29,7 +29,7 @@ feasible_hh(timep, wtg, purch, cons) {
     [exp_feas_states, exp_trans_prob] = inventory.Transit(FeasA); 
     expected_transition = max(exp_feas_states .* exp_trans_prob[purch[i]][]);
     
-    if (i > 130) {
+    /*if (i > 130) {
     print("purch: ", purchase.v);
     print("\t\twtg: ", AV(inventory));
     print("\t\tcons: ", AV(consumption), "\t", consumption.actual[consumption.v], "\t", cons[i]);
@@ -38,19 +38,19 @@ feasible_hh(timep, wtg, purch, cons) {
         "etp: ", exp_trans_prob[purch[i]][]);
     decl x = exp_feas_states .* exp_trans_prob[purch[i]][];
     print("x: ", x);
-    }
+    }*/
     
     // actual feasible transition
     actual_transition = wtg[i+1];
     
-    //if (actual_transition != expected_transition) {
+    if (actual_transition != expected_transition) {
     print("Time: ", timep[i+1],
         "\tConsump: ", AV(consumption), "\t", consumption.v, "\t", consumption.actual[consumption.v], 
-        "\tPurchase: ", purch[i],
+        "\tPurchase: ", purch[i], "\t", purchase.actual[purch[i]], 
         "\tInventory: ", AV(inventory),
         "\tExpected: ", expected_transition,
         "\tActual: ", actual_transition, "\n");
-    //}
+    }
 
   }
 }
@@ -86,7 +86,7 @@ feasible_hhs(db) {
 main() {
   // load in the data 
   decl db = new Database();
-  db.Load("sample.dta");
+  db.Load("../data/full_init.dta");
 
   feasible_hhs(db);
 }
