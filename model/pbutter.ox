@@ -103,7 +103,7 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 	Bellman::Delete();
 }
 
-PButter::InitializeStatesParams() {
+PButter::InitializeStatesParams() {	
 	hat = new array[N_PARAMS];
   Initialize(1.0,Reachable,FALSE,0);
 
@@ -223,5 +223,5 @@ PButter::Utility() {
   //println("utility3: ", util);
   
   //writeLogEntry(sprint(util'));
-  return util/10000;
+  return -util/10000;
 }
