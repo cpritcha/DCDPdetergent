@@ -26,9 +26,9 @@ struct PButter : ExtremeValue {
                     Nconsumption = 64; // no one buys more than a years worth of laundry detergent
 
 	static const decl init_hat = {
-    0.99, 
-    <1.0>, 
-    <1,1,1>}; 
+    0.01, 
+    <2.0,5.0>, 
+    <0.1>}; 
 
 	static decl purchase; // control variable
 	static decl weeks_to_go, consumption, coupon_ctl, coupon_jif, coupon_peter, coupon_skippy, coupon_other; // state variables

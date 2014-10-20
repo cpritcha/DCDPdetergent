@@ -12,7 +12,7 @@ rm -f model/pbutterMainSimple.oxo
 oxl -c model/pbutterMainSimple.ox model/Inventory.h model/pbutter.h
 mv pbutterMainSimple.oxo model/.
 
-cmd="sqsub -r 10.0m -o ${logfile} -q serial --memperproc=2.5G
+cmd="sqsub -r 2.0h -o ${logfile} -q serial --memperproc=2.0G
  oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
 echo "Starting Peanut Butter Estimation"
 echo $cmd

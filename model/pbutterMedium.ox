@@ -95,22 +95,19 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 	PButter::ThirdStage();
 	// Perform one iteration for all parameters
 	// to get variance/covariance matrix
-	//nfxp -> Hessian();
 	nfxp -> ResetMax();
-	//mleBHHH -> Gupdate();
-	//mleBHHH -> HHupdate(1);
 	mleBHHH -> Iterate(0);
 
 	nfxp->Save(_savefile);
 
-	aconfint(_resultsfile, mleNM.O.cur.X, invert(nfxp.cur.H), 0.95);
+	aconfint(_resultsfile, mleBHHH.O.cur.X, invert(mleBHHH.OC.H), 0.95);
 
 	delete mleNM, mleBHHH, nfxp, EMax;
 	Bellman::Delete();
 }
 
 PButter::InitializeStatesParams() {
-	rho = 1.0; // ex-post smoothing parameter
+	rho = 0.75; // ex-post smoothing parameter
 	
 	hat = new array[N_PARAMS];
   Initialize(1.0,Reachable,FALSE,0);
@@ -159,33 +156,14 @@ PButter::Utility() {
   decl util = zeros(sizer(buy),1);
 
   // stockout costs
-  util += (CV(hat[ALPHA])[0])*(buy .? 0 .: 1)*
+  util += (CV(hat[ALPHA])[0] +  CV(hat[ALPHA])[1]*AV(consumption))*(buy .? 0 .: 1)*
     (AV(weeks_to_go) > 0 ? 0 : 1);
   
   // inventory holding costs
-  /*
-	util += CV(hat[ETA])[0]*(AV(weeks_to_go) < 3) + 
-		CV(hat[ETA])[1]*(AV(weeks_to_go) < 6) +
-		CV(hat[ETA])[2]*(AV(weeks_to_go) < 20) + 
-		CV(hat[ETA])[3];
-	*/
+	util += CV(hat[ETA])[0]*(AV(weeks_to_go) + 1);
+  
+	//decl normalization = -1e-2*(log(Nwtg)*CV(hat[ETA])[0] + log(Nconsumption)*CV(hat[ALPHA])[1])/2;
 
-	/*
-	util += CV(hat[ETA])[0]*(AV(weeks_to_go) < 10) +
-		CV(hat[ETA])[1]*(AV(weeks_to_go) >= 10 && AV(weeks_to_go) < 20) + 
-		CV(hat[ETA])[2]*(AV(weeks_to_go) >= 20);
-  */
-	decl knotw = 15;
-
-	decl wght0 = (AV(weeks_to_go) <= knotw)*(knotw - AV(weeks_to_go))/knotw,
-			 wght1 = (AV(weeks_to_go) <= knotw)*(AV(weeks_to_go))/knotw + 
-								(AV(weeks_to_go) > knotw && AV(weeks_to_go) <= 2*knotw)*(2*knotw - AV(weeks_to_go))/knotw,
-			 wght2 = (AV(weeks_to_go) >= knotw && AV(weeks_to_go) <= 2*knotw)*(AV(weeks_to_go) - knotw)/knotw + 
-								(AV(weeks_to_go) > 2*knotw);
-			 //wght3 = (AV(weeks_to_go) >= 
-
-	util += CV(hat[ETA])[0]*wght0 +
-		CV(hat[ETA])[1]*wght1 +	CV(hat[ETA])[1]*wght2;
 	/*
 	if (util > maxutil) {
 		writeLogEntry("maxutil: " + sprint(util) + "\t\tnormalization: " + sprint(normalization));
@@ -196,5 +174,5 @@ PButter::Utility() {
 		minutil = util;
 	}*/
   //writeLogEntry(sprint(util'));
-  return -util;
+  return -util + normalization;
 }
