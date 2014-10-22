@@ -16,19 +16,19 @@ struct PButter : ExtremeValue {
 	enum{DISCOUNT, 
 			 STOCKOUT_COSTS, 
 			 INVENTORY_HOLDING_COSTS, 
-       N_PARAMS
+			 PERCIEVED_COUPON_VALUES,
+       TRANS_PROB_CTL,
+       TRANS_PROB_JIF,
+       TRANS_PROB_PETER,
+       TRANS_PROB_SKIPPY,
+       TRANS_PROB_OTHER
   };
 
-	enum{DELTA,ALPHA,ETA};
+	enum{DELTA,ALPHA,ETA,GAMMA,Q_CTL,Q_JIF,Q_PETER,Q_SKIPPY,Q_OTHER};
 
 	// maxmimum weeks of laundry detergent inventory
 	static const decl Nwtg = 59,
                     Nconsumption = 64; // no one buys more than a years worth of laundry detergent
-
-	static const decl init_hat = {
-    0.99, 
-    <1.0>, 
-    <1,1,1>}; 
 
 	static decl purchase; // control variable
 	static decl weeks_to_go, consumption, coupon_ctl, coupon_jif, coupon_peter, coupon_skippy, coupon_other; // state variables
@@ -39,6 +39,7 @@ struct PButter : ExtremeValue {
 	static InitializeStatesParams();	
 	static ToggleInventoryVars();
 	static ToggleCouponTransitionVars();
+	static ToggleBrandPreferenceVars();
 
 	static FirstStage();
 	static SecondStage();

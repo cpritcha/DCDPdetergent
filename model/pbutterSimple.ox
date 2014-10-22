@@ -45,15 +45,6 @@ aconfint(resultsfile, solution, invhessian, level) {
 	writeToFile(resultsfile, "confidence interval:\n" + sprint(confidenceMat));
 }
 
-PButterData::PButterData(method, datafile) {
-	DataSet("PeanutButter", method, TRUE);
-	Observed(PButter::weeks_to_go,"wks_to_g",
-					 PButter::purchase,"purch",
-	  			 PButter::consumption, "cons");
-	IDColumn("hh_id");
-	Read(datafile);
-}
-
 PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 	logfile = _logfile;
 
@@ -69,7 +60,6 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 
   mleNM = new NelderMead(nfxp); //new NelderMead(nfxp);
   mleNM.Volume = LOUD;
-  //mleNM.maxiter = 1;
 
 	mleBHHH = new BHHH(nfxp);
 	mleBHHH.Volume = LOUD;
@@ -95,10 +85,7 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 	PButter::ThirdStage();
 	// Perform one iteration for all parameters
 	// to get variance/covariance matrix
-	//nfxp -> Hessian();
 	nfxp -> ResetMax();
-	//mleBHHH -> Gupdate();
-	//mleBHHH -> HHupdate(1);
 	mleBHHH -> Iterate(0);
 
 	nfxp->Save(_savefile);
@@ -109,92 +96,5 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 	Bellman::Delete();
 }
 
-PButter::InitializeStatesParams() {
-	rho = 1.0; // ex-post smoothing parameter
-	
-	hat = new array[N_PARAMS];
-  Initialize(1.0,Reachable,FALSE,0);
-
-	hat[DISCOUNT] = new Determined("delta",init_hat[DISCOUNT]);
-	hat[STOCKOUT_COSTS] = new Coefficients("alpha", init_hat[STOCKOUT_COSTS]);
-	hat[INVENTORY_HOLDING_COSTS] = new Coefficients("eta", init_hat[INVENTORY_HOLDING_COSTS]);
-  
- 	SetDelta(hat[DISCOUNT]);
-
-	purchase = new ActionVariable("purchase", 6);
-  purchase.actual = <0;12;18;28;40;80.0>;
-  Actions(purchase);
-
-  consumption = new FixedEffect("consumption", Nconsumption);
-  consumption.actual = (consumption.vals + 1);
-
-  weeks_to_go = new InventoryState("weeks_to_go", Nwtg, consumption, purchase);
-
-  EndogenousStates(weeks_to_go, consumption);
-	CreateSpaces();
-}
-
-PButter::ToggleInventoryVars() {
-	hat[STOCKOUT_COSTS]->ToggleDoNotVary();
-	hat[INVENTORY_HOLDING_COSTS]->ToggleDoNotVary();
-}
-
-PButter::FirstStage() {
-	ToggleInventoryVars();  
-}
-
-PButter::SecondStage() {
-	ToggleInventoryVars();
-}
-
-PButter::ThirdStage() {
-}
 
 PButter::Reachable() { return new PButter(); }
-
-PButter::Utility() {
-	// println("start utility");
-  decl buy = aa(purchase);
-
-  decl util = zeros(sizer(buy),1);
-
-  // stockout costs
-  util += (CV(hat[ALPHA])[0])*(buy .? 0 .: 1)*
-    (AV(weeks_to_go) > 0 ? 0 : 1);
-  
-  // inventory holding costs
-  /*
-	util += CV(hat[ETA])[0]*(AV(weeks_to_go) < 3) + 
-		CV(hat[ETA])[1]*(AV(weeks_to_go) < 6) +
-		CV(hat[ETA])[2]*(AV(weeks_to_go) < 20) + 
-		CV(hat[ETA])[3];
-	*/
-
-	/*
-	util += CV(hat[ETA])[0]*(AV(weeks_to_go) < 10) +
-		CV(hat[ETA])[1]*(AV(weeks_to_go) >= 10 && AV(weeks_to_go) < 20) + 
-		CV(hat[ETA])[2]*(AV(weeks_to_go) >= 20);
-  */
-	decl knotw = 15;
-
-	decl wght0 = (AV(weeks_to_go) <= knotw)*(knotw - AV(weeks_to_go))/knotw,
-			 wght1 = (AV(weeks_to_go) <= knotw)*(AV(weeks_to_go))/knotw + 
-								(AV(weeks_to_go) > knotw && AV(weeks_to_go) <= 2*knotw)*(2*knotw - AV(weeks_to_go))/knotw,
-			 wght2 = (AV(weeks_to_go) >= knotw && AV(weeks_to_go) <= 2*knotw)*(AV(weeks_to_go) - knotw)/knotw + 
-								(AV(weeks_to_go) > 2*knotw);
-			 //wght3 = (AV(weeks_to_go) >= 
-
-	util += CV(hat[ETA])[0]*wght0 +
-		CV(hat[ETA])[1]*wght1 +	CV(hat[ETA])[1]*wght2;
-	/*
-	if (util > maxutil) {
-		writeLogEntry("maxutil: " + sprint(util) + "\t\tnormalization: " + sprint(normalization));
-		maxutil = util;
-	}
-	if (util < minutil) {
-		writeLogEntry("minutil: " + sprint(util) + "\t\tnormalization: " + sprint(normalization));
-		minutil = util;
-	}*/
-  //writeLogEntry(sprint(util'));
-  return -util;
-}
