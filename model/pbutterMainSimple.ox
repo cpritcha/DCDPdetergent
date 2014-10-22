@@ -1,5 +1,10 @@
 #import "pbutterSimple"
 
+/*
+ * The Ox preprocessor does not support #if directive 
+ * so do not refactor
+ */
+
 #ifdef LOW
 const decl DR = 0.1;
 #endif
