@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# command line example
+#  ./pbs pbutter _test
+#   means to run the model on pbutter.dta and name
+#   output files "pbutter_test.*"
+
+
+# datefile is assumed to reside in the output/ folder
 version=${2:-1}
 datafile="data/$1.dta"
 logfile="output/$1$version.log"
@@ -14,8 +21,12 @@ oxl  -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
 #oxl -DVHIGH+LINEAR+COMPLEX -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
 mv pbutterMainSimple.oxo model/.
 
-cmd="sqsub -r 6.0h -o ${logfile} -q serial --memperproc=3.5G
- oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
+# to run without sharcnet
+cmd="oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
+
+# to run on sharcnet
+#cmd="sqsub -r 6.0h -o ${logfile} -q serial --memperproc=3.5G
+# oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
 echo "Starting Peanut Butter Estimation"
 echo $cmd
 
