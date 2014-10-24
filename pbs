@@ -9,15 +9,10 @@ savefile="output/$1$version"
 rm -f ${logfile}
 rm -f ${resultsfile}
 rm -f model/pbutterMainSimple.oxo #model/pbutterSimple.oxo model/Inventory.oxo
-#oxl -c model/Inventory.h
-#oxl -DVHIGH+LINEAR -c model/pbutterSimple.h
-#oxl -c model/pbutterMainSimple.ox
 
-oxl -DVHIGH+LINEAR+COMPLEX -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
-#mv Inventory.oxo model/.
-#mv pbutterSimple.oxo model/.
+oxl  -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
+#oxl -DVHIGH+LINEAR+COMPLEX -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
 mv pbutterMainSimple.oxo model/.
-#mv modelspecific.oxo model/.
 
 cmd="sqsub -r 6.0h -o ${logfile} -q serial --memperproc=3.5G
  oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"

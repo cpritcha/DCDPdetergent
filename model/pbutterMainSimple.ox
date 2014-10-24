@@ -5,6 +5,8 @@
  * so do not refactor
  */
 
+
+/*
 #ifdef LOW
 const decl DR = 0.1;
 #endif
@@ -14,13 +16,13 @@ const decl DR = 0.5;
 #ifdef HIGH
 const decl DR = 0.9;
 #endif
-#ifdef VHIGH
+#ifdef VHIGH*/
 const decl DR = 0.99;
-#endif 
+//#endif 
 
-#ifdef LINEAR
+//#ifdef LINEAR
 // linear utility
-#ifdef COMPLEX
+//#ifdef COMPLEX
 decl init_hat = {
 	DR,
 	1.0,
@@ -49,7 +51,7 @@ PButter::Utility() {
  
 	return -cost;
 }
-#else
+/*#else
 decl init_hat = {
 	DR,
 	1.0,
@@ -169,9 +171,14 @@ PButter::Utility() {
 
 	return -cost;
 }
-#endif
+#endif*/
 
-#ifdef COMPLEX
+//#ifdef COMPLEX
+
+/*
+ * Full model. Includes coupons
+ */
+
 PButterData::PButterData(method, datafile) {
 	DataSet("PeanutButter", method, TRUE);
 	Observed(PButter::weeks_to_go,"wks_to_g",
@@ -276,7 +283,13 @@ PButter::SecondStage() {
 
 PButter::ThirdStage() {
 }
-#else
+//#else
+
+/*
+ * Simple model. No coupon information
+ */
+
+/*
 PButterData::PButterData(method, datafile) {
 	DataSet("PeanutButter", method, TRUE);
 	Observed(PButter::weeks_to_go,"wks_to_g",
@@ -332,7 +345,7 @@ PButter::SecondStage() {
 }
 
 PButter::ThirdStage() {}
-#endif
+#endif*/
 
 validate(args) {
 	if (sizec(args) != 5) oxrunerror("DoAll() must have four arguments");
