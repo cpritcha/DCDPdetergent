@@ -26,7 +26,7 @@ decl init_hat = {
 	1.0,
 	<1.0>,
 	<0,0,0,0,0>,
-	<0,0.01034117>, //CTL
+	<0.001,0.01034117>, //CTL
 	<0.07843137,0.09803922>, //JIF
 	<0.5073331,0.1775556>, //PETER
 	<0.1176471,0.1998359>, //SKIPPY
@@ -75,7 +75,7 @@ decl init_hat = {
 	1.0,
 	<1.0,1.0>,
 	<0,0,0,0,0>,
-	<0,0.01034117>, //CTL
+	<0.001,0.01034117>, //CTL
 	<0.07843137,0.09803922>, //JIF
 	<0.5073331,0.1775556>, //PETER
 	<0.1176471,0.1998359>, //SKIPPY
@@ -196,7 +196,7 @@ PButter::InitializeStatesParams() {
 	hat[PERCIEVED_COUPON_VALUES] = new Coefficients("gamma", init_hat[PERCIEVED_COUPON_VALUES]);
   
   hat[TRANS_PROB_CTL] = {
-    new Determined("q_ctl1", init_hat[TRANS_PROB_CTL][0]),
+    new Probability("q_ctl1", init_hat[TRANS_PROB_CTL][0]),
     new Probability("q_ctl2", init_hat[TRANS_PROB_CTL][1])
   };
   
