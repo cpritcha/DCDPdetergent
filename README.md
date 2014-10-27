@@ -17,3 +17,5 @@ oxl -DVHIGH+QUAD+COMPLEX -c <files>
 
 The `-D` switch `VHIGH` sets the discount rate, `QUAD` sets the inventory holding cost to be quadratic
 and `COMPLEX` adds coupon transition and brand preference variables.
+
+Logfiles are [here](https://gist.github.com/ff7039506fa6c8dd40a1)
