@@ -22,11 +22,11 @@ oxl  -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
 mv pbutterMainSimple.oxo model/.
 
 # to run without sharcnet
-cmd="oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
+#cmd="oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
 
 # to run on sharcnet
-#cmd="sqsub -r 6.0h -o ${logfile} -q serial --memperproc=3.5G
-# oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
+cmd="sqsub -r 6.0h -o ${logfile} -q serial --memperproc=3.5G
+ oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
 echo "Starting Peanut Butter Estimation"
 echo $cmd
 

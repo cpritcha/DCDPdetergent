@@ -234,7 +234,7 @@ PButter::InitializeStatesParams() {
   Actions(purchase);
 
   consumption = new FixedEffect("consumption", Nconsumption);
-  consumption.actual = (consumption.vals + 1);
+  consumption.actual = ((consumption.vals + 1)');
 
   weeks_to_go = new InventoryState("weeks_to_go", Nwtg, consumption, purchase);
 
@@ -348,7 +348,9 @@ PButter::ThirdStage() {}
 #endif*/
 
 validate(args) {
-	if (sizec(args) != 5) oxrunerror("DoAll() must have four arguments");
+	if (sizec(args) != 5) {
+		args = {"pbutterModel", "data/pbutter.dta", "output/pbutter.log", "output/pbutter.out", "output/pbutter.optobj"};
+	}
 	return args;
 }
 

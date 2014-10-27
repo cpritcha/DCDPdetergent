@@ -1,0 +1,10 @@
+#!/bin/bash
+rm -f output/pbutter.log
+rm -f output/pbutter.out
+rm -f model/pbutterMainSimple.oxo #model/pbutterSimple.oxo model/Inventory.oxo
+
+oxl -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
+#oxl -DVHIGH+LINEAR+COMPLEX -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
+mv pbutterMainSimple.oxo model/.
+
+sqsub -r 6.0h -o output/pbutter.log -q serial --memperproc=3.5G oxl model/pbutterMainSimple.oxo
