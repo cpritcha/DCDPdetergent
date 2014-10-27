@@ -5,8 +5,6 @@
  * so do not refactor
  */
 
-
-/*
 #ifdef LOW
 const decl DR = 0.1;
 #endif
@@ -16,13 +14,13 @@ const decl DR = 0.5;
 #ifdef HIGH
 const decl DR = 0.9;
 #endif
-#ifdef VHIGH*/
+#ifdef VHIGH
 const decl DR = 0.99;
-//#endif 
+#endif 
 
-//#ifdef LINEAR
+#ifdef LINEAR
 // linear utility
-//#ifdef COMPLEX
+#ifdef COMPLEX
 decl init_hat = {
 	DR,
 	1.0,
@@ -51,7 +49,7 @@ PButter::Utility() {
  
 	return -cost;
 }
-/*#else
+#else
 decl init_hat = {
 	DR,
 	1.0,
@@ -171,9 +169,9 @@ PButter::Utility() {
 
 	return -cost;
 }
-#endif*/
+#endif
 
-//#ifdef COMPLEX
+#ifdef COMPLEX
 
 /*
  * Full model. Includes coupons
@@ -245,6 +243,7 @@ PButter::InitializeStatesParams() {
   coupon_other = new CouponState("coupon_other", hat[TRANS_PROB_OTHER]);
 
   EndogenousStates(coupon_ctl, coupon_jif, coupon_peter, coupon_skippy, coupon_other, weeks_to_go, consumption);
+	SubSampleStates(0.2);
 	CreateSpaces();
 }
 
@@ -283,13 +282,13 @@ PButter::SecondStage() {
 
 PButter::ThirdStage() {
 }
-//#else
+#else
 
 /*
  * Simple model. No coupon information
  */
 
-/*
+
 PButterData::PButterData(method, datafile) {
 	DataSet("PeanutButter", method, TRUE);
 	Observed(PButter::weeks_to_go,"wks_to_g",
@@ -345,11 +344,14 @@ PButter::SecondStage() {
 }
 
 PButter::ThirdStage() {}
-#endif*/
+#endif
 
 validate(args) {
 	if (sizec(args) != 5) {
-		args = {"pbutterModel", "data/pbutter.dta", "output/pbutter.log", "output/pbutter.out", "output/pbutter.optobj"};
+		println("Wrong number of command line arguments. Setting arguments to defaults: ");
+		args = {"pbutterModel", "../data/pbutter.dta", "../output/pbutter.log", "../output/pbutter.out", "../output/pbutter.optobj"};
+		//oxrunerror("Not called right");
+		println(args);
 	}
 	return args;
 }

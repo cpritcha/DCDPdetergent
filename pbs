@@ -5,7 +5,6 @@
 #   means to run the model on pbutter.dta and name
 #   output files "pbutter_test.*"
 
-
 # datefile is assumed to reside in the output/ folder
 version=${2:-1}
 datafile="data/$1.dta"
@@ -17,8 +16,8 @@ rm -f ${logfile}
 rm -f ${resultsfile}
 rm -f model/pbutterMainSimple.oxo #model/pbutterSimple.oxo model/Inventory.oxo
 
-oxl  -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
-#oxl -DVHIGH+LINEAR+COMPLEX -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
+#oxl  -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
+oxl -DVHIGH+LINEAR+COMPLEX -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
 mv pbutterMainSimple.oxo model/.
 
 # to run without sharcnet
