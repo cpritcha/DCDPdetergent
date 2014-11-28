@@ -29,17 +29,6 @@ feasible_hh(timep, wtg, purch, cons) {
     [exp_feas_states, exp_trans_prob] = inventory.Transit(FeasA); 
     expected_transition = max(exp_feas_states .* exp_trans_prob[purch[i]][]);
     
-    /*if (i > 130) {
-    print("purch: ", purchase.v);
-    print("\t\twtg: ", AV(inventory));
-    print("\t\tcons: ", AV(consumption), "\t", consumption.actual[consumption.v], "\t", cons[i]);
-
-    print("\nefs: ", exp_feas_states,
-        "etp: ", exp_trans_prob[purch[i]][]);
-    decl x = exp_feas_states .* exp_trans_prob[purch[i]][];
-    print("x: ", x);
-    }*/
-    
     // actual feasible transition
     actual_transition = wtg[i+1];
     
@@ -86,7 +75,7 @@ feasible_hhs(db) {
 main() {
   // load in the data 
   decl db = new Database();
-  db.Load("../data/full_init.dta");
+  db.Load("../data/pbutter.dta");
 
   feasible_hhs(db);
 }

@@ -6,6 +6,7 @@
 #   output files "pbutter_test.*"
 
 # datefile is assumed to reside in the output/ folder
+flags=$3
 version=${2:-1}
 datafile="data/$1.dta"
 logfile="output/$1$version.log"
@@ -17,16 +18,20 @@ rm -f ${resultsfile}
 rm -f model/pbutterMainSimple.oxo #model/pbutterSimple.oxo model/Inventory.oxo
 
 #oxl  -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
-oxl -DVHIGH+LINEAR+COMPLEX -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h
-mv pbutterMainSimple.oxo model/.
+precmd="oxl -D${flags} -c model/pbutterMainSimple.ox model/pbutterSimple.h model/Inventory.h"
+echo $precmd
+eval $precmd
+mv pbutterMainSimple.oxo model/${version}.oxo
 
 # to run without sharcnet
 #cmd="oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
 
 # to run on sharcnet
 cmd="sqsub -r 6.0h -o ${logfile} -q serial --memperproc=3.5G
- oxl model/pbutterMainSimple.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
+ oxl model/${version}.oxo ${datafile} ${logfile} ${resultsfile} ${savefile}"
 echo "Starting Peanut Butter Estimation"
 echo $cmd
 
 eval $cmd
+
+#rm model/${version}.oxo

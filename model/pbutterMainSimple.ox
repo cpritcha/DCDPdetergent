@@ -1,5 +1,9 @@
 #import "pbutterSimple"
-
+/*
+#define VHIGH
+#define COMPLEX
+#define LINEAR
+*/
 /*
  * The Ox preprocessor does not support #if directive 
  * so do not refactor
@@ -11,12 +15,18 @@ const decl DR = 0.1;
 #ifdef MED
 const decl DR = 0.5;
 #endif
+#ifdef MEDLOW
+const decl DR = 0.25;
+#endif
 #ifdef HIGH
 const decl DR = 0.9;
 #endif
 #ifdef VHIGH
 const decl DR = 0.99;
 #endif 
+#ifdef VVHIGH
+const decl DR = 0.999;
+#endif
 
 #ifdef LINEAR
 // linear utility
@@ -52,8 +62,8 @@ PButter::Utility() {
 #else
 decl init_hat = {
 	DR,
-	1.0,
-	<1.0>};
+	0.01,
+	<0.001>};
 
 PButter::Utility() {
 	decl buy = aa(purchase);
@@ -242,8 +252,9 @@ PButter::InitializeStatesParams() {
   coupon_skippy = new CouponState(("coupon_skippy"), hat[TRANS_PROB_SKIPPY]);
   coupon_other = new CouponState("coupon_other", hat[TRANS_PROB_OTHER]);
 
-  EndogenousStates(coupon_ctl, coupon_jif, coupon_peter, coupon_skippy, coupon_other, weeks_to_go, consumption);
-	SubSampleStates(0.2);
+	GroupVariables(consumption);
+  EndogenousStates(coupon_ctl, coupon_jif, coupon_peter, coupon_skippy, coupon_other, weeks_to_go);
+	//SubSampleStates(0.2);
 	CreateSpaces();
 }
 
@@ -308,7 +319,8 @@ PButter::InitializeStatesParams() {
 	hat[DISCOUNT] = new Determined("delta",init_hat[DISCOUNT]);
 	hat[STOCKOUT_COSTS] = new Coefficients("alpha", init_hat[STOCKOUT_COSTS]);
 	hat[INVENTORY_HOLDING_COSTS] = new Coefficients("eta", init_hat[INVENTORY_HOLDING_COSTS]);
-  
+
+	SetClock(InfiniteHorizon);  
  	SetDelta(hat[DISCOUNT]);
 
 	purchase = new ActionVariable("purchase", 6);
@@ -316,11 +328,12 @@ PButter::InitializeStatesParams() {
   Actions(purchase);
 
   consumption = new FixedEffect("consumption", Nconsumption);
-  consumption.actual = (consumption.vals + 1);
+  consumption.actual = ((consumption.vals + 1)');
 
   weeks_to_go = new InventoryState("weeks_to_go", Nwtg, consumption, purchase);
 
-  EndogenousStates(weeks_to_go, consumption);
+	GroupVariables(consumption);
+  EndogenousStates(weeks_to_go);
 	CreateSpaces();
 }
 

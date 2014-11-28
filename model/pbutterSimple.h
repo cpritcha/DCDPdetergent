@@ -27,7 +27,7 @@ struct PButter : ExtremeValue {
 	enum{DELTA,ALPHA,ETA,GAMMA,Q_CTL,Q_JIF,Q_PETER,Q_SKIPPY,Q_OTHER};
 
 	// maxmimum weeks of laundry detergent inventory
-	static const decl Nwtg = 59,
+	static const decl Nwtg = 97, // 97 67
                     Nconsumption = 64; // no one buys more than a years worth of laundry detergent
 
 	static decl purchase; // control variable
