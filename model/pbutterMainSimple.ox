@@ -9,6 +9,10 @@
  * so do not refactor
  */
 
+#define VHIGH
+#define LINEAR
+#define COMPLEX
+
 #ifdef LOW
 const decl DR = 0.1;
 #endif
