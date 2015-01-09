@@ -2,4 +2,4 @@
 
 Datasets used in the paper.
 
-Original data is [here](http://research.chicagobooth.edu/kilts/marketing-databases/erim).
+Original data is [here](http://kilts.chicagobooth.edu/acnpanel/raw_files/erim/pbutter/pbutter.zip).
