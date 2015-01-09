@@ -49,7 +49,7 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 	logfile = _logfile;
 
 	PButter::InitializeStatesParams();
-	EMax = new ValueIteration(0);//KeaneWolpin(0.2); //ValueIteration(0);
+	EMax = new ValueIteration(0);
 	EMax.vtoler  = 1E-1;
 
   pbutter = new PButterData(EMax, _datafile);
@@ -86,6 +86,7 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 	// Perform one iteration for all parameters
 	// to get variance/covariance matrix
 	nfxp -> ResetMax();
+	nfxp -> ToggleParameterConstraint();
 	mleBHHH -> Iterate(0);
 
 	nfxp->Save(_savefile);

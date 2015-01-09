@@ -1,0 +1,25 @@
+#!/bin/bash
+
+amount=2
+./pbs pbutter VHQ VHIGH+QUAD 
+sleep $amount
+./pbs pbutter HQ  HIGH+QUAD 
+sleep $amount
+./pbs pbutter MQ MED+QUAD 
+sleep $amount
+./pbs pbutter MLQ MEDLOW+QUAD
+sleep $amount
+./pbs pbutter LQ LOW+QUAD
+sleep $amount
+
+./pbs pbutter2 VHQ2 VHIGH+QUAD 
+sleep $amount
+./pbs pbutter2 HQ2 HIGH+QUAD 
+sleep $amount
+./pbs pbutter2 MQ2 MED+QUAD 
+sleep $amount
+./pbs pbutter2 MLQ2 MEDLOW+QUAD
+sleep $amount
+./pbs pbutter2 LQ2 LOW+QUAD 
+sleep $amount            
+   

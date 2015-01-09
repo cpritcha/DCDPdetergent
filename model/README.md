@@ -1,5 +1,4 @@
 # Model
 
-- `pbutterSimple.*` minimal inventory model. Has only linear stockout costs and inventory holding costs
-- `pbutter.*` full inventory model. Has linear stockout costs, quadratic inventory holding costs and brand value variables.
-- `InventoryState.*` 
+- `pbutterSimple.*` and `pbutterMainSimple.*` contain the code to run models used in the paper. Has only linear stockout costs and inventory holding costs
+- `InventoryState.*` defines the state transition class for the weeks of peanut butter remaining variable 

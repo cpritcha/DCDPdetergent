@@ -1,19 +1,16 @@
 # ERIM Data Discrete Choice Models
 
-To the simple model (assuming that there is a dataset in the data directory called `pbutter.dta`:
+To estimate the simple quadratic (`QUAD`) model with a very high (`VHIGH`) interest rate  (assuming that there is a dataset in the data directory called `pbutter.dta`):
 
-```
-./pbs pbutter _fullQUAD
-```
-
-When the model completes output and log files will be in the *output/* folder. `pbutter_fullQUAD.log`,
-`pbutter_fullQUAD.optobj` and `pbutter_fullQUAD.optobj` should be created as output.
-
-The `pbs` bash script has the following line
-
-```
-oxl -DVHIGH+QUAD+COMPLEX -c <files>
+```bash
+./pbs pbutter VHQ VHIGH+QUAD
 ```
 
-The `-D` switch `VHIGH` sets the discount rate, `QUAD` sets the inventory holding cost to be quadratic
-and `COMPLEX` adds coupon transition and brand preference variables.
+When the model completes output and log files will be in the *output/* folder. `pbutterVHQ.log`,
+`pbutterVHQ.optobj` and `pbutterVHQ.out` should be created as output.
+
+To run all the models used in the paper on `sharcnet`:
+
+```bash
+./run
+```
