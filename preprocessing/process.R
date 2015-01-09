@@ -91,26 +91,6 @@ colnames(upcdata) <-
 upcdata <- data.table(upcdata, keys=c("upc_id"))
 upcdata[, upc_id := as.character(upc_id)]
 
-# advertising <- read.fwf(str_c(root,"f11.dat"), 
-#                         widths=c(8,1,10,9,6,3,6,1,6,6,6))
-# setnames(advertising,
-#   c("hh.id",
-#     "meter.num",
-#     "CNAN",
-#     "comm.id",
-#     "comm.start",
-#     "comm.duration",
-#     "week",
-#     "day",
-#     "exposure.date",
-#     "tune.in.time",
-#     "tune.out.time"))
-# advertising <- data.table(advertising, key=c("hh.id"))
-# # aggregate viewing data
-# # 2 rows are corrupted
-# advertising[,hh.id := as.integer(as.character(hh.id))]
-# advertising <- advertising[!is.na(advertising$hh.id),]
-# advertising[,duration := as.integer(as.character(comm.duration))]
 
 #####
 #  Store
@@ -294,8 +274,7 @@ for (dt in c("purchhist", "upcdata", "shopoccasion", "definitions", "retail", "h
 #indexes <- paste(readLines("indexes.sql"), collapse="\n")
 #dbSendQuery(conn, indexes)
 
-# need to run all.sql first
-
+# need to run pbutter_processing.sql, pbutter_functions.sql first
 # retrieve data from db
 res <- dbGetQuery(conn, 
                   "SELECT hh_id, week, vol, purchased, inv_lag AS wks_to_g, consumption, coupon_available_ch, coupon_available_other, coupon_available_td, dinventory
