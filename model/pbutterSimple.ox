@@ -49,7 +49,7 @@ PButterEstimates::DoAll(_datafile, _logfile, _resultsfile, _savefile) {
 	logfile = _logfile;
 
 	PButter::InitializeStatesParams();
-	EMax = new KeaneWolpin(0.2); //ValueIteration(0);
+	EMax = new ValueIteration(0);//KeaneWolpin(0.2); //ValueIteration(0);
 	EMax.vtoler  = 1E-1;
 
   pbutter = new PButterData(EMax, _datafile);

@@ -247,7 +247,7 @@ PButter::InitializeStatesParams() {
   coupon_other = new CouponState("coupon_other", hat[TRANS_PROB_OTHER]);
 
   EndogenousStates(coupon_ctl, coupon_jif, coupon_peter, coupon_skippy, coupon_other, weeks_to_go, consumption);
-	SubSampleStates(0.2);
+	//SubSampleStates(0.2);
 	CreateSpaces();
 }
 

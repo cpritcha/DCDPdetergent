@@ -2,11 +2,13 @@ setwd("~/Google Drive/School/Masters/FinalPaper/src")
 library(foreign)
 library(data.table)
 library(ggplot2)
+library(stringr)
 
 directory <- "data/pbutter/"
 
 load(paste(directory, "data.RData", sep=""))
 data <- data.table(read.dta("data/pbutter.dta"))
+fulldata <- data.table(read.dta("data/pbutterFull.dta"))
 hhs <- unique(data$hh_id)
 
 d <- subset(data,hh_id==hhs[30])
@@ -59,19 +61,10 @@ ggplot(data=dd, aes(x = vol, fill = wks_to_g)) + geom_bar()
 d2 <- ggplot(data=dd, aes(vol, wks_to_g))
 d2 + stat_sum(aes(group = count))
 
-
-library(nnet)
-x <- multinom(purch ~ wks_to_g + I(wks_to_g^2) + cons,data=data)
-y <- multinom(purch ~ 1, data=data)
-
-# pseudo R-Square
-(y$deviance - x$deviance)/y$deviance
-
-
 # Plots
 
 # Kernel Density: weeks to go by consumption_category 
-data[,cons_cat := factor(round(cons/5), levels=0:13, labels=paste(0:13*5,1:14*5,sep="-"))]
+data[, cons_cat := factor(round(cons/5), levels=0:13, labels=paste(0:13*5,1:14*5,sep="-"))]
 
 kd_wtg_by_consumption <- ggplot(data = data, aes(x = wks_to_g, colour = cons_cat)) + 
   geom_density(xlab = "Weeks to go") +
@@ -104,10 +97,26 @@ ph_upc <- merge(purchhist, upcdata)
 tot_vol_ph_upc <- ph_upc[,list(tot_vol=sum(tot_wght)), by=c("date", "brand")]
 setkey(tot_vol_ph_upc, date, brand)
 
+tot_ph_upc <- ph_upc[,list(sz=sum(unit_wght.x)), by=c("hh_id", "week")]
+bar_tot_vol <- ggplot(data = tot_ph_upc[,list(cnt=length(hh_id)), by=sz]) +
+  geom_bar(aes(x = sz,
+               y = cnt), alpha=0.5,
+           stat="identity",
+           position="dodge") +
+  labs(x = "total purchase size (Oz)",
+       y = "count") +
+  #xlim(c(0,81)) +
+  theme_bw()
+bar_tot_vol
+  #  geom_bar(aes(x = factor(hh_income), 
+  #               y=mean_gross_unit_price), alpha=0.5, 
+  #           stat="identity",
+  #           position = "dodge")
+
 lp_tot_vol_by_brand <- qplot(x = date, y = tot_vol, 
   data = tot_vol_ph_upc, 
   facets = brand ~ ., geom = "line",
-  ylab = "total vol (oz)",
+  ylab = "total vol (Oz)",
   main = "Total Peanut Butter Vol Sold by Brand") + theme_bw()
 lp_tot_vol_by_brand
 
@@ -118,9 +127,9 @@ ph_upc_data <- merge(ph_upc, data)
 tot_purch_ph_upc <- ph_upc_data[, list(npurch = .N), by=c("date","brand","vol")]
 
 slp_tot_purch_by_vol_cat <- ggplot(data = tot_purch_ph_upc) +
-  scale_color_discrete("Volume Cat.") +
   scale_y_log10() +
-  geom_line(aes(x = date, y = npurch, colour = factor(vol))) +
+  scale_linetype_discrete("Volume (Oz)") +
+  geom_line(aes(x = date, y = npurch, linetype=factor(vol))) +
   facet_grid(brand ~ .) +
   theme_bw() +
   labs(y="number of sales",
@@ -146,14 +155,21 @@ prices <- ph_upc_data[, list(npurch = .N,
                       by=c("date","brand","vol")]
 setkey(prices, date, brand, vol)
 
-lp_prices <- ggplot(prices, aes(x = date, colour=factor(vol))) +
+lp_prices <- ggplot(prices, aes(x = date, linetype=factor(vol))) +
   geom_line(aes(y = mean_net_unit_price/vol)) +
-  scale_color_discrete("Volume Cat.") +
+  scale_linetype_discrete("Volume (Oz)") +
   facet_grid(brand ~ .) +
   theme_bw() + 
-  labs(y = "mean unit gross price ($/oz)",
+  labs(y = "mean unit gross price ($/Oz)",
        title = "Prices")
 lp_prices
+
+# Imputation difference
+library(plyr)
+tab_inv_comp <- 
+  sapply(
+    data.frame(fulldata)[, c("cons", "dpurchased", "wtg1", "wtg2")], 
+    each(min, max, mean, sd, median, IQR))
 
 # Price / Weeks to go
 price_wtg <- ph_upc_data[, list(wtg=max(wks_to_g), 
@@ -169,11 +185,15 @@ sp_price_wtg <- ggplot(price_wtg, aes(x = wtg, y = mean_net_unit_price/vol)) +
   #stat_density2d(geom="tile", aes(fill = ..density.., geom="polygon"), contour=FALSE)
 sp_price_wtg
 
+# Sizes
+
 # Mean Price / Shopping Frequency
 ph_upc_data[, store_id := as.integer(store_id)]
 setkey(ph_upc_data, hh_id)
 setkey(shopoccasion, hh_id)
 shpocc <- shopoccasion[,list(ntrips=.N, tot_spent=sum(dollars_spent > 2000)),by=c("hh_id")]
+
+ph_upc_data_shpocc <- merge(ph_upc_data, shpocc)
 
 mean_price_by_freq <- ph_upc_data_shpocc[,list(mean_gross_unit_price=sum(gross_unit_price)/sum(vol)),
                                          by=hh_id]
@@ -183,6 +203,8 @@ mean_price_by_freq <- merge(mean_price_by_freq, shpocc)
 
 price_by_shopocc <- ggplot(data = mean_price_by_freq) +
   geom_point(aes(x = mean_gross_unit_price, y = tot_spent)) +
+  labs(x = "mean gross unit price ($/Oz)",
+       y = "N trips (> $20)") +
   theme_bw()
 price_by_shopocc
 
@@ -194,12 +216,32 @@ ph_upc_data_demog <- merge(ph_upc_data, hh.demog, all.x = TRUE)
 mean_price_by_income <- ph_upc_data_demog[, list(mean_gross_unit_price=sum(gross_unit_price)/sum(vol)),
                                           by=c("hh_income")]
 setkey(mean_price_by_income, hh_income)
-price_by_income <- ggplot(data = mean_price_by_income) + 
-  geom_bar(aes(x = factor(hh_income), 
-               y=mean_gross_unit_price), alpha=0.5, 
-           stat="identity",
-           position = "dodge")
-price_by_income
+#price_by_income <- ggplot(data = mean_price_by_income) + 
+#  geom_bar(aes(x = factor(hh_income), 
+#               y=mean_gross_unit_price), alpha=0.5, 
+#           stat="identity",
+#           position = "dodge")
+#price_by_income
+
+price_by_income <- tapply(ph_upc_data_demog$net_unit_price/ph_upc_data_demog$unit_wght.x, 
+                          factor(ph_upc_data_demog$hh_income,
+                                 labels = c("< $5K",
+                                            "$[5,10)K",
+                                            "$[10,15)K",
+                                            "$[15,20)K",
+                                            "$[20,25)K",
+                                            "$[25,30]K",
+                                            "$[30,35)K",
+                                            "$[35,40)K",
+                                            "$[40,45)K",
+                                            "$[45,50)K",
+                                            "$[50,60)K",
+                                            "$[60,75)K",
+                                            "$[75,100]K",
+                                            "> $100K")),
+                          mean)
+price_by_income <- data.frame(price_by_income)
+colnames(price_by_income) <- ("Mean Net Unit Price ($/Oz)")
 
 # Mean Price by Store
 mean_price_by_store <- ph_upc_data[,list(mean_gross_unit_price = mean(gross_unit_price)),
@@ -224,6 +266,8 @@ save(lp_tot_vol_by_brand,
      price_by_shopocc,
      price_by_store, 
      price_by_income,
-     kd_wtg_by_consumption, file =  "graphics/plot.RData")
+     kd_wtg_by_consumption, 
+     bar_tot_vol,
+     tab_inv_comp, file =  "graphics/plot.RData")
 #ggsave(filename = "price_by_store.pdf",plot = price_by_store)
 load("graphics/plot.RData")

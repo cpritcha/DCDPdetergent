@@ -421,3 +421,85 @@ WHERE hh_id IN (
   FROM done
   GROUP BY hh_id
   HAVING COUNT(CASE WHEN vol = 0 THEN NULL ELSE vol END) > 2);
+
+-- final columns
+DROP TABLE IF EXISTS done;
+CREATE TABLE done AS
+SELECT 
+  hh_id,
+  week,
+  purchased,
+  CASE 
+    WHEN purchased = 0 THEN 0
+    WHEN purchased = 1 THEN 12 
+    WHEN purchased = 2 THEN 18
+    WHEN purchased = 3 THEN 28 
+    WHEN purchased = 4 THEN 40
+    ELSE 80
+  END AS dpurchased,
+  dconsumption AS cons,
+  NULL::integer AS inv1,
+  NULL::integer AS inv2,
+  NULL::integer AS wtg1,
+  NULL::integer AS wtg2,
+  coupon_available_ctl, 
+  coupon_available_jif, 
+  coupon_available_peter,
+  coupon_available_skippy,
+  coupon_available_other
+FROM results_final;
+
+SELECT *
+FROM done
+--WHERE wtg2 > wtg1
+ORDER BY hh_id, week
+LIMIT 1000;
+
+---------
+-- initial inventory for inv1, wtg1
+UPDATE done SET inv1 = b.inv
+FROM (
+  SELECT 
+    hh_id, 
+    round(sum(dpurchased::double precision)/
+      count(CASE WHEN dpurchased > 0 THEN 1 ELSE NULL END))::integer AS inv
+  FROM done
+  GROUP BY hh_id
+  HAVING count(CASE WHEN dpurchased > 0 THEN 1 ELSE NULL END) > 0
+) AS b
+WHERE done.hh_id = b.hh_id AND done.week = 198625
+
+UPDATE done SET wtg1 = round(inv1::double precision/cons)::integer 
+-- imputed inventory for inv1, wtg1
+SELECT inv1();
+SELECT wtg1();
+
+---------
+-- initial inventory for inv2, wtg2
+UPDATE done SET wtg2 = b.min_unrestricted_wtg
+FROM (
+  SELECT hh_id, CASE WHEN -min(unrestricted_wtg) < 0 THEN 0 ELSE -min(unrestricted_wtg) END AS min_unrestricted_wtg
+  FROM (
+    SELECT hh_id, week, purchased, cons, 
+      sum(dpurchased/cons) OVER (PARTITION BY hh_id ORDER BY week) - row_number() OVER (PARTITION BY hh_id ORDER BY week) AS unrestricted_wtg
+    FROM done
+    ORDER BY hh_id, week
+  ) AS a
+  GROUP BY hh_id) AS b
+WHERE done.week = 198625 AND done.hh_id = b.hh_id;
+
+UPDATE done SET inv2 = b.min_unrestricted_inv
+FROM (
+  SELECT hh_id, CASE WHEN -min(unrestricted_inv) < 0 THEN 0 ELSE -min(unrestricted_inv) END AS min_unrestricted_inv
+  FROM (
+    SELECT hh_id, week, purchased, cons, 
+      sum(dpurchased - cons) OVER (PARTITION BY hh_id ORDER BY week) AS unrestricted_inv
+    FROM done
+    ORDER BY hh_id, week
+  ) AS a
+  GROUP BY hh_id) AS b
+WHERE done.week = 198625 AND done.hh_id = b.hh_id;
+-- imputed inventory for inv2, wtg2
+SELECT inv2();
+SELECT wtg2();
+

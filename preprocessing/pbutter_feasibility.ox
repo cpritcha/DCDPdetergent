@@ -86,7 +86,7 @@ feasible_hhs(db) {
 main() {
   // load in the data 
   decl db = new Database();
-  db.Load("../data/full_init.dta");
+  db.Load("../data/pbutter.dta");
 
   feasible_hhs(db);
 }
